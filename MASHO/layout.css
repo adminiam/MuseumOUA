@@ -10,7 +10,6 @@ html, body {
 body {
     background: linear-gradient(to bottom, #0A2B4B, #c3f3ff) no-repeat fixed;
     font-family: 'Montserrat', sans-serif;
-    /*overflow: hidden;*/ /*TODO раскомментировать для анимации*/
 }
 
 
@@ -37,7 +36,7 @@ li {
 
 header {
     background: linear-gradient(to bottom, #0A2B4B, #c3f3ff) no-repeat fixed;
-    height: 107px; /*//TODO уменьшить высоту с помощью пикселей, поставить auto в случае чего*/
+    height: 107px;
     width: 100%;
     position: fixed;
     left: 0;
@@ -209,7 +208,7 @@ video {
 /* ------------------------------------------------------------------ */
 
 #universities-carousel, #video-carousel, #sv-information {
-    padding-top: 155px; /*TODO пофиксить переход*/
+    padding-top: 155px;
     padding-bottom: 78px;
 
 }

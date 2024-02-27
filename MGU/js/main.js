@@ -66,16 +66,7 @@
       });
 
   	});
-	//
-	// const sliderIds = ['#mySlider', '#mySlider1','#mySlider2','#mySlider3','#mySlider4', '#mySlider5','#mySlider6','#mySlider7','#mySlider8','#mySlider9'];
-	//
-	// sliderIds.forEach((sliderId) => {
-	// 	new Splide(sliderId, {
-	// 		/*pagination: false*/
-	// 	}).mount();
-	// });
-	//
-	// new Splide( '.splide' ).mount( window.splide.Extensions );
+
 	var swiper = new Swiper(".mySwiper", {
 		loop: true,
 		spaceBetween: 10,
@@ -93,6 +84,14 @@
 		thumbs:{
 			swiper: swiper,
 		},
+	});
+	var swiperFourSlides = new Swiper(".mySwiper-4-slides", {
+		spaceBetween: 10,
+		slidesPerView: 4
+	});
+	var swiperThreeSlides = new Swiper(".mySwiper-3-slides", {
+		spaceBetween: 10,
+		slidesPerView: 3
 	});
 
 

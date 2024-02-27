@@ -1,13 +1,7 @@
-/*-----------------------------------------------------------------------------------
-/*
-/* Main JS
-/*
------------------------------------------------------------------------------------*/
+
 
 (function ($) {
-    /*---------------------------------------------------- */
-    /* Mobile Menu
- ------------------------------------------------------ */
+
     var toggle_button = $("<a>", {
             id: "toggle-btn",
             html: "Menu",
@@ -18,8 +12,6 @@
     var nav_wrap = $('nav#nav-wrap')
     var nav = $("ul#nav");
 
-    /* id JS is enabled, remove the two a.mobile-btns
-    and dynamically prepend a.toggle-btn to #nav-wrap */
     nav_wrap.find('a.mobile-btn').remove();
     nav_wrap.prepend(toggle_button);
 
@@ -38,30 +30,6 @@
         if (nav.hasClass('mobile')) nav.fadeOut('fast');
     });
 
-    const sliderIds = ['#mySlider'];
-
-    sliderIds.forEach((sliderId) => {
-        const slider = new Splide(sliderId, {
-            /* настройки для каждого слайдера */
-            /*pagination: false*/ /*TODO раскоммитить если нужно*/
-        });
-
-        slider.mount();
-    });
-
-
-    /*document.addEventListener('contextmenu', function (e) {
-        e.preventDefault();
-    });*/
-
-    /*----------------------------------------------------*/
-    /* FitText Settings
-    ------------------------------------------------------ */
-
-
-    /*----------------------------------------------------*/
-    /* Smooth Scrolling
-    ------------------------------------------------------ */
     $('.smoothscroll').on('click', function (e) {
 
         e.preventDefault();
@@ -76,13 +44,18 @@
         });
 
     });
+    var swiper2 = new Swiper(".mySwiper3", {
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
 
 
-    /*----------------------------------------------------*/
-    /* Highlight the current section in the navigation bar
-    ------------------------------------------------------*/
-    var sections = $("section"),
-        navigation_links = $("#nav-wrap a");
 
 
 
