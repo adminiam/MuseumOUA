@@ -13,7 +13,7 @@ body {
 
 .swiper {
     width: 100%;
-    max-width: 900px;
+    max-width: 800px;
     height: auto;
     margin: 0;
 }
@@ -251,7 +251,7 @@ ul#nav li {
     background: linear-gradient(to bottom, #1D5C60, #367c89) no-repeat fixed;
     padding: 10px;
     z-index: 1;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0 0 10px 10px;
 }
 
 .dropdown-menu li {
