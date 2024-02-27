@@ -10,28 +10,16 @@
     <link rel="stylesheet" href="../../css/default.css">
     <link rel="stylesheet" href="../layout.css">
     <link rel="stylesheet" href="../media-queries.css">
-    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
-<!--    <div class="wrapper">-->
-<!--        <a class="logo" href="../oua.html">-->
-<!--            <img class="oua-logo-img" alt="" src="../../images/logo.png">-->
-<!--        </a>-->
-<!--        <nav id="nav-wrap" class="nav-periods nav-periods-font-size">-->
-<!--            <ul id="nav" class="nav">-->
-<!--                <li><a href="1817-1997.html">1817-1997</a></li>-->
-<!--                <li><a href="1998-2003.html">1998-2003</a></li>-->
-<!--                <li><a href="#">2004-2009</a></li>-->
-<!--                <li><a href="2010-2014.html">2010-2014</a></li>-->
-<!--                <li><a href="2015-2019.html">2015-2019</a></li>-->
-<!--                <li><a href="2020-2024.html">2020-2024</a></li>-->
-<!--            </ul>-->
-<!--        </nav>-->
-<!--    </div>-->
     <div class="wrapper">
         <nav class="uk-navbar-container uk-visible@m uk-navbar" uk-navbar="mode: click">
             <div class="uk-navbar-center">
@@ -76,16 +64,9 @@
         </div>
     </div>
 </header>
-<!-- Header End -->
 
-
-<!-- Homepage Hero
-================================================== -->
-<!-- Homepage Hero end -->
 <div class="sections-container">
 
-    <!-- Features Section
-================================================== -->
     <section id='sv-information'>
         <div class="row feature flex-column">
             <div class="six columns feature-media left">
@@ -114,7 +95,8 @@
                     </p>
                 </div>
                 <div class="six columns right text margin-fixed-right">
-                    <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;3 вересня 2006 року храм Святої Татіани було
+                    <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;3 вересня 2006 року храм Святої Татіани
+                        було
                         освячено. У цей день приміщення храму та прилегла територія була <span class="sv-text-bold">заповнена багатотисячним
                             зібранням студентів академії та віруючих одеситів</span>, які прийшли розділи радість свята.
                         Професорсько-викладацький склад, запрошені гості, <span class="sv-text-bold">ієрархи Українського духовенства</span>
@@ -170,21 +152,21 @@
     <section class="fix-position">
         <div class="row feature">
             <div class="six columns feature-media left">
-                <section id="mySlider" class="splide" aria-label="Splide Basic HTML Example">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide"><img src="img/img59.jpg" alt="59">
-                                <p class="splide-text-slide">2007 рік. Присвоєння Президенту Міжнародного кримінального
-                                    суду Філіпу Кіршу звання Почесний доктор Одеської національної юридичної академії
-                                </p>
-                            </li>
-                            <li class="splide__slide"><img src="img/img49.jpg" alt="49">
-                                <p class="splide-text-slide">2007 рік. Візит до ОНЮА Генерального прокурора України О.
-                                    І. Медведька та генеральних прокурорів Молдови та Румунії </p>
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img59.jpg" alt="59">
+                            <p class="photo-text">2007 рік. Присвоєння Президенту Міжнародного кримінального
+                                суду Філіпу Кіршу звання Почесний доктор Одеської національної юридичної академії</p>
+                        </div>
+                        <div class="swiper-slide"><img src="img/img49.jpg" alt="49">
+                            <p class="photo-text">2007 рік. Візит до ОНЮА Генерального прокурора України О.
+                                І. Медведька та генеральних прокурорів Молдови та Румунії </p>
+                        </div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
             <div class="container-right-text">
                 <div class="six columns right text margin-fixed-right">
@@ -247,27 +229,26 @@
             </div>
             <div class="six columns feature-media right">
                 <div class="six columns feature-media right">
-                    <section id="mySlider1" class="splide" aria-label="Splide Basic HTML Example">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide"><img src="img/img60.jpg" alt="60">
-                                    <p class="splide-text-slide">Відкриття адміністративного корпусу Одеської
-                                        національної юридичної академії
-                                    </p>
-                                </li>
-                                <li class="splide__slide"><img src="img/img61.jpg" alt="61">
-                                    <p class="splide-text-slide">2004 рік. Вперше колектив ОНЮА святкує День знань на
-                                        території
-                                        новозбудованого спортивного комплексу
-                                    </p>
-                                </li>
-                                <li class="splide__slide"><img src="img/img62.jpg" alt="62">
-                                    <p class="splide-text-slide">Приміщення нової криміналістичної лабораторії на
+                    <div class="six columns feature-media left">
+                        <div class="swiper mySwiper3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="img/img60.jpg" alt="60">
+                                    <p class="photo-text">Відкриття адміністративного корпусу Одеської
+                                        національної юридичної академії</p></div>
+                                <div class="swiper-slide"><img src="img/img61.jpg" alt="61">
+                                    <p class="photo-text">2004 рік. Вперше колектив ОНЮА святкує День знань на
+                                        території новозбудованого спортивного комплексу</p>
+                                </div>
+                                <div class="swiper-slide"><img src="img/img62.jpg" alt="62">
+                                    <p class="photo-text">Приміщення нової криміналістичної лабораторії на
                                         першому поверсі Адміністративного корпусу ОНЮА</p>
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
-                    </section>
+                    </div>
                 </div>
             </div>
         </div>
@@ -276,27 +257,25 @@
     <section>
         <div class="row feature design display fix-position">
             <div class="six columns feature-media left">
-                <section id="mySlider2" class="splide" aria-label="Splide Basic HTML Example">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide"><img src="img/img63.jpg" alt="63">
-                                <p class="splide-text-slide">2006 рік. Завершення будівництва освітнього комплексу
-                                    «Комп’ютерний дім». На відкритті зокрема присутній перший Голова Вищого
-                                    адміністративного суду України Олександр Пасенюк</p>
-                            </li>
-                            <li class="splide__slide"><img src="img/img64.jpg" alt="64">
-                                <p class="splide-text-slide">Приміщення новозбудованого Музею рідкісної книги –
-                                    справжньої перлини
-                                    Навчального комплексу ОНЮА
-                                </p>
-                            </li>
-                            <li class="splide__slide"><img src="img/img65.jpg" alt="65">
-                                <p class="splide-text-slide">Стрілецький тир Одеської національної юридичної
-                                    академії</p>
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img63.jpg" alt="63">
+                            <p class="photo-text">2006 рік. Завершення будівництва освітнього комплексу
+                                «Комп’ютерний дім». На відкритті зокрема присутній перший Голова Вищого
+                                адміністративного суду України Олександр Пасенюк</p></div>
+                        <div class="swiper-slide"><img src="img/img64.jpg" alt="64">
+                            <p class="photo-text">Приміщення новозбудованого Музею рідкісної книги –
+                                справжньої перлини Навчального комплексу ОНЮА</p>
+                        </div>
+                        <div class="swiper-slide"><img src="img/img65.jpg" alt="65">
+                            <p class="photo-text">Стрілецький тир Одеської національної юридичної
+                                академії</p>
+                        </div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
             <div class="container-right-text">
                 <div class="six columns right text margin-fixed-right">
@@ -365,20 +344,20 @@
                 </div>
             </div>
             <div class="six columns feature-media left">
-                <section id="mySlider3" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide"><img src="img/img66.jpg" alt="66">
-                                <p class="splide-text-slide">2005 рік. Відкриття сучасного лекційного корпусу ОНЮА за
-                                    адресою Піонерська 7</p>
-                            </li>
-                            <li class="splide__slide"><img src="img/img67.jpg" alt="67">
-                                <p class="splide-text-slide">Музей вогнепальної і холодної зброї Одеської національної
-                                    юридичної академії, розміщений у бідівлі «Комп’ютерного будинку»</p>
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img66.jpg" alt="66">
+                            <p class="photo-text">2005 рік. Відкриття сучасного лекційного корпусу ОНЮА за
+                                адресою Піонерська 7</p></div>
+                        <div class="swiper-slide"><img src="img/img67.jpg" alt="67">
+                            <p class="photo-text">Музей вогнепальної і холодної зброї Одеської національної
+                                юридичної академії, розміщений у бідівлі «Комп’ютерного будинку»</p>
+                        </div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -388,7 +367,8 @@
             <div class="six columns feature-media left">
                 <div class="six columns feature-media left">
                     <img class="img-misc img-width" src="img/img68.png" alt="68">
-                    <p class="photo-text">Президент ОНЮА Сергій Ківалов разом із професорсько-викладацьким колективом Інституту прокуратури та слідства</p>
+                    <p class="photo-text">Президент ОНЮА Сергій Ківалов разом із професорсько-викладацьким колективом
+                        Інституту прокуратури та слідства</p>
                 </div>
             </div>
             <div class="container-right-text">
@@ -448,7 +428,8 @@
             </div>
             <div class="six columns feature-media right">
                 <img class="img-misc img-width" src="img/img69.jpg" alt="69">
-                <p class="photo-text">2003 рік. Президент ОНЮА Сергій Ківалов та студенти ОНЮА на одній із перших Всеукраїнських наукових конференцій</p>
+                <p class="photo-text">2003 рік. Президент ОНЮА Сергій Ківалов та студенти ОНЮА на одній із перших
+                    Всеукраїнських наукових конференцій</p>
             </div>
         </div>
     </section>
@@ -458,7 +439,8 @@
                 <div class="six columns feature-media left">
                     <div class="six columns feature-media left">
                         <img class="img-misc img-width" src="img/img70.jpg" alt="70">
-                        <p class="photo-text">Колектив кафедри адміністративного та фінансового права Одеської національної юридичної академії</p>
+                        <p class="photo-text">Колектив кафедри адміністративного та фінансового права Одеської
+                            національної юридичної академії</p>
                     </div>
                 </div>
             </div>
@@ -508,7 +490,8 @@
             </div>
             <div class="six columns feature-media right">
                 <img class="img-misc img-width" src="img/img71.png" alt="71">
-                <p class="photo-text">Професорсько-викладацький склад факультет міжнародно-правових відносин та журналістики</p>
+                <p class="photo-text">Професорсько-викладацький склад факультет міжнародно-правових відносин та
+                    журналістики</p>
             </div>
         </div>
     </section>
@@ -517,19 +500,20 @@
             <div class="six columns feature-media left">
                 <div class="six columns feature-media left">
                     <div class="six columns feature-media left">
-                        <section id="mySlider4" class="splide" aria-label="Splide Basic HTML Example">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li class="splide__slide"><img src="img/img72.jpg" alt="72">
-                                        <p class="splide-text-slide">Магістратура державної служби Одеської національної юридичної академії</p>
-                                    </li>
-                                    <li class="splide__slide"><img src="img/img73.jpg" alt="73">
-                                        <p class="splide-text-slide">2005 рік. Багатотисячний колектив ОНЮА святкує День знань.
-                                        </p>
-                                    </li>
-                                </ul>
+                        <div class="swiper mySwiper3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="img/img72.jpg" alt="72">
+                                    <p class="photo-text">Магістратура державної служби Одеської національної
+                                        юридичної академії</p></div>
+                                <div class="swiper-slide"><img src="img/img73.jpg" alt="73">
+                                    <p class="photo-text">2005 рік. Багатотисячний колектив ОНЮА святкує День
+                                        знань.</p>
+                                </div>
                             </div>
-                        </section>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -612,23 +596,21 @@
                 </div>
             </div>
             <div class="six columns feature-media right">
-                <section id="mySlider5" class="splide" aria-label="Splide Basic HTML Example">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide"><img src="img/img74.jpg" alt="74">
-                                <p class="splide-text-slide">2001 рік. Візит до Одеської юридичної академії,
-                                    Генерального прокурора Республіки Болгарія Ніколи Філчева
-                                </p>
-                            </li>
-                            <li class="splide__slide"><img src="img/img75.jpg" alt="75">
-                                <p class="splide-text-slide">2000 рік. Колектив ОНЮА разом із Головою
-                                    Верховного Суду України, Головою Вищого арбітражного
-                                    суду України, Головою Одеського апеляційного арбітражного суду
-                                </p>
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img74.jpg" alt="74">
+                            <p class="photo-text">2001 рік. Візит до Одеської юридичної академії,
+                                Генерального прокурора Республіки Болгарія Ніколи Філчева</p></div>
+                        <div class="swiper-slide"><img src="img/img75.jpg" alt="75">
+                            <p class="photo-text">2000 рік. Колектив ОНЮА разом із Головою
+                                Верховного Суду України, Головою Вищого арбітражного
+                                суду України, Головою Одеського апеляційного арбітражного суду</p>
+                        </div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </div>
 
@@ -665,23 +647,14 @@
         </div>
     </section>
 </div>
-<!-- Footer
-================================================== -->
-
-<!-- Footer End-->
-<!-- Java Script
-================================================== -->
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../js/jquery-1.10.2.min.js"><\/script>')</script>
-<script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
-<script src="../js/modernizr.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../../js/modernizr.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="../js/main.js"></script>
 <script src="../js/sectionAppearance.js"></script>
-<script src="../js/uikit3/uikit.min.js"></script>
-<script src="../js/uikit3/uikit-icons.min.js"></script>
+<script src="../../js/buttonAnimation.js"></script>
+<script src="../../js/uikit3/uikit.min.js"></script>
+<script src="../../js/uikit3/uikit-icons.min.js"></script>
 </body>
 </html>
 

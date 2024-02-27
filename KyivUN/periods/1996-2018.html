@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../../css/default.css">
     <link rel="stylesheet" href="../layout.css">
     <link rel="stylesheet" href="../media-queries.css">
-    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -58,46 +58,59 @@
         </div>
     </div>
 </header>
-<!-- Header End -->
-
-
-<!-- Homepage Hero
-================================================== -->
-<!-- Homepage Hero end -->
 <div class="sections-container">
-
-    <!-- Features Section
-================================================== -->
-    <section id='sv-information'>
-        <div class="row feature flex-column">
-            <div class="six columns feature-media left">
-                <section id="mySlider" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide"><img src="img/img74.jpg" alt="74">
-                            </li>
-                            <li class="splide__slide"><img src="../../OUA/periods/img/img46.jpg" alt="46">
-                            </li>
-                            <li class="splide__slide"><img src="img/img6.jpg" alt="6">
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
-            <div class="container-right-text">
-                <div class="six columns right text margin-fixed-right">
-                    <p class="sv-text-period-small">&nbsp;&nbsp;&nbsp;&nbsp;<span class="sv-text-bold">«Як тебе не любити, Києве мій!»</span>
-                        - ці слова
+    <section id="sv-information">
+        <div class="row feature">
+            <div class="container-left-text">
+                <div class="six columns right text margin-fixed-left">
+                    <p class="sv-text-period-medium">
+                    <h2 class="h2-period">«Як тебе не любити, Києве мій!»</h2>
+                    <p class="sv-text-period-large">&nbsp;&nbsp;&nbsp;&nbsp;Ці слова
                         можна почути і від киянина, і від туриста, і навіть від людини, яка бачила місто лише через
                         цифрові засоби. Київ – це одне з найстаріших місць Європи та столиця України. Внаслідок
                         <span class="sv-text-bold">синергічного поєднання традицій, цінностей та підходів до ведення науково-освітньої діяльності
-                            Одеської юридичної академії із столичними можливостями і перспективами</span>, Київський університет інтелектуальної власності та права сьогодні є одним з найкращих та найбільш передових приватних університетів країни, котрий
+                            Одеської юридичної академії із столичними можливостями і перспективами</span>, Київський
+                        університет інтелектуальної власності та права сьогодні є одним з найкращих та найбільш
+                        передових приватних університетів країни, котрий
                         користується <span class="sv-text-bold">повагою та довірою з-поміж тисяч абітурієнтів</span> та
                         їх батьків.
                     </p>
                 </div>
+            </div>
+            <div class="six columns feature-media right">
+                <img class="img-misc img-width" src="img/img2.jpg" alt="2">
+                <p class="photo-text">Київський університет інтелектуальної власності та права після завершення
+                    будівництва рекреаційних зон</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row feature flex-column">
+            <div class="six columns feature-media left">
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img74.jpg" alt="74">
+                            <p class="photo-text">Будівля Київського інституту інтелектуальної власності та права в
+                                процесі розбудови на базі НУ «ОЮА» </p>
+                        </div>
+                        <div class="swiper-slide"><img src="../../OUA/periods/img/img46.jpg" alt="46">
+                            <p class="photo-text">Будівля Київського інституту інтелектуальної власності та права в
+                                процесі активної розбудови на базі НУ «ОЮА» </p>
+                        </div>
+                        <div class="swiper-slide"><img src="img/img6.jpg" alt="6">
+                            <p class="photo-text">Місце майбутнього зведення спортивного комплексу Київського інституту
+                                інтелектуальної власності та права в процесі активної розбудови на базі НУ «ОЮА» </p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="container-right-text">
                 <div class="six columns right text margin-fixed-right">
-                    <p class="sv-text-period-small">&nbsp;&nbsp;&nbsp;&nbsp;Історія створення та розвитку Київського
+                    <h2 class="h2-period">Заснування освітнього закладу</h2>
+                    <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;Історія створення та розвитку Київського
                         інституту інтелектуальної власності та права Національного університету «Одеська юридична
                         академія» розпочалася <span class="sv-text-bold">з 1996 року</span>, коли на виконання спільного
                         рішення Комісії <span class="sv-text-bold">Верховної Ради
@@ -107,7 +120,7 @@
                     </p>
                 </div>
                 <div id="margin-bottom-2" class="six columns right text margin-fixed-right">
-                    <p class="sv-text-period-small">&nbsp;&nbsp;&nbsp;&nbsp;Основним напрямком діяльності
+                    <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;Основним напрямком діяльності
                         новоутвореного навчального закладу була підготовка висококваліфікованих <span
                                 class="sv-text-bold">фахівців для державної
                             системи правової охорони інтелектуальної власності та підприємств</span>, організацій і
@@ -123,7 +136,8 @@
         <div class="row feature">
             <div class="container-left-text">
                 <div class="six columns right text margin-fixed-left">
-                    <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;27 листопада 2004 року наказом Міністерства
+                    <h2 class="h2-period">Підготовка кращих спеціалістів у сфері права інтелектуальної власності</h2>
+                    <p class="sv-text-period-small">&nbsp;&nbsp;&nbsp;&nbsp;27 листопада 2004 року наказом Міністерства
                         освіти і науки України № 821 інститут <span class="sv-text-bold">визначено головним з питань підготовки, перепідготовки та
                             підвищення кваліфікації кадрів у сфері інтелектуальної власності</span>. У 2008 році на
                         виконання
@@ -135,7 +149,7 @@
                     </p>
                 </div>
                 <div class="six columns right text margin-fixed-left">
-                    <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;З тих самих пір Київський інститут
+                    <p class="sv-text-period-small">&nbsp;&nbsp;&nbsp;&nbsp;З тих самих пір Київський інститут
                         Інтелектуальної власності і права набув повноправного <span class="sv-text-bold">статусу столичного структурного підрозділу
                             Одеської юридичної академії</span>. Проте порівняно із іншими філіалами Університету,
                         Київський
@@ -144,7 +158,7 @@
                         розрізі.</p>
                 </div>
                 <div id="margin-bottom" class="six columns left text margin-fixed-left">
-                    <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp; Всього за період з 2011 до 2016 року
+                    <p class="sv-text-period-small">&nbsp;&nbsp;&nbsp;&nbsp; Всього за період з 2011 до 2016 року
                         <span class="sv-text-bold">дипломи спеціалістів та магістрів отримали 1546 осіб</span>. Про
                         високу якість підготовки фахівців в
                         інституті можуть свідчити такі факти: станом на той час, <span class="sv-text-bold">з 414 патентних повірених України
@@ -157,6 +171,8 @@
             </div>
             <div class="six columns feature-media right">
                 <img class="img-misc img-width" src="img/img7.jpg" alt="1">
+                <p class="photo-text">Студенти КІІВП НУ «ОЮА» на новозбудованому стадіоні урочисто виносять студентський
+                    квиток з нагоди Дня знань</p>
             </div>
         </div>
 
@@ -165,22 +181,29 @@
     <section class="fix-position">
         <div class="row feature">
             <div class="six columns feature-media left">
-                <section id="mySlider1" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="img/img8.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img9.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="../../images/kyiv-UN2.jpg" alt="">
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img8.jpg" alt="">
+                            <p class="photo-text">Інфраструктура Київського університету інтелектуальної власності та
+                                права</p>
+                        </div>
+                        <div class="swiper-slide"><img src="img/img9.jpg" alt="">
+                            <p class="photo-text">Інфраструктура Київського університету інтелектуальної власності та
+                                права </p>
+                        </div>
+                        <div class="swiper-slide"><img src="../../images/kyiv-UN2.jpg" alt="">
+                            <p class="photo-text">Інфраструктура Київського університету інтелектуальної власності та
+                                права </p>
+                        </div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
             <div class="container-right-text">
                 <div class="six columns right text margin-fixed-right">
+                    <h2 class="h2-period">Кращий територіальний центр НУ «ОЮА»</h2>
                     <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;Саме тому, вже у листопаді 2014 року з
                         метою впорядкування та приведення у відповідність до Закону України «Про вищу освіту» наказом
                         ректора Національного університету «Одеська юридична академія» <span class="sv-text-bold">інститут перейменовується в
@@ -205,8 +228,8 @@
                     <h2 class="h2-period">Розвиток матеріально-технічної бази</h2>
                     <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;Так, у 2017 році завершується <span
                             class="sv-text-bold">комплексний
-                        <a class="a-underline" href="#">ремонт гуртожитку Київського інституту інтелектуальної власності та права Національного
-                            університету «Одеська юридична академія»</a></span>. Крім новітніх кімнат <span
+                        ремонт гуртожитку Київського інституту інтелектуальної власності та права Національного
+                            університету «Одеська юридична академія»</span>. Крім новітніх кімнат <span
                             class="sv-text-bold">європейського типу</span>, при
                         гуртожитку побудовано <span class="sv-text-bold">велику спортивну залу</span>, в якій студенти
                         мають змогу безоплатно підтримувати
@@ -226,23 +249,31 @@
                 </div>
             </div>
             <div class="six columns feature-media right">
-                <section id="mySlider2" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="img/img10.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img11.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img12.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img13.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img14.jpg" alt="">
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img10.jpg" alt="">
+                            <p class="photo-text">Червень 2017 року. Урочисте відкриття гуртожитку КІІВП</p></div>
+                        <div class="swiper-slide"><img src="img/img11.jpg" alt="">
+                            <p class="photo-text">Червень 2017 року. Урочисте відкриття гуртожитку КІІВП</p></div>
+                        <div class="swiper-slide"><img src="img/img12.jpg" alt="">
+                            <p class="photo-text">Червень 2017 року. Урочисте відкриття гуртожитку КІІВП</p></div>
+                        <div class="swiper-slide"><img src="img/img13.jpg" alt="">
+                            <p class="photo-text">Червень 2017 року. Урочисте відкриття гуртожитку КІІВП</p></div>
+                        <div class="swiper-slide"><img src="img/img14.jpg" alt="">
+                            <p class="photo-text">Червень 2017 року. Урочисте відкриття гуртожитку КІІВП</p></div>
+                        <div class="swiper-slide"><img src="img/img75.jpg" alt="">
+                            <p class="photo-text">Червень 2017 року. Урочисте відкриття гуртожитку КІІВП</p></div>
+                        <div class="swiper-slide">
+                            <iframe class="video-yt" src="https://www.youtube.com/embed/f053cPPuey0?si=1LdT97375kh9lfrp"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            <p class="photo-text">Червень 2017 року. Урочисте відкриття гуртожитку КІІВП</p></div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -250,31 +281,39 @@
     <section>
         <div class="row feature design display fix-position">
             <div class="six columns feature-media left">
-                <section id="mySlider3" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="img/img15.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img16.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img16-1.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img16-2.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img17.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img18.png" alt="">
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img15.jpg" alt="">
+                            <p class="photo-text">Вересень 2018 року. Відкриття рекреаційного комплексу «Карпатський
+                                водоспад»</p></div>
+                        <div class="swiper-slide"><img src="img/img16.jpg" alt="">
+                            <p class="photo-text">Вересень 2018 року. Відкриття рекреаційного комплексу «Карпатський
+                                водоспад»</p></div>
+                        <div class="swiper-slide"><img src="img/img16-1.jpg" alt="">
+                            <p class="photo-text">Вересень 2018 року. Відкриття рекреаційного комплексу «Карпатський
+                                водоспад»</p></div>
+                        <div class="swiper-slide"><img src="img/img16-2.jpg" alt="">
+                            <p class="photo-text">Вересень 2018 року. Відкриття рекреаційного комплексу «Карпатський
+                                водоспад»</p></div>
+                        <div class="swiper-slide"><img src="img/img17.jpg" alt="">
+                            <p class="photo-text">Вересень 2018 року. Відкриття рекреаційного комплексу «Карпатський
+                                водоспад»</p></div>
+                        <div class="swiper-slide"><img src="img/img18.png" alt="">
+                            <p class="photo-text">Вересень 2018 року. Відкриття рекреаційного комплексу «Карпатський
+                                водоспад»</p></div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
             <div class="container-right-text">
                 <div class="six columns right text margin-fixed-right">
+                    <h2 class="h2-period">Розвиток рекреаційних зон для студентів</h2>
                     <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;18 вересня 2018 року впроваджують у життя
                         проекти з <span class="sv-text-bold">благоустрою території Студентського містечка</span>. Одним
-                        з таких проектів є <a class="sv-text-bold a-underline" href="#">відкриття
+                        з таких проектів є <a class="sv-text-bold a-underline"
+                                              href="https://kyivinstitute.com/news/urochiste_vidkrittja_kompleksu_karpatskij_vodospad">відкриття
                             комплексу «Карпатський водоспад»</a>. Над проектом працювали <span class="sv-text-bold">кращі ландшафтні дизайнери</span>
                         та
                         будівельники заходу України, створивши справжній диво-куточок, де потужний <span
@@ -302,8 +341,11 @@
         <div class="row feature design display fix-position">
             <div class="container-left-text">
                 <div class="six columns left text margin-fixed-left">
+                    <h2 class="h2-period">Зведення міні-парку «Карпатська гірка»</h2>
                     <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;Слід зазначити, що незадовго до цього, 01
-                        вересня 2017 року було відкрито інший <a class="a-underline sv-text-bold">рекреаційний міні-парк
+                        вересня 2017 року було відкрито інший <a class="a-underline sv-text-bold"
+                                                                 href="https://kyivinstitute.com/news/vidkrittja_karpatskoji_girki_na_teritoriji_kijivskogo_institutu_intelektualnoji_vlasnosti_ta_prava_nu_ojua">рекреаційний
+                            міні-парк
                             «Карпатська гірка»,</a> диво-куточок,
                         де кам'яниста гірка поєднуються з неповторними <span class="sv-text-bold">пішохідними доріжками, які спритно розрізають
                         собою квіткові газони</span>. Міні-парк «Карпатська гірка» буквально наповнений <span
@@ -317,18 +359,22 @@
                 </div>
             </div>
             <div class="six columns feature-media right">
-                <section id="mySlider4" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide"><img src="img/img19.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img20.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img21.jpg" alt="">
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img19.jpg" alt="">
+                            <p class="photo-text">Вересень 2017 року. Завершення будівництва міні-парку «Карпатська
+                                гірка»</p></div>
+                        <div class="swiper-slide"><img src="img/img20.jpg" alt="">
+                            <p class="photo-text">Вересень 2017 року. Завершення будівництва міні-парку «Карпатська
+                                гірка»</p></div>
+                        <div class="swiper-slide"><img src="img/img21.jpg" alt="">
+                            <p class="photo-text">Вересень 2017 року. Завершення будівництва міні-парку «Карпатська
+                                гірка»</p></div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -336,27 +382,33 @@
     <section>
         <div class="row feature design display fix-position">
             <div class="six columns feature-media left">
-                <section id="mySlider5" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide"><img src="img/img22.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img23.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img24.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img25.jpg" alt="">
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img22.jpg" alt="">
+                            <p class="photo-text">Вересень 2018 року. Початок будівництва спортивно-оздоровчого
+                                комплексу КІІВП</p></div>
+                        <div class="swiper-slide"><img src="img/img23.jpg" alt="">
+                            <p class="photo-text">Вересень 2018 року. Початок будівництва спортивно-оздоровчого
+                                комплексу КІІВП</p></div>
+                        <div class="swiper-slide"><img src="img/img24.jpg" alt="">
+                            <p class="photo-text">Вересень 2018 року. Початок будівництва спортивно-оздоровчого
+                                комплексу КІІВП</p></div>
+                        <div class="swiper-slide"><img src="img/img25.jpg" alt="">
+                            <p class="photo-text">Вересень 2018 року. Початок будівництва спортивно-оздоровчого
+                                комплексу КІІВП</p></div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
             <div class="container-right-text">
                 <div class="six columns right text margin-fixed-right">
+                    <h2 class="h2-period">Спортивне життя – невід’ємна частина розвитку студентів</h2>
                     <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;В продовження спортивно-оздоровчого
-                        розвитку студентів у 2018 році розпочинається <a class="a-underline sv-text-bold">будівництво
+                        розвитку студентів у 2018 році розпочинається <span class="sv-text-bold">будівництво
                             надзвичайно потужного й масштабного
-                            проекту – спортивно-оздоровчого комплексу</a>, який включатиме у себе велике <span
+                            проекту – спортивно-оздоровчого комплексу</span>, який включатиме у себе велике <span
                                 class="sv-text-bold">професійне футбольне
                             поле</span>, чудові глядацькі трибуни, просторі переодягальні, <span class="sv-text-bold">фітнес і тренажерні зали</span>.
                         Цьому
@@ -413,18 +465,25 @@
                 </div>
             </div>
             <div class="six columns feature-media right">
-                <section id="mySlider6" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide"><img src="img/img26.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img27.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img28.jpg" alt="">
-                            </li>
-                        </ul>
-                    </div>
-                </section>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img26.jpg" alt="">
+                            <p class="photo-text">Жовтень 2017 року. Підписання меморандуму про співпрацю із Відомством
+                                патентів та торговельних марок Азербайджанської Республіки.</p></div>
+                        <div class="swiper-slide"><img src="img/img27.jpg" alt="">
+                            <p class="photo-text">Жовтень 2017 року. Підписання меморандуму про співпрацю із Відомством
+                                патентів та торговельних марок Азербайджанської Республіки.</p></div>
+                        <div class="swiper-slide"><img src="img/img28.jpg" alt="">
+                            <p class="photo-text">Жовтень 2017 року. Президент НУ «ОЮА» Сергій Ківалов пояснює студентам
+                                переваги співробітництва із Відомством патентів та торговельних марок Азербайджанської
+                                Республіки.</p></div>
+                        <div class="swiper-slide"><iframe class="video-yt" src="https://www.youtube.com/embed/ef6E8cuT4c8?si=VceXypli4HOSAcE3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                         </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -444,6 +503,7 @@
                         університету «Одеська юридична академія» для середньої спеціальної підготовки майбутніх юристів,
                         <span class="sv-text-bold">психологічний консультативно-тренінговий центр</span>; а також п’ять
                         кафедр:<br>
+                        <span class="sv-text-bold">
                         &nbsp;— кафедру конституційного, міжнародного права та публічно-правових дисциплін,
                         <br>&nbsp;— кафедру адміністративного права, інтелектуальної власності та цивільно-правових
                         дисциплін,
@@ -451,7 +511,7 @@
                         <br>&nbsp;— кафедру іноземних мов, філології та журналістики,
                         <br>&nbsp;— кафедру кібербезпеки, інформаційних технологій та економіки
                         <br>&nbsp;— кафедру філософії та психології.
-
+                        </span>
                     </p>
                 </div>
             </div>
@@ -465,23 +525,14 @@
         </a>
     </div>
 </div>
-<!-- Footer
-================================================== -->
-
-<!-- Footer End-->
-<!-- Java Script
-================================================== -->
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../js/jquery-1.10.2.min.js"><\/script>')</script>
-<script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
-<script src="../js/modernizr.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../../js/modernizr.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="../js/main.js"></script>
 <script src="../js/sectionAppearance.js"></script>
-<script src="../js/uikit3/uikit.min.js"></script>
-<script src="../js/uikit3/uikit-icons.min.js"></script>
+<script src="../../js/buttonAnimation.js"></script>
+<script src="../../js/uikit3/uikit.min.js"></script>
+<script src="../../js/uikit3/uikit-icons.min.js"></script>
 </body>
 </html>
 

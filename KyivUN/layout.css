@@ -1,8 +1,4 @@
 
-
-/* ------------------------------------------------------------------ */
-/* a. General and Common Styles
-/* ------------------------------------------------------------------ */
 html, body {
     scroll-behavior: smooth;
     position: relative;
@@ -14,6 +10,41 @@ body {
     font-family: 'Montserrat', sans-serif;
     /*overflow: hidden;*/ /*TODO раскомментировать для анимации*/
 }
+
+.swiper {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 35px!important;
+    font-weight: bold!important;
+    color: #ffffff;
+    opacity: 0.7!important;
+}
+
+.swiper-button-next:hover::after, .swiper-button-prev:hover::after{
+    color: #ffffff!important;
+    opacity: 1!important;
+}
+
+.swiper-pagination-bullet{
+    margin-bottom: 40px!important;
+    background-color: #ccc!important;
+}
+
+.swiper-pagination-bullet-active{
+    background: #fff!important;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
 
 
 .section-head {
@@ -341,7 +372,8 @@ video {
 
 .video-yt {
     width: 900px;
-    height: 500px;
+    height: 600px;
+    border-radius: 10px;
 }
 
 
@@ -430,29 +462,6 @@ video {
 
 .sv-text-period-italic{
     font-family: 'Montserrat Alternates', sans-serif;
-}
-
-.splide__slide img {
-    border-radius: 10px;
-}
-
-.splide__arrow {
-    background: none !important;
-    width: 2.8em !important;
-}
-
-.splide__arrow svg {
-    width: 2.8em !important;
-    height: 2.8em !important;
-    fill: rgba(255, 255, 255, 1) !important;
-}
-
-.splide__pagination {
-    bottom: 1.5em !important;
-}
-
-.splide-text-slide {
-    padding-top: 25px;
 }
 
 
