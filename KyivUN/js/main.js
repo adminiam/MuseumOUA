@@ -1,27 +1,4 @@
-/*-----------------------------------------------------------------------------------
-/*
-/* Main JS
-/*
------------------------------------------------------------------------------------*/
-
 (function ($) {
-
-    /*---------------------------------------------------- */
-    /* Preloader
- ------------------------------------------------------ */
-    $(window).load(function () {
-
-        // will first fade out the loading animation
-        $("#status").fadeOut("slow");
-
-        // will fade out the whole DIV that covers the website.
-        $("#preloader").delay(500).fadeOut("slow").remove();
-
-        $('.js #hero .hero-image img').addClass("animated fadeInUpBig");
-        $('.js #hero .buttons a.trial').addClass("animated shake");
-
-    })
-
 
     /*---------------------------------------------------- */
     /* Mobile Menu
@@ -56,17 +33,6 @@
         if (nav.hasClass('mobile')) nav.fadeOut('fast');
     });
 
-
-    /*----------------------------------------------------*/
-    /* FitText Settings
-    ------------------------------------------------------ */
-    setTimeout(function () {
-
-        $('h1.responsive-headline').fitText(1.2, {minFontSize: '25px', maxFontSize: '40px'});
-
-    }, 100);
-
-
     /*----------------------------------------------------*/
     /* Smooth Scrolling
     ------------------------------------------------------ */
@@ -85,12 +51,43 @@
 
     });
 
-    const sliderIds = ['#mySlider', '#mySlider1', '#mySlider2', '#mySlider3', '#mySlider4', '#mySlider5', '#mySlider6', '#mySlider7'];
+    // const sliderIds = ['#mySlider', '#mySlider1', '#mySlider2', '#mySlider3', '#mySlider4', '#mySlider5', '#mySlider6', '#mySlider7'];
+    //
+    // sliderIds.forEach((sliderId) => {
+    //     new Splide(sliderId, {
+    //         /*pagination: false*/
+    //     }).mount();
+    // });
 
-    sliderIds.forEach((sliderId) => {
-        new Splide(sliderId, {
-            /*pagination: false*/
-        }).mount();
+
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 5,
+        freeMode: true,
+        watchSlidesProgress: true,
     });
+    var swiper = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: swiper,
+        },
+    });
+    var swiper2 = new Swiper(".mySwiper3", {
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+
 
 })(jQuery);
