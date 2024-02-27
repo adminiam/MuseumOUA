@@ -9,7 +9,7 @@ html, body {
 
 .swiper {
     width: 100%;
-    max-width: 900px;
+    max-width: 800px;
     height: auto;
     margin: 0;
 }
@@ -45,7 +45,6 @@ html, body {
 body {
     background: linear-gradient(to bottom, #001E3F, #457391) no-repeat fixed;
     font-family: 'Montserrat', sans-serif;
-    /*overflow: hidden;*/ /*TODO раскомментировать для анимации*/
 }
 
 
@@ -72,7 +71,7 @@ li {
 
 header {
     background: linear-gradient(to bottom, #001E3F, #457391) no-repeat fixed;
-    height: 115px; /*//TODO уменьшить высоту с помощью пикселей, поставить auto в случае чего*/
+    height: 115px;
     width: 100%;
     position: fixed;
     left: 0;
@@ -247,7 +246,7 @@ video {
 /* ------------------------------------------------------------------ */
 
 #universities-carousel, #video-carousel, #sv-information {
-    padding-top: 155px; /*TODO пофиксить переход*/
+    padding-top: 155px;
     padding-bottom: 78px;
 
 }
