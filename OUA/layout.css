@@ -1,0 +1,431 @@
+/* ------------------------------------------------------------------ */
+/* a. General and Common Styles
+/* ------------------------------------------------------------------ */
+html, body {
+    scroll-behavior: smooth;
+    position: relative;
+    height: 100%;
+}
+
+.swiper {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 35px!important;
+    font-weight: bold!important;
+    color: #ffffff;
+    opacity: 0.7!important;
+}
+
+.swiper-button-next:hover::after, .swiper-button-prev:hover::after{
+    color: #ffffff!important;
+    opacity: 1!important;
+}
+
+.swiper-pagination-bullet{
+    margin-bottom: 40px!important;
+    background-color: #ccc!important;
+}
+
+.swiper-pagination-bullet-active{
+    background: #fff!important;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+body {
+    background: linear-gradient(to bottom, #001E3F, #457391) no-repeat fixed;
+    font-family: 'Montserrat', sans-serif;
+    /*overflow: hidden;*/ /*TODO раскомментировать для анимации*/
+}
+
+
+.section-head {
+    padding: 0 4%;
+    text-align: center;
+}
+
+.section-head h1 {
+    font: 20px/36px 'montserrat-bold', sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+li {
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------ */
+/* b. Header Styles
+/* ------------------------------------------------------------------ */
+
+header {
+    background: linear-gradient(to bottom, #001E3F, #457391) no-repeat fixed;
+    height: 115px; /*//TODO уменьшить высоту с помощью пикселей, поставить auto в случае чего*/
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 990;
+}
+
+.a-underline {
+    text-decoration: underline;
+}
+
+
+/* header logo */
+header .logo {
+    float: left;
+    width: auto;
+    z-index: 991;
+    position: relative;
+}
+
+.all-logo-img {
+    width: 210px;
+    height: auto;
+}
+
+.oua-logo-img {
+    width: 100px;
+    height: auto;
+}
+
+header .logo a {
+    display: block;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+
+header .header-social li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header .header-social li a {
+    color: #fff;
+}
+
+header .header-social li a:hover {
+    color: #11ABB0;
+}
+
+
+/* primary navigation
+--------------------------------------------------------------------- */
+.uk-navbar-dropdown-nav li a {
+    display: block;
+}
+
+.border-bottom {
+    border-bottom: 2px solid #2D2E34;
+    padding: 0 0 10px 0;
+    text-align: center;
+}
+
+#dropdown-toggle:checked + .uk-navbar-dropdown {
+    display: block;
+}
+
+.uk-navbar-dropdown {
+    display: none;
+}
+
+#offcanvas-nav .uk-offcanvas-bar {
+    background: linear-gradient(to bottom, #102746, #235881) no-repeat fixed;
+    height: 430px;
+    margin: 115px 0 0 0;
+}
+
+.uk-navbar-nav > li > a:hover,
+.uk-navbar-nav > li > a:focus,
+.uk-navbar-nav > li > a:active,
+.uk-nav > li > label:hover,
+.uk-nav > li > a:hover {
+    color: #2c6dc9;
+}
+
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-yt {
+    width: 900px;
+    height: 500px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-yt {
+    border-radius: 10px;
+    width: 900px;
+    height: 500px;
+}
+
+.sv-text {
+    font-size: 16px;
+}
+
+.sv-text-period-small {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sv-text-period-medium {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sv-text-period-italic {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.sv-text-period-large {
+    font-size: 21px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sv-text-bold {
+    font-weight: bold;
+}
+
+.splide__slide img {
+    border-radius: 10px;
+}
+
+.splide__arrow {
+    background: none !important;
+    width: 2.8em !important;
+}
+
+.splide__arrow svg {
+    width: 2.8em !important;
+    height: 2.8em !important;
+    fill: rgba(255, 255, 255, 1) !important;
+}
+
+.splide__pagination {
+    bottom: 1.5em !important;
+}
+
+.splide-text-slide {
+    padding-top: 35px;
+}
+
+/* ------------------------------------------------------------------ */
+/* d. Features Section
+/* ------------------------------------------------------------------ */
+
+#universities-carousel, #video-carousel, #sv-information {
+    padding-top: 155px; /*TODO пофиксить переход*/
+    padding-bottom: 78px;
+
+}
+
+#universities-carousel .feature, #video-carousel .feature, #sv-information .feature {
+    margin-top: 30px;
+    margin-bottom: 54px;
+
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.container-left-text,
+.container-right-text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-media {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+.left.text,
+.right.text {
+    padding: 0 20px; /* Додайте відступи, щоб зберегти відстань між текстом та фото */
+}
+
+#universities-carousel .right, #video-carousel .right, #sv-information .right {
+    float: right;
+}
+
+#universities-carousel .left, #video-carousel .left, #sv-information .left {
+    float: left;
+}
+
+#universities-carousel h3, #video-carousel h3, #sv-information h3 {
+    font: 16px/24px 'montserrat-bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /*color: #ffffff;*/
+}
+
+.img, .video {
+    border-radius: 10px;
+}
+
+.photo-text {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.six.columns.right.text, .six.columns.left.text {
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    /*margin: 0 15px 0 15px;
+    width: auto;*/
+}
+
+.left-size {
+    width: 60.6em;
+}
+
+.fix-position {
+    margin-top: 150px;
+}
+
+.margin-fixed-right {
+    margin: 0 0 10px 0;
+}
+
+.margin-bottom {
+    margin-bottom: 100px;
+}
+
+.margin-fixed-left {
+    margin-right: 0;
+    margin-left: 20px; /* Збережіть відстань зліва для тексту */
+    margin-bottom: 20px;
+}
+
+#margin-bottom, #margin-bottom-1, #margin-bottom-2, #margin-bottom-3, #margin-bottom-4, #margin-bottom-5, #margin-bottom-6, #margin-bottom-7, #margin-bottom-8, #margin-bottom-9, #margin-bottom-10, #margin-bottom-11, #margin-bottom-12, #margin-bottom-13, #margin-bottom-14, #margin-bottom-15, #margin-bottom-16, #margin-bottom-17 {
+    margin-bottom: 0;
+}
+
+.margin-fixed-right {
+    margin-right: 20px; /* Збережіть відстань справа для тексту */
+}
+
+.h2-period {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+/* ------------------------------------------------------------------ */
+/* j. Footer
+/* ------------------------------------------------------------------ */
+
+footer {
+    color: #3c4753;
+    font-size: 17px;
+    line-height: 24px;
+    position: relative;
+}
+
+footer a, footer a:visited {
+    color: #fff;
+}
+
+footer a:hover, footer a:focus {
+    color: #163046;
+}
+
+/* Go To Top Button */
+.go-top-container {
+    text-align: center;
+}
+
+.go-top-button {
+    display: inline-block;
+    background: #132B4A;
+    padding: 10px 20px; /* Измените эти значения, чтобы уменьшить отступы */
+    border-radius: 50px; /* Измените это значение, чтобы уменьшить размер границы */
+}
+
+.go-top-button:hover {
+    text-decoration: none;
+    background: #365471;
+}
+
+.go-top-text {
+    height: auto;
+    width: auto;
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.button-period {
+    margin: 40px 0 40px 0
+}
+
+.img-misc {
+    border-radius: 10px;
+}
+
+.social-media-item-wrapper .social-media-color {
+    display: none;
+    pointer-events: none;
+}
+
+.social-media-item-wrapper:hover .social-media-dark {
+    display: none;
+    pointer-events: none;
+}
+
+.social-media-item-wrapper:hover .social-media-color {
+    display: inline;
+    pointer-events: auto;
+}
+
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 20px;
+
+}
+
+.footer-social-media {
+    margin: 10px 0 0 0;
+    display: flex;
+    gap: 15px;
+}

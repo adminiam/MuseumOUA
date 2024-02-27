@@ -1,0 +1,288 @@
+/* Общие стили */
+html, body {
+    scroll-behavior: smooth;
+    position: relative;
+    overflow-x: hidden
+}
+
+body {
+    background: no-repeat linear-gradient(214deg, rgba(68, 45, 27, 1) 0%, rgba(209, 162, 121, 1) 50%, rgba(68, 45, 27, 1) 100%);
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+@keyframes cursor {
+    0% {
+        border-color: white;
+    }
+
+    50% {
+        border-color: transparent;
+    }
+
+    100% {
+        border-color: white;
+    }
+}
+
+@keyframes printed_text {
+    from {
+        width: 0;
+    }
+}
+
+.section-head {
+    padding: 0 4%;
+    text-align: center;
+}
+
+.section-head h1 {
+    font: 20px/36px 'montserrat-bold', sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+li {
+    text-align: center;
+}
+
+/* Стили заголовка */
+
+header {
+    background: #1f150e no-repeat fixed;
+    /*linear-gradient(to bottom, #1f150e, #ddbc95) no-repeat fixed;*/
+    /*#575757*/
+    height: 115px; /*//TODO уменьшить высоту с помощью пикселей, поставить auto в случае чего*/
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 990;
+}
+
+.all-logo-img {
+    width: 210px;
+    height: auto;
+}
+
+.uk-navbar-dropdown-nav li a {
+    display: block;
+}
+
+#dropdown-toggle:checked + .uk-navbar-dropdown {
+    display: block;
+}
+
+.uk-navbar-dropdown {
+    display: none;
+}
+
+#offcanvas-nav .uk-offcanvas-bar {
+    background-color: #1f150e;
+    height: 430px;
+    margin: 115px 0 0 0;
+}
+
+.uk-navbar-nav > li > a:hover,
+.uk-navbar-nav > li > a:focus,
+.uk-navbar-nav > li > a:active,
+.uk-nav > li > label:hover,
+.uk-nav > li > a:hover {
+    color: #685040;
+}
+
+.border-bottom {
+    border-bottom: 2px solid #2D2E34;
+    padding: 0 0 10px 0;
+    text-align: center;
+}
+
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Стили раздела Hero */
+#hero {
+    /*padding-top: 9vh;*/
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-yt {
+    width: 900px;
+    height: 500px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.custom-button {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #e1e1e1;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 20px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background-color: rgba(62, 225, 255, 0.56);
+    color: #e1e1e1;
+}
+
+.wrapper-animated-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.animated-text {
+    width: 58rem;
+    height: 4rem;
+    color: white;
+    font-size: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid white;
+    animation: cursor 0.95s step-end infinite, printed_text 4s steps(26);
+}
+
+.sv-text {
+    font-size: 18px;
+}
+
+.splide__track {
+    border-radius: 10px;
+}
+
+.splide__arrow {
+    background: none !important;
+    width: 2.8em !important;
+}
+
+.splide__arrow svg {
+    width: 2.8em !important;
+    height: 2.8em !important;
+    fill: rgba(255, 255, 255, 1) !important;
+}
+
+/* Стили раздела Features */
+#universities-carousel,
+#video-carousel,
+#sv-information {
+    padding-top: 155px; /*TODO пофиксить переход*/
+    padding-bottom: 78px;
+}
+
+#universities-carousel .feature,
+#video-carousel .feature,
+#sv-information .feature {
+    margin-top: 30px;
+    margin-bottom: 54px;
+}
+
+.feature-media {
+    display: flex;
+    align-items: center;
+}
+
+#universities-carousel .right,
+#video-carousel .right,
+#sv-information .right {
+    float: right;
+}
+
+#universities-carousel .left,
+#video-carousel .left,
+#sv-information .left {
+    float: left;
+}
+
+#universities-carousel h3,
+#video-carousel h3,
+#sv-information h3 {
+    font: 16px/24px 'montserrat-bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.display {
+    display: flex;
+}
+
+.img,
+.video {
+    border-radius: 10px;
+}
+
+.six.columns.right.text,
+.six.columns.left.text {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0 0 0 15px;
+}
+
+/* Стили кнопки "Наверх" */
+.go-top-container {
+    text-align: center;
+}
+
+.go-top-button {
+    display: inline-block;
+    background-color: #543c29;
+    padding: 15px 25px;
+    border-radius: 50px;
+}
+
+.go-top-button:hover {
+    text-decoration: none;
+    background: #93654d;
+}
+
+.go-top-text {
+    height: auto;
+    width: auto;
+    max-width: 20px;
+    max-height: 20px;
+}
+
+
+
