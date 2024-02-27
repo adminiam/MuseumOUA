@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../../css/default.css">
     <link rel="stylesheet" href="../layout.css">
     <link rel="stylesheet" href="../media-queries.css">
-    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -58,32 +58,29 @@
         </div>
     </div>
 </header>
-<!-- Header End -->
-
-
-<!-- Homepage Hero
-================================================== -->
-<!-- Homepage Hero end -->
 <div class="sections-container">
-
-    <!-- Features Section
-================================================== -->
     <section id='sv-information'>
         <div class="row feature flex-column">
             <div class="six columns feature-media left">
-                <section id="mySlider" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide"><img src="img/img30.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img31.jpg" alt="">
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/img30.jpg" alt="">
+                            <p class="photo-text"></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img31.jpg" alt="">
+                            <p class="photo-text"></p>
+                        </div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
             <div class="container-right-text">
                 <div class="six columns right text margin-fixed-right">
+                    <h2 class="h2-period">Пандемія – не перешкода для розвитку</h2>
                     <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;<span
                             class="sv-text-bold sv-text-period-italic">Період 2019-2021 року</span>, не зважаючи на
                         виклики, кинуті <span class="sv-text-bold">пандемією COVID-19 та пов’язаними із нею обмеженнями навчального процесу,</span>
@@ -93,9 +90,9 @@
                     </p>
                 </div>
                 <div class="six columns right text margin-fixed-right">
-                    <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;Так, у лютому 2019 року підписано<a
-                            class="a-underline sv-text-bold" href="#"> меморандум про співпрацю з Головним
-                        територіальним управлінням юстиції у м. Київ</a>. Основним
+                    <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;Так, у лютому 2019 року підписано<span
+                            class="sv-text-bold"> меморандум про співпрацю з Головним
+                        територіальним управлінням юстиції у м. Київ</span>. Основним
                         напрямом співробітництва підписаної угоди є надання змоги студентам Інституту широко
                         <span class="sv-text-bold">ознайомитись з усіма практичними аспектами нотаріальної діяльності,</span>
                         реалізацією державної
@@ -113,10 +110,10 @@
         <div class="row feature">
             <div class="container-left-text">
                 <div class="six columns right text margin-fixed-right">
-                    <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;Подібну <a class="a-underline sv-text-bold"
-                                                                                        href="#">угоду про
+                    <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;Подібну <span class="sv-text-bold">угоду про
                         співробітництво було
-                        підписано між Київським інститутом та Бориспільською міською радою</a>, за участі президента НУ
+                        підписано між Київським інститутом та Бориспільською міською радою</span>, за участі президента
+                        НУ
                         «ОЮА» Сергія Ківалова та <span class="sv-text-bold">міським головою м. Борисполя Анатолієм Федорчуком</span>.
                         Основним напрямом
                         співробітництва було здійснення спільних заходів щодо <span class="sv-text-bold">задоволення потреб територіальної громади
@@ -130,19 +127,27 @@
                 </div>
             </div>
             <div class="six columns feature-media right">
-                <section id="mySlider1" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="img/img32.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img33.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img34.jpg" alt="">
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/img32.jpg" alt="">
+                            <p class="photo-text">Травень 2019 року. Підписання меморандуму про співпрацю між ректором
+                                КІІВП Василем Феликом та міським головою міста Бориспіль Анатолієм Федорчуком</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img33.jpg" alt="">
+                            <p class="photo-text">Травень 2019 року. Підписання меморандуму про співпрацю між ректором
+                                КІІВП Василем Феликом та міським головою міста Бориспіль Анатолієм Федорчуком</p>
+                        </div>
+                        <div class="swiper-slide"><img src="img/img34.jpg" alt="">
+                            <p class="photo-text">Травень 2019 року. Підписання меморандуму про співпрацю між ректором
+                                КІІВП Василем Феликом та міським головою міста Бориспіль Анатолієм Федорчуком</p>
+                        </div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </div>
 
@@ -151,35 +156,41 @@
     <section class="fix-position">
         <div class="row feature">
             <div class="six columns feature-media left">
-                <section id="mySlider2" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="img/img35.jpg" alt="">
-                                <p class="splide-text-slide"> Президент Університету Сергій Ківалов із засновником
-                                    адвокатського об’єднання «ARZINGERТА» Сергієм Шкляром</p>
-                            </li>
-                            <li class="splide__slide"><img src="img/img36.jpg" alt="">
-                                <p class="splide-text-slide"> Ректор КІІВП із представниками Головного управління
-                                    державної служби України з питань безпечності харчових продуктів та захисту
-                                    споживачів у м. Києві</p>
-                            </li>
-                            <li class="splide__slide"><img src="img/img37.jpg" alt="">
-                                <p class="splide-text-slide"> Профорієнтаційна зустріч з учнями м. Миронівки Київської
-                                    області в рамках освітнього співробітництва</p>
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/img36.jpg" alt="">
+                            <p class="photo-text"> Ректор КІІВП із представниками Головного управління
+                                державної служби України з питань безпечності харчових продуктів та захисту
+                                споживачів у м. Києві</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img78.jpg" alt="">
+                            <p class="photo-text">Президент Університету Сергій Ківалов передає підписаний меморандум
+                                засновнику адвокатського об’єднання «ARZINGERТА» Сергію Шкляру</p>
+                        </div>
+                        <div class="swiper-slide"><img src="img/img37.jpg" alt="">
+                            <p class="photo-text"> Профорієнтаційна зустріч з учнями м. Миронівки Київської
+                                області в рамках освітнього співробітництва</p>
+                        </div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
             <div class="container-right-text">
                 <div class="six columns right text margin-fixed-right">
-                    <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;Подібні угоди були укладені і з
-                        <a class="a-underline sv-text-bold" href="#">адвокатським об’єднанням "ARZINGERТА"</a>,
-                        <a class="a-underline sv-text-bold" href="#">Головним управлінням державної служби України з
+                    <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;Аналогічні меморандуми були укладені і з
+                        <a class="a-underline sv-text-bold"
+                           href="https://www.google.com/url?client=internal-element-cse&cx=e0c4ad5ee65df7ab9&q=http://kyivinstitute.com/news/pidpisannja_memorandumu_pro_spivrobitnitstvo_mizh_advokatskim_objednannjam_arzingerta_ta_natsionalnim_universitetom_odeska_juridichna_akademija&sa=U&ved=2ahUKEwi4uqrNnYWDAxULYPEDHTq_AXYQFnoECAUQAg&usg=AOvVaw1IZPZcjvds6HDCZwe_hmDJ">адвокатським
+                            об’єднанням "ARZINGERТА"</a>,
+                        <a class="a-underline sv-text-bold"
+                           href="https://kyivinstitute.com/news/pidpisannja_memorandumu_pro_spivrobitnitstvo_u_sferi_osvitnoji_dijalnosti_mizh_kiivp_nu_ojua_ta_golovnim_upravlinnjam_derzhavnoji_sluzhbi_ukrajini_z_pitan_bezpechnosti_harchovih_produktiv_ta_zahistu_spozhivachiv_u_m_kijevi">Головним
+                            управлінням державної служби України з
                             питань безпечності харчових продуктів та захисту
                             споживачів у м. Києві</a>,
-                        <a class="a-underline sv-text-bold" href="#">Миронівською міською радою Київської області</a>.
+                        <span class="sv-text-bold">Миронівською міською радою Київської області</span>.
                         Всі вони передбачали обмін знань між студентами та практиками, а також можливість проходити
                         навчальну практику у відповідних інституціях.
                     </p>
@@ -200,9 +211,9 @@
                     <h2 class="h2-period">Військова підготовка</h2>
                     <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;А вже 5-го грудня 2020 року здобувачі КІІВП
                         отримали можливість проходити військову підготовку за програмою підготовки офіцерів запасу
-                        внаслідок укладення <a class="a-underline sv-text-bold" href="#">меморандуму про співробітництво
+                        внаслідок укладення <span class="sv-text-bold">меморандуму про співробітництво
                             між Інститутом та Національним університетом
-                            оборони України ім. Івана Черняховського.</a> Підготовка студентів здійснюється методом
+                            оборони України ім. Івана Черняховського.</span> Підготовка студентів здійснюється методом
                         «військового
                         дня»<span class="sv-text-bold"> без відриву від основного місця навчання</span> протягом 2
                         років. Саме після навчання на кафедрі
@@ -221,17 +232,30 @@
                 </div>
             </div>
             <div class="six columns feature-media right">
-                <section id="mySlider3" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="img/img38.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img39.jpg" alt="">
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/img38.jpg" alt="">
+                            <p class="photo-text">Грудень 2020 року. КІІВП в особі ректора Василя Фелика та
+                                Національний університет оборони України в особі начальника кафедри військової
+                                підготовки полковника Євгена Віталійовича Камалова підписують меморандум</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img77.jpg" alt="">
+                            <p class="photo-text">Грудень 2020 року. КІІВП в особі ректора Василя Фелика та
+                                Національний університет оборони України в особі начальника кафедри військової
+                                підготовки полковника Євгена Віталійовича Камалова підписують меморандум</p>
+                        </div>
+                        <div class="swiper-slide"><img src="img/img39.jpg" alt="">
+                            <p class="photo-text">Грудень 2020 року. КІІВП в особі ректора Василя Фелика та
+                                Національний університет оборони України в особі начальника кафедри військової
+                                підготовки полковника Євгена Віталійовича Камалова підписують меморандум</p>
+                        </div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -240,8 +264,8 @@
         <div class="row feature design display fix-position">
             <div class="six columns feature-media left">
                 <img class="img-misc img-width" src="img/img40.jpg" alt="1">
-                <p class="photo-text">Підписання договору про співпрацю з Центром міжнародних відносин "Мир і
-                    безпека"</p>
+                <p class="photo-text">Квітень 2018 року. КІІВП бере участь в офіційному відкритті проекту Ради Європи
+                    «Підтримка виконання Україною рішень Європейського суду з прав людини»</p>
             </div>
             <div class="container-right-text">
                 <div class="six columns right text margin-fixed-right">
@@ -251,9 +275,13 @@
                             Republic of Azerbaijan у 2017 році</span>, Інститут розширив своє співробітництво шляхом
                         підписання
                         ряду меморандумів і з іншими закордонними інституціями: <a class="a-underline sv-text-bold"
-                                                                                   href="#">Бакинським слов'янським
-                            університетом,
-                            San Education Organization, Академією громадської безпеки Університету Миколаса Романса
+                                                                                   href="https://drive.google.com/file/d/1xccC-IH3K5TQPhCpWQeAvMB_2Rg-rHrK/view">Бакинським
+                            слов'янським
+                            університетом,</a>
+                        <a class="a-underline sv-text-bold"
+                           href="https://drive.google.com/file/d/1XggD9JaJQtJ-v3XX_cq7GR3hVK7rcMkK/view">San Education
+                            Organization,</a> <a class="a-underline sv-text-bold">Академією громадської безпеки
+                            Університету Миколаса Романса
                             (Вільнюс, Литва), Центром українсько-європейського наукового співробітництва та Центром
                             міжнародних відносин "Мир і безпека».</a>
                     </p>
@@ -275,7 +303,7 @@
             <div class="container-left-text">
                 <div class="six columns left text margin-fixed-left">
                     <h2 class="sv-text-bold h2-period">Науково-освітні заходи</h2>
-                    <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;Крім того, у Київському інституті
+                    <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;До того ж, у Київському інституті
                         інтелектуальної власності та права <span class="sv-text-bold">вирує наукове життя</span>:
                         проводяться науково-практичні
                         конференції, постійно захищаються аспіранти та докторанти; Інститутом <span
@@ -312,17 +340,22 @@
                 </div>
             </div>
             <div class="six columns feature-media right">
-                <section id="mySlider4" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="img/img41.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img42.jpg" alt="">
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img41.jpg" alt="">
+                            <p class="photo-text">Квітень 2019 року. Відкриття міжнародної конференції ректором КІІВП
+                                Васиьем Феликом</p></div>
+                        <div class="swiper-slide"><img src="img/img42.jpg" alt="">
+                            <p class="photo-text">Виступ на конференції директора Інституту держави і права ім. В.М.
+                                Корецького НАН України Шемшученко Юрій</p></div>
+                        <div class="swiper-slide"><img src="img/img76.jpg" alt="">
+                            <p class="photo-text">Виступ на конференції постійного представника Верховної Ради України у
+                                Конституційному Суді України, відомого вченого, професора Анатолія Селіванова</p></div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -330,29 +363,32 @@
     <section>
         <div class="row feature design display fix-position">
             <div class="six columns feature-media left">
-                <section id="mySlider5" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="img/img43.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img44.jpg" alt="">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/img45.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img46.jpg" alt="">
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img43.jpg" alt="">
+                            <p class="photo-text">Травень 2021 року. Відкриття спортивного комплексу Київського
+                                інституту інтелектуальної власності та права</p></div>
+                        <div class="swiper-slide"><img src="img/img44.jpg" alt="">
+                            <p class="photo-text">Травень 2021 року. Відкриття спортивного комплексу Київського
+                                інституту інтелектуальної власності та права</p></div>
+                        <div class="swiper-slide"><img src="img/img45.jpg" alt="">
+                            <p class="photo-text">Травень 2021 року. Відкриття спортивного комплексу Київського
+                                інституту інтелектуальної власності та права</p></div>
+                        <div class="swiper-slide"><img src="img/img46.jpg" alt="">
+                            <p class="photo-text">Травень 2021 року. Відкриття спортивного комплексу Київського
+                                інституту інтелектуальної власності та права</p></div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
             <div class="container-right-text">
                 <div class="six columns right text margin-fixed-right">
-                    <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;<a class="a-underline sv-text-bold"
-                                                                                href="#">Відкриття спортивного комплексу
+                    <h2 class="h2-period">Урочисте завершення будівництва сучасного студентського комплексу </h2>
+                    <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;<span class="sv-text-bold">Відкриття спортивного комплексу
                         Київського
-                        інституту інтелектуальної власності та права є дійсно визначною подією в історії закладу</a>.
+                        інституту інтелектуальної власності та права є дійсно визначною подією в історії закладу</span>.
                         Варто
                         зазначити, що Київський інститут інтелектуальної власності та права <span class="sv-text-bold">є центром не лише
                             освітнього, професійного та наукового зростання, а й популяризації спорту</span>, здорового
@@ -362,9 +398,6 @@
                         КІІВП, професора В.І. Фелика <span class="sv-text-bold sv-text-period-italic">28 травня 2021 року</span>
                         на лівому березі Дніпра у Києві відбулося
                         <span class="sv-text-bold">відкриття нового спортивного комплексу Київського інституту інтелектуальної власності та права</span>.
-                        Це надзвичайно потужний та масштабний проект, який вже сьогодні реалізовано у життя, що доводить
-                        - для Київського інституту саме <span class="sv-text-bold">навчання та здоровий активний відпочинок студентів є пріоритетом
-                            розвитку</span>.
                     </p>
                 </div>
                 <div class="six columns right text margin-fixed-right">
@@ -385,6 +418,7 @@
         <div class="row feature design display fix-position">
             <div class="container-left-text">
                 <div class="six columns left text margin-fixed-left">
+                    <h2 class="h2-period">Святкування Дня знань із Міністром</h2>
                     <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;<span class="sv-text-bold">Урочистості з нагоди нового навчального
                         року та посвята у першокурсники є вже традиційним заходом, як для НУ «ОЮА», так і для КІІВП НУ
                         «ОЮА»</span>. Саме тому, щороку у вересні студенти збираються в стінах університетів та
@@ -394,8 +428,8 @@
                     </p>
                 </div>
                 <div class="six columns left text margin-fixed-left">
-                    <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;<a class="a-underline sv-text-bold">Зі
-                        святом Дня знань</a> усіх присутніх привітав
+                    <p class="sv-text-period-medium">&nbsp;&nbsp;&nbsp;&nbsp;<span class="sv-text-bold">Зі
+                        святом Дня знань</span> усіх присутніх привітав
                         <span class="sv-text-bold">Міністр освіти і науки України Шкарлет Сергій Миколайович</span>.
                         Президент НУ «ОЮА» <span class="sv-text-bold">Ківалов Сергій
                             Васильович</span> побажав першокурсникам здоров'я, цікавого студентського життя, здобуття
@@ -424,42 +458,49 @@
                 </div>
             </div>
             <div class="six columns feature-media right">
-                <section id="mySlider6" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="img/img47.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img48.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img49.jpg" alt="">
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img47.jpg" alt="">
+                            <p class="photo-text">Вересень 2021 року. Студентів КІІВП вітає з нагоди Дня знань Міністр
+                                освіти і науки України Сергій Шкарлет</p></div>
+                        <div class="swiper-slide"><img src="img/img48.jpg" alt="">
+                            <p class="photo-text">Вересень 2021 року. З Божим Благословенням до студентів КІІВП
+                                звертається ректор Київської духовної академії і семінарії Сильвестр</p></div>
+                        <div class="swiper-slide"><img src="img/img49.jpg" alt="">
+                            <p class="photo-text">Вересень 2021 року. Урочисте винесення студентського квитка КІІВП</p>
+                        </div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </div>
     </section>
     <section>
         <div class="row feature design display fix-position">
             <div class="six columns feature-media left">
-                <section id="mySlider7" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="img/img47.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img50.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img51.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img52.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img53.jpg" alt="">
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img50.jpg" alt="">
+                            <p class="photo-text">Листопад 2021 року. Проведення виборів ректора та президента КУІВП як
+                                самостійного університету. На голосування присутній безпосередньо Міністр освіти і науки
+                                Сергій Шкарлет</p></div>
+                        <div class="swiper-slide"><img src="img/img51.jpg" alt="">
+                            <p class="photo-text">Листопад 2021 року. Проведення виборів ректора та президента КУІВП як
+                                самостійного університету. На голосування присутній безпосередньо Міністр освіти і науки
+                                Сергій Шкарлет</p></div>
+                        <div class="swiper-slide"><img src="img/img52.jpg" alt="">
+                            <p class="photo-text">Листопад 2021 року. Майбутній ректор КУІВП Василь Фелик робить свій
+                                голос</p></div>
+                        <div class="swiper-slide"><img src="img/img53.jpg" alt="">
+                            <p class="photo-text">Листопад 2021 року. Міністр освіти і науки Сергій Шкарлет вітає
+                                новообраного президента Університету Сергія Ківалова із перемогою</p></div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
             <div class="container-right-text">
                 <div class="six columns right text margin-fixed-right">
@@ -498,23 +539,14 @@
         </a>
     </div>
 </div>
-<!-- Footer
-================================================== -->
-
-<!-- Footer End-->
-<!-- Java Script
-================================================== -->
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../js/jquery-1.10.2.min.js"><\/script>')</script>
-<script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
-<script src="../js/modernizr.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../../js/modernizr.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="../js/main.js"></script>
 <script src="../js/sectionAppearance.js"></script>
-<script src="../js/uikit3/uikit.min.js"></script>
-<script src="../js/uikit3/uikit-icons.min.js"></script>
+<script src="../../js/buttonAnimation.js"></script>
+<script src="../../js/uikit3/uikit.min.js"></script>
+<script src="../../js/uikit3/uikit-icons.min.js"></script>
 </body>
 </html>
 
