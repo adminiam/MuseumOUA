@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../../css/default.css">
     <link rel="stylesheet" href="../layout.css">
     <link rel="stylesheet" href="../media-queries.css">
-    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -67,16 +67,7 @@
         </div>
     </div>
 </header>
-<!-- Header End -->
-
-
-<!-- Homepage Hero
-================================================== -->
-<!-- Homepage Hero end -->
 <div class="sections-container">
-
-    <!-- Features Section
-================================================== -->
     <section id='sv-information'>
         <div class="row feature flex-column">
             <div class="six columns feature-media left">
@@ -307,16 +298,17 @@
     <section>
         <div class="row feature design display fix-position">
             <div class="six columns feature-media left">
-                <section id="mySlider" class="splide" aria-label="Splide Basic HTML Example">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide"><img src="img/img32.jpg" alt="32">
-                            </li>
-                            <li class="splide__slide"><img src="img/img33.jpg" alt="33">
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img32.jpg" alt="32">
+                        </div>
+                        <div class="swiper-slide"><img src="img/img33.jpg" alt="33">
+                        </div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
             <div class="container-right-text">
                 <div class="six columns right text margin-fixed-right">
@@ -355,34 +347,38 @@
                 </div>
             </div>
             <div class="six columns feature-media left">
-                <section id="mySlider1" class="splide" aria-label="Splide Basic HTML Example">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide"><img src="img/img34.jpg" alt="1">
-                            </li>
-                            <li class="splide__slide"><img src="img/img35.jpg" alt="2">
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img34.jpg" alt="1">
+                        </div>
+                        <div class="swiper-slide"><img src="img/img35.jpg" alt="2">
+                        </div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </div>
     </section>
     <section>
         <div class="row feature design display fix-position">
                 <div class="six columns feature-media left">
-                    <section id="mySlider2" class="splide" aria-label="Splide Basic HTML Example">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide"><img src="img/img36.jpg" alt="36">
-                                    <p class="splide-text-slide">Проведення з’їзду Національної асоціації адвокатів
-                                        України в рамках меморандуму про співпрацю між НУ «ОЮА» та НААУ</p></li>
-                                <li class="splide__slide"><img src="img/img37.jpg" alt="37">
-                                    <p class="splide-text-slide">Керівництво НААУ, зокрема і Голова Національної
-                                        асоціації Лідія Ізовітова</p></li>
-                            </ul>
+                    <div class="swiper mySwiper3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/img36.jpg" alt="36">
+                                <p class="photo-text">Проведення з’їзду Національної асоціації адвокатів
+                                    України в рамках меморандуму про співпрацю між НУ «ОЮА» та НААУ</p>
+                            </div>
+                            <div class="swiper-slide"><img src="img/img37.jpg" alt="37">
+                                <p class="photo-text">Керівництво НААУ, зокрема і Голова Національної
+                                    асоціації Лідія Ізовітова</p>
+                            </div>
                         </div>
-                    </section>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
                 </div>
                 <div class="container-right-text">
                 <div class="six columns right text margin-fixed-right">
@@ -460,23 +456,14 @@
         </div>
     </section>
 </div>
-<!-- Footer
-================================================== -->
-
-<!-- Footer End-->
-<!-- Java Script
-================================================== -->
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../js/jquery-1.10.2.min.js"><\/script>')</script>
-<script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
-<script src="../js/modernizr.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../../js/modernizr.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="../js/main.js"></script>
 <script src="../js/sectionAppearance.js"></script>
-<script src="../js/uikit3/uikit.min.js"></script>
-<script src="../js/uikit3/uikit-icons.min.js"></script>
+<script src="../../js/buttonAnimation.js"></script>
+<script src="../../js/uikit3/uikit.min.js"></script>
+<script src="../../js/uikit3/uikit-icons.min.js"></script>
 </body>
 </html>
 

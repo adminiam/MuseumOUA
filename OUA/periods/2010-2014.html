@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../css/default.css">
     <link rel="stylesheet" href="../layout.css">
     <link rel="stylesheet" href="../media-queries.css">
-    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -25,21 +25,6 @@
 </head>
 <body>
 <header>
-<!--    <div class="wrapper">-->
-<!--        <a class="logo" href="../oua.html">-->
-<!--            <img class="oua-logo-img" alt="" src="../../images/logo.png">-->
-<!--        </a>-->
-<!--        <nav id="nav-wrap" class="nav-periods nav-periods-font-size">-->
-<!--            <ul id="nav" class="nav">-->
-<!--                <li><a href="1817-1997.html">1817-1997</a></li>-->
-<!--                <li><a href="1998-2003.html">1998-2003</a></li>-->
-<!--                <li><a href="2004-2009.html">2004-2009</a></li>-->
-<!--                <li><a href="#">2010-2014</a></li>-->
-<!--                <li><a href="2015-2019.html">2015-2019</a></li>-->
-<!--                <li><a href="2020-2024.html">2020-2024</a></li>-->
-<!--            </ul>-->
-<!--        </nav>-->
-<!--    </div>-->
     <div class="wrapper">
         <nav class="uk-navbar-container uk-visible@m uk-navbar" uk-navbar="mode: click">
             <div class="uk-navbar-center">
@@ -84,16 +69,9 @@
         </div>
     </div>
 </header>
-<!-- Header End -->
 
-
-<!-- Homepage Hero
-================================================== -->
-<!-- Homepage Hero end -->
 <div class="sections-container">
 
-    <!-- Features Section
-================================================== -->
     <section id='sv-information'>
         <div class="row feature flex-column">
             <div class="six columns feature-media left">
@@ -148,16 +126,17 @@
             </div>
             <div class="six columns feature-media right">
                 <div class="six columns feature-media left">
-                    <section id="mySlider" class="splide" aria-label="Splide Basic HTML Example">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide"><img src="img/img41.jpg" alt="41">
-                                </li>
-                                <li class="splide__slide"><img src="img/img42.jpg" alt="42">
-                                </li>
-                            </ul>
+                    <div class="swiper mySwiper3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/img41.jpg" alt="41">
+                             </div>
+                            <div class="swiper-slide"><img src="img/img42.jpg" alt="42">
+                            </div>
                         </div>
-                    </section>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -465,23 +444,14 @@
         </div>
     </section>
 </div>
-<!-- Footer
-================================================== -->
-
-<!-- Footer End-->
-<!-- Java Script
-================================================== -->
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../js/jquery-1.10.2.min.js"><\/script>')</script>
-<script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
-<script src="../js/modernizr.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../../js/modernizr.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="../js/main.js"></script>
 <script src="../js/sectionAppearance.js"></script>
-<script src="../js/uikit3/uikit.min.js"></script>
-<script src="../js/uikit3/uikit-icons.min.js"></script>
+<script src="../../js/buttonAnimation.js"></script>
+<script src="../../js/uikit3/uikit.min.js"></script>
+<script src="../../js/uikit3/uikit-icons.min.js"></script>
 </body>
 </html>
 
