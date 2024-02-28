@@ -63,16 +63,6 @@ li {
     text-align: center;
 }
 
-/* for css animations */
-
-
-
-
-
-/* ------------------------------------------------------------------ */
-/* b. Header Styles
-/* ------------------------------------------------------------------ */
-
 header {
     background: linear-gradient(to bottom, #07575b, #c4dfe6) no-repeat fixed;
     height: 115px;
@@ -83,8 +73,6 @@ header {
     z-index: 990;
 }
 
-
-/* header logo */
 header .logo {
     float: left;
     width: auto;
@@ -136,16 +124,6 @@ header .logo a {
     outline: none;
 }
 
-/*!* header social *!*/
-/*header .header-social {*/
-/*    font-size: 20px;*/
-/*    font-weight: normal;*/
-/*    line-height: 54px;*/
-/*    color: #424a56;*/
-/*    padding: 0;*/
-/*    float: right;*/
-/*}*/
-
 header .header-social li {
     display: inline-block;
     margin-right: 20px;
@@ -159,9 +137,6 @@ header .header-social li a:hover {
     color: #11ABB0;
 }
 
-
-/* primary navigation
---------------------------------------------------------------------- */
 #nav-wrap, #nav-wrap ul, #nav-wrap li, #nav-wrap a {
     border: none;
     outline: none;
@@ -688,8 +663,8 @@ footer .copyright {
 .go-top-button {
     display: inline-block;
     background: #1d5e56;
-    padding: 10px 20px; /* Измените эти значения, чтобы уменьшить отступы */
-    border-radius: 50px; /* Измените это значение, чтобы уменьшить размер границы */
+    padding: 10px 20px;
+    border-radius: 50px;
 }
 
 .go-top-button:hover {

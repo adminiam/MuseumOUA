@@ -5,6 +5,7 @@
 *   05-02-2014
 /* ================================================================== */
 
+
 @media only screen and (max-width: 992px) {
     h3 {
 
@@ -79,10 +80,6 @@
 }
 
 @media only screen and (max-width: 1280px) {
-
-    .feature{
-        flex-direction: column;
-    }
 
     .container-left-text, .container-right-text{
         width: auto;
@@ -188,7 +185,6 @@
     #nav-wrap ul#nav {
         padding: 10px 36px 10px 36px;
         background: linear-gradient(to bottom, #07575b, #c4dfe6) no-repeat fixed;
-        /*#575757*/
         height: auto;
         display: none;
         clear: both;
@@ -402,8 +398,6 @@
   
 
 }
-
-
 
 @media only screen and (max-width: 1199px) {
     .fixed-size {
