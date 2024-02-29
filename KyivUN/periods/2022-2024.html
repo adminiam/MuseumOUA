@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../../css/default.css">
     <link rel="stylesheet" href="../layout.css">
     <link rel="stylesheet" href="../media-queries.css">
-    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -23,10 +23,10 @@
     <div class="wrapper">
         <nav class="uk-navbar-container uk-visible@m uk-navbar" uk-navbar="mode: click">
             <div class="uk-navbar-center">
-                <a class="uk-logo" href="#">
+                <a class="uk-logo" href="../kyivUN.html">
                     <img class="oua-logo-img" alt="" src="../../images/logo.png">
                 </a>
-                <ul class="uk-navbar-nav">
+                <ul class="uk-navbar-nav">-
                     <li><a href="1996-2018.html">1996-2018</a></li>
                     <li><a href="2019-2021.html">2019-2021</a></li>
                     <li><a href="#">2022-2024</a></li>
@@ -136,19 +136,16 @@
                 </div>
             </div>
             <div class="six columns feature-media right">
-                <section id="mySlider" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide"><img src="img/imgCover3.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img55.png" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img56.png" alt="">
-                            </li>
-
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/imgCover3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/img55.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/img56.png" alt=""></div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </div>
 
@@ -157,18 +154,16 @@
     <section class="fix-position">
         <div class="row feature">
             <div class="six columns feature-media left">
-                <section id="mySlider1" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide"><img src="img/img57.png" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img58.png" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img59.png" alt="">
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img57.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/img58.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/img59.png" alt=""></div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
             <div class="container-right-text">
                 <div class="six columns right text margin-fixed-right">
@@ -290,18 +285,16 @@
                 </div>
             </div>
             <div class="six columns feature-media right">
-                <section id="mySlider2" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide"><img src="img/img62.png" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img63.png" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img64.png" alt="">
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img62.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/img63.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/img64.png" alt=""></div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -309,25 +302,22 @@
     <section>
         <div class="row feature design display fix-position">
             <div class="six columns feature-media left">
-                <section id="mySlider3" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <iframe class="video-yt" width="560" height="315"
-                                        src="https://www.youtube.com/embed/waQat17jYsY?si=gGh-ScgLwpM8d3Kv"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowfullscreen></iframe>
-                            </li>
-                            <li class="splide__slide"><img src="img/img3.jpg" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img66.jpg" alt="">
-                            </li>
-
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <iframe class="video-yt"
+                                    src="https://www.youtube.com/embed/waQat17jYsY?si=gGh-ScgLwpM8d3Kv"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide"><img src="img/img3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/img66.jpg" alt=""></div>
                     </div>
-                </section>
-
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
             <div class="container-right-text">
                 <div class="six columns right text margin-fixed-right">
@@ -389,26 +379,20 @@
                 </div>
             </div>
             <div class="six columns feature-media right">
-                <section id="mySlider4" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide"><img src="img/img67.png" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img68.png" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img69.png" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img70.png" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img71.png" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img72.png" alt="">
-                            </li>
-                            <li class="splide__slide"><img src="img/img73.png" alt="">
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img67.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/img68.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/img69.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/img70.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/img71.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/img72.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/img73.png" alt=""></div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -420,23 +404,11 @@
         </a>
     </div>
 </div>
-<!-- Footer
-================================================== -->
-
-<!-- Footer End-->
-<!-- Java Script
-================================================== -->
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../js/jquery-1.10.2.min.js"><\/script>')</script>
-<script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
-<script src="../js/modernizr.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../../js/modernizr.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="../js/main.js"></script>
 <script src="../js/sectionAppearance.js"></script>
-<script src="../js/uikit3/uikit.min.js"></script>
-<script src="../js/uikit3/uikit-icons.min.js"></script>
 </body>
 </html>
 

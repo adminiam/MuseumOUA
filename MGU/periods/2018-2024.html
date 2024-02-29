@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../css/default.css">
     <link rel="stylesheet" href="../layout.css">
     <link rel="stylesheet" href="../media-queries.css">
-    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -21,18 +21,6 @@
 </head>
 <body>
 <header>
-    <!--    <div class="wrapper">-->
-    <!--        <a class="logo" href="../mgu.html">-->
-    <!--            <img class="oua-logo-img" alt="" src="../../images/mguLogo.png">-->
-    <!--        </a>-->
-    <!--        <nav id="nav-wrap" class="nav-periods nav-periods-font-size">-->
-    <!--            <ul id="nav" class="nav">-->
-    <!--                <li><a href="2002-2006.html">2002-2006</a></li>-->
-    <!--                <li><a href="2007-2011.html">2007-2011</a></li>-->
-    <!--                <li><a href="2012-2017.html">2012-2017</a></li>-->
-    <!--                <li><a href="#">2018-2024</a></li>-->
-    <!--            </ul>-->
-    <!--        </nav>-->
     <div class="wrapper">
         <nav class="uk-navbar-container uk-visible@m uk-navbar" uk-navbar="mode: click">
             <div class="uk-navbar-center">
@@ -73,37 +61,27 @@
         </div>
     </div>
 </header>
-<!-- Header End -->
-
-
-<!-- Homepage Hero
-================================================== -->
-<!-- Homepage Hero end -->
 <div class="sections-container">
-
-    <!-- Features Section
-================================================== -->
     <section id='sv-information'>
         <div class="row feature flex-column">
             <div class="six columns feature-media left">
-                <section id="mySlider" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="../link-tree/img/linkImg8.jpg" alt="8">
-                                <p class="splide-text-slide">Грудень 2018 року. Урочисте святкування 16-тиріччя
-                                    Міжнародного гуманітарного університету</p>
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/img6.jpg" alt="6">
-                                <p class="splide-text-slide">2018 рік. 18-та церемонія нагородження лауреатів рейтингу
-                                    «Народне визнання». Директор Інституту права, економіки та міжнародних відносин МГУ
-                                    Костянтин Громовенко від імені Університету отримує нагороду «Кращий ЗВО у сфері
-                                    міжнародної діяльності»</p>
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../link-tree/img/linkImg8.jpg" alt="8">
+                            <p class="photo-text">Грудень 2018 року. Урочисте святкування 16-тиріччя
+                                Міжнародного гуманітарного університету</p>
+                        </div>
+                        <div class="swiper-slide"><img src="img/img6.jpg" alt="6">
+                            <p class="photo-text">2018 рік. 18-та церемонія нагородження лауреатів рейтингу
+                                «Народне визнання». Директор Інституту права, економіки та міжнародних відносин МГУ
+                                Костянтин Громовенко від імені Університету отримує нагороду «Кращий ЗВО у сфері
+                                міжнародної діяльності»</p>
+                        </div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
             <div class="container-right-text">
                 <div class="six columns right text margin-fixed-right">
@@ -170,24 +148,23 @@
                 </div>
             </div>
             <div class="six columns feature-media right">
-                <section id="mySlider1" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="img/img7.png" alt="7">
-                                <p class="splide-text-slide">Квітень 2018 року. Зустріч студентів МГУ із
-                                    мультимільйонером, єгипетським бізнесменом і юристом міжнародного рівня Мухамедом
-                                    Бахрі</p>
-                            </li>
-                            <li class="splide__slide">
-                                <img src="../link-tree/img/linkImg43.jpg" alt="43">
-                                <p class="splide-text-slide">Вересень 2018 року. Професор Авінаш Павар (Avinash PAWAR)
-                                    бізнес-школи Раджива Ганді м. Пуна (Індія) проводить в МГУ лекцію з інструментів
-                                    управління бізнесом</p>
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img7.png" alt="7">
+                            <p class="photo-text">Квітень 2018 року. Зустріч студентів МГУ із
+                                мультимільйонером, єгипетським бізнесменом і юристом міжнародного рівня Мухамедом
+                                Бахрі</p>
+                        </div>
+                        <div class="swiper-slide"><img src="../link-tree/img/linkImg43.jpg" alt="43">
+                            <p class="photo-text">Вересень 2018 року. Професор Авінаш Павар (Avinash PAWAR)
+                                бізнес-школи Раджива Ганді м. Пуна (Індія) проводить в МГУ лекцію з інструментів
+                                управління бізнесом</p>
+                        </div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </div>
 
@@ -196,23 +173,22 @@
     <section class="fix-position">
         <div class="row feature">
             <div class="six columns feature-media left">
-                <section id="mySlider2" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="img/img8.jpg" alt="8">
-                                <p class="splide-text-slide">Січень 2018 року. Президент МГУ Сергій Ківалов отримує
-                                    нагороду від директора Інституту світової економіки та політики Чжана Юйяня</p>
-                            </li>
-                            <li class="splide__slide">
-                                <img src="../link-tree/img/linkImg34.jpg" alt="34">
-                                <p class="splide-text-slide">Лютий 2018 року. Підписання тристоронній меморандум про
-                                    співпрацю між трьома університетами: Міжнародний гуманітарний університет,
-                                    Національний університет «Одеська юридична академія» та Варшавський університет</p>
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img8.jpg" alt="8">
+                            <p class="photo-text">Січень 2018 року. Президент МГУ Сергій Ківалов отримує
+                                нагороду від директора Інституту світової економіки та політики Чжана Юйяня</p>
+                        </div>
+                        <div class="swiper-slide"><img src="../link-tree/img/linkImg34.jpg" alt="34">
+                            <p class="photo-text">Лютий 2018 року. Підписання тристоронній меморандум про
+                                співпрацю між трьома університетами: Міжнародний гуманітарний університет,
+                                Національний університет «Одеська юридична академія» та Варшавський університет</p>
+                        </div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
             <div class="container-right-text">
                 <div class="six columns right text margin-fixed-right">
@@ -280,22 +256,21 @@
                 </div>
             </div>
             <div class="six columns feature-media right">
-                <section id="mySlider3" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="img/img9.png" alt="9">
-                                <p class="splide-text-slide">Листопад 2020 року. Установча онлайн-зустріч робочої групи
-                                    «Researcher Mental Health»</p>
-                            </li>
-                            <li class="splide__slide">
-                                <img src="../link-tree/img/linkImg11.jpg" alt="11">
-                                <p class="splide-text-slide">Жовтень 2023 року. Зустріч керівництва МГУ із представником
-                                    Автономного університету Барселони (Universitat Autònoma de Barcelona)</p>
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img9.png" alt="9">
+                            <p class="photo-text">Листопад 2020 року. Установча онлайн-зустріч робочої групи
+                                «Researcher Mental Health»</p>
+                        </div>
+                        <div class="swiper-slide"><img src="../link-tree/img/linkImg11.jpg" alt="11">
+                            <p class="photo-text">Жовтень 2023 року. Зустріч керівництва МГУ із представником
+                                Автономного університету Барселони (Universitat Autònoma de Barcelona)</p>
+                        </div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -303,20 +278,19 @@
     <section>
         <div class="row feature design display fix-position">
             <div class="six columns feature-media left">
-                <section id="mySlider4" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="img/img60.jpg" alt="60">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/img10.jpg" alt="10">
-                                <p class="splide-text-slide">2023 рік. Підписання договору про проходження
-                                    студентам-медиками МГУ практики у Медичному домі «Odrex»</p>
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img60.jpg" alt="60">
+                        </div>
+                        <div class="swiper-slide"><img src="img/img10.jpg" alt="10">
+                            <p class="photo-text">2023 рік. Підписання договору про проходження
+                                студентам-медиками МГУ практики у Медичному домі «Odrex»</p>
+                        </div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
             <div class="container-right-text">
                 <div class="six columns right text margin-fixed-right">
@@ -479,43 +453,41 @@
                 </div>
             </div>
             <div class="six columns feature-media right">
-                <section id="mySlider5" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="img/img61.png" alt="61">
-                                <p class="splide-text-slide">Липень 2020 року. Підписання меморандуму про співпрацю між
-                                    МГУ та Міжнародною асоціацією здоров’я</p>
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/img12.jpg" alt="12">
-                                <p class="splide-text-slide">2020 рік. Проведення у стінах Міжнародного гуманітарного
-                                    університету практичних семінарів та воркшопів по боротьбі із поширенням
-                                    коронавірусу для лікарів міста Одеси</p>
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img61.png" alt="61">
+                            <p class="photo-text">Липень 2020 року. Підписання меморандуму про співпрацю між
+                                МГУ та Міжнародною асоціацією здоров’я</p>
+                        </div>
+                        <div class="swiper-slide"><img src="img/img12.jpg" alt="12">
+                            <p class="photo-text">2020 рік. Проведення у стінах Міжнародного гуманітарного
+                                університету практичних семінарів та воркшопів по боротьбі із поширенням
+                                коронавірусу для лікарів міста Одеси</p>
+                        </div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </div>
     </section>
     <section>
         <div class="row feature design display fix-position">
             <div class="six columns feature-media left">
-                <section id="mySlider6" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="img/img62.png" alt="62">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/img13.jpg" alt="12">
-                                <p class="splide-text-slide">Серпень 2020 року. Презентація першого в Україні онлайн
-                                    серіалу «За вікном», знятого за участі колективу МГУ</p>
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img62.png" alt="62">
+                        </div>
+                        <div class="swiper-slide"><img src="img/img13.jpg" alt="12">
+                            <p class="photo-text">Серпень 2020 року. Презентація першого в Україні онлайн
+                                серіалу «За вікном», знятого за участі колективу МГУ</p>
+                        </div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
             <div class="container-right-text">
                 <div class="six columns right text margin-fixed-right">
@@ -564,25 +536,26 @@
                 </div>
             </div>
             <div class="six columns feature-media right">
-                <section id="mySlider7" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="img/img14.jpg" alt="14">
-                            </li>
-                            <li class="splide__slide">
-                                <iframe class="slider-yt"
-                                        src="https://www.youtube.com/embed/wtX3IQAjxfQ?si=umb4-oohixmF2X21"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowfullscreen></iframe>
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <iframe class="video-yt"
+                                    src="https://www.youtube.com/embed/wtX3IQAjxfQ?si=umb4-oohixmF2X21"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide"><img class="img-misc img-width" src="img/img14.jpg" alt="14">
+                            <p class="photo-text">2023 рік. Президент МГУ Сергій Ківалов та ректор Костянтин Громовенко
+                                нагороджують
+                                студента-військовослужбовця Збройних Сил України</p>
+                        </div>
                     </div>
-                </section>
-                <img class="img-misc img-width" src="img/img14.jpg" alt="14">
-                <p class="photo-text">2023 рік. Президент МГУ Сергій Ківалов та ректор Костянтин Громовенко нагороджують
-                    студента-військовослужбовця Збройних Сил України</p>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -650,55 +623,49 @@
                 </div>
             </div>
             <div class="six columns feature-media right">
-                <section id="mySlider8" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="img/img17.jpg" alt="17">
-                                <p class="splide-text-slide">2022 рік. Колектив Міжнародного гуманітарного університету
-                                    на святкування 20-ого Дня народження Університету</p>
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/img16.jpg" alt="16">
-                                <p class="splide-text-slide">2022 рік. Керівництво МГУ, зокрема президент Університету
-                                    Сергій Ківалов, ректор Костянтин Громовенко та голова Наглядової ради Юлія Гришина
-                                    на святкування 20-ого Дня народження</p>
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img17.jpg" alt="">
+                            <p class="splide-text-slide">2022 рік. Колектив Міжнародного гуманітарного університету
+                                на святкування 20-ого Дня народження Університету</p>
+                        </div>
+                        <div class="swiper-slide"><img src="img/img16.jpg" alt="">
+                            <p class="splide-text-slide">2022 рік. Керівництво МГУ, зокрема президент Університету
+                                Сергій Ківалов, ректор Костянтин Громовенко та голова Наглядової ради Юлія Гришина
+                                на святкування 20-ого Дня народження</p>
+                        </div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </div>
     </section>
     <section>
         <div class="row feature design display fix-position">
             <div class="six columns feature-media left">
-                <section id="mySlider9" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="../link-tree/img/linkImg71.jpg" alt="">
-                                <p class="splide-text-slide">Жовтень 2023 року. Установчі збори засновників-члені
-                                    Міжнародної освітньої корпорації</p>
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/img55.jpg" alt="">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/img56.jpg" alt="">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/img57.jpg" alt="">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/img58.jpg" alt="">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/img59.jpg" alt="">
-                            </li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../link-tree/img/linkImg71.jpg" alt="">
+                            <p class="splide-text-slide">Жовтень 2023 року. Установчі збори засновників-члені
+                                Міжнародної освітньої корпорації</p>
+                        </div>
+                        <div class="swiper-slide"><img src="img/img55.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="img/img56.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="img/img57.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="img/img58.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="img/img59.jpg" alt="">
+                        </div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
             <div class="container-right-text">
                 <div class="six columns right text margin-fixed-right">
@@ -741,23 +708,11 @@
         </div>
     </section>
 </div>
-<!-- Footer
-================================================== -->
-
-<!-- Footer End-->
-<!-- Java Script
-================================================== -->
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../js/jquery-1.10.2.min.js"><\/script>')</script>
-<script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
-<script src="../js/modernizr.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../../js/modernizr.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="../js/main.js"></script>
 <script src="../js/sectionAppearance.js"></script>
-<script src="../js/uikit3/uikit.min.js"></script>
-<script src="../js/uikit3/uikit-icons.min.js"></script>
 </body>
 </html>
 
