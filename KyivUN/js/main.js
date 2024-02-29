@@ -51,15 +51,6 @@
 
     });
 
-    // const sliderIds = ['#mySlider', '#mySlider1', '#mySlider2', '#mySlider3', '#mySlider4', '#mySlider5', '#mySlider6', '#mySlider7'];
-    //
-    // sliderIds.forEach((sliderId) => {
-    //     new Splide(sliderId, {
-    //         /*pagination: false*/
-    //     }).mount();
-    // });
-
-
     var swiper = new Swiper(".mySwiper", {
         loop: true,
         spaceBetween: 10,
@@ -70,23 +61,21 @@
     var swiper = new Swiper(".mySwiper2", {
         loop: true,
         spaceBetween: 10,
-        navigation: {
+        navigation:{
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-        thumbs: {
+        thumbs:{
             swiper: swiper,
         },
     });
-    var swiper2 = new Swiper(".mySwiper3", {
-        loop: true,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-            el: '.swiper-pagination',
-        },
+    var swiperFourSlides = new Swiper(".mySwiper-4-slides", {
+        spaceBetween: 10,
+        slidesPerView: 4
+    });
+    var swiperThreeSlides = new Swiper(".mySwiper-3-slides", {
+        spaceBetween: 10,
+        slidesPerView: 3
     });
 
 
