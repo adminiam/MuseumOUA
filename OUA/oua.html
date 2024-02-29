@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="media-queries.css">
-    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -18,60 +18,68 @@
 <body>
 <!-- Header End -->
 <header>
-        <div class="wrapper">
-            <nav class="uk-navbar-container uk-visible@m uk-navbar" uk-navbar="mode: click">
-                <div class="uk-navbar-center">
-                    <a class="uk-logo" href="#">
-                        <img class="oua-logo-img" alt="" src="../images/logo.png">
-                    </a>
-                    <ul class="uk-navbar-nav">
-                        <li><a href="../MASHO/masho.html">Міжнародна академічна<br>школа Одеса</a></li>
-                        <li>
-                            <a href="#">Національний університет<br>"Одеська юридична академія"<span uk-drop-parent-icon></span></a>
-                            <div class="uk-navbar-dropdown">
-                                <ul class="uk-nav uk-navbar-dropdown-nav uk-animation-slide-bottom-medium">
-                                    <li class="border-bottom"><a href="../OUA/oua.html">НУ "ОЮА"</a></li>
-                                    <li><a href="https://www.onua.edu.ua/ua/virtualnyi-tur-universytetom">Віртуальний тур університетом</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="../MGU/mgu.html">Міжнародний гуманітарний<br>університет</a></li>
-                        <li><a href="../KyivUN/kyivUN.html">Київський університет інтелектуальної<br>власності та права НУ «ОЮА»</a></li>
-                    </ul>
-                </div>
-            </nav>
-
-            <nav class="uk-navbar uk-navbar-container uk-margin uk-hidden@m">
-                <div class="uk-navbar-right">
-                    <a class="uk-navbar-toggle" href="#offcanvas-nav" uk-toggle>
-                        <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left"></span>
-                    </a>
-                </div>
-                <div class="uk-navbar-center">
-                    <a class="uk-logo" href="#">
-                        <img class="oua-logo-img" alt="" src="../images/logo.png">
-                    </a>
-                </div>
-            </nav>
-
-            <div id="offcanvas-nav" uk-offcanvas="flip: true; mode: slide">
-                <div class="uk-offcanvas-bar uk-overflow-hidden">
-                    <ul class="uk-nav">
-                        <li class="border-bottom"><a href="../MASHO/masho.html">Міжнародна академічна школа Одеса</a></li>
-                        <li class="border-bottom">
-                            <a class="uk-margin-small-bottom" href="#">Національний університет "Одеська юридична академія"</a>
-                            <ul class="uk-nav-sub">
-                                <li><a class="uk-text-muted uk-text-left" href="../OUA/oua.html"><span uk-icon="icon: chevron-right"></span>НУ "ОЮА"</a></li>
-                                <li><a class="uk-text-muted uk-text-left" href="https://www.onua.edu.ua/ua/virtualnyi-tur-universytetom"><span uk-icon="icon: chevron-right"></span>Віртуальний тур університетом</a></li>
+    <div class="wrapper">
+        <nav class="uk-navbar-container uk-visible@m uk-navbar" uk-navbar="mode: click">
+            <div class="uk-navbar-center">
+                <a class="uk-logo" href="#">
+                    <img class="oua-logo-img" alt="" src="../images/logo.png">
+                </a>
+                <ul class="uk-navbar-nav">
+                    <li><a href="../MASHO/masho.html">Міжнародна академічна<br>школа Одеса</a></li>
+                    <li>
+                        <a href="#">Національний університет<br>"Одеська юридична академія"<span
+                                uk-drop-parent-icon></span></a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav uk-animation-slide-bottom-medium">
+                                <li class="border-bottom"><a href="../OUA/oua.html">НУ "ОЮА"</a></li>
+                                <li><a href="https://www.onua.edu.ua/ua/virtualnyi-tur-universytetom">Віртуальний тур
+                                    університетом</a></li>
                             </ul>
-                        </li>
-                        <li class="border-bottom"><a href="../MGU/mgu.html">Міжнародний гуманітарний університет</a></li>
-                        <li class="border-bottom"><a href="../KyivUN/kyivUN.html">Київський університет інтелектуальної власності та права НУ «ОЮА»</a></li>
-                    </ul>
-                </div>
+                        </div>
+                    </li>
+                    <li><a href="../MGU/mgu.html">Міжнародний гуманітарний<br>університет</a></li>
+                    <li><a href="../KyivUN/kyivUN.html">Київський університет інтелектуальної<br>власності та права НУ
+                        «ОЮА»</a></li>
+                </ul>
             </div>
+        </nav>
 
+        <nav class="uk-navbar uk-navbar-container uk-margin uk-hidden@m">
+            <div class="uk-navbar-right">
+                <a class="uk-navbar-toggle" href="#offcanvas-nav" uk-toggle>
+                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left"></span>
+                </a>
+            </div>
+            <div class="uk-navbar-center">
+                <a class="uk-logo" href="#">
+                    <img class="oua-logo-img" alt="" src="../images/logo.png">
+                </a>
+            </div>
+        </nav>
+
+        <div id="offcanvas-nav" uk-offcanvas="flip: true; mode: slide">
+            <div class="uk-offcanvas-bar uk-overflow-hidden">
+                <ul class="uk-nav">
+                    <li class="border-bottom"><a href="../MASHO/masho.html">Міжнародна академічна школа Одеса</a></li>
+                    <li class="border-bottom">
+                        <a class="uk-margin-small-bottom" href="#">Національний університет "Одеська юридична
+                            академія"</a>
+                        <ul class="uk-nav-sub">
+                            <li><a class="uk-text-muted uk-text-left" href="../OUA/oua.html"><span
+                                    uk-icon="icon: chevron-right"></span>НУ "ОЮА"</a></li>
+                            <li><a class="uk-text-muted uk-text-left"
+                                   href="https://www.onua.edu.ua/ua/virtualnyi-tur-universytetom"><span
+                                    uk-icon="icon: chevron-right"></span>Віртуальний тур університетом</a></li>
+                        </ul>
+                    </li>
+                    <li class="border-bottom"><a href="../MGU/mgu.html">Міжнародний гуманітарний університет</a></li>
+                    <li class="border-bottom"><a href="../KyivUN/kyivUN.html">Київський університет інтелектуальної
+                        власності та права НУ «ОЮА»</a></li>
+                </ul>
+            </div>
         </div>
+
+    </div>
 </header>
 <div class="sections-container">
 
@@ -84,7 +92,8 @@
                     <p class="sv-text">
                     <h2>Національний університет <br> «Одеська юридична академія»</h2>
                     &nbsp;&nbsp;&nbsp;&nbsp;Протягом майже трьох десятиліть
-                    невпинного розвитку навчальний заклад став лідером правової освіти не лише в України, але всього Східноєвропейського
+                    невпинного розвитку навчальний заклад став лідером правової освіти не лише в України, але всього
+                    Східноєвропейського
                     регіону. Першість Університету з-поміж інших освітніх установ забезпечують: висококваліфікований
                     професорсько-викладацький склад, сучасна матеріально-технічна база, прогресивні підходи в
                     навчальному процесі і науці та розвинута система співробітництва із зарубіжними університетами та
@@ -92,28 +101,38 @@
                     ідеї втілюють у реальність.
                 </div>
                 <div id="margin-bottom-1" class="six columns left text margin-fixed-left">
-                    <p class="sv-text">&nbsp;&nbsp;&nbsp;&nbsp;За час свого існування Одеська юридична академія пройшла шлях від автономного юридичного інституту у
+                    <p class="sv-text">&nbsp;&nbsp;&nbsp;&nbsp;За час свого існування Одеська юридична академія пройшла
+                        шлях від автономного юридичного інституту у
                         складі ОДУ ім. І.І. Мечникова до самостійного міжгалузевого навчального закладу вищої освіти із
-                        статусом «Національного». Сьогодні історію НУ «ОЮА» пишуть не тільки адвокати і прокурори, судді і
+                        статусом «Національного». Сьогодні історію НУ «ОЮА» пишуть не тільки адвокати і прокурори, судді
+                        і
                         нотаріуси, але й журналісти та перекладачі, психологи, політологи і соціологи, фахівці в галузі
-                        інформаційних технологій. Пандемія, а потім війна, не лише не зменшили темпи розвитку Університету
+                        інформаційних технологій. Пандемія, а потім війна, не лише не зменшили темпи розвитку
+                        Університету
                         та його внесок в історію, яка пишеться сьогодні, але навпаки – згуртували колектив Вишу навколо
                         єдиної мети: залишатися кращими, що б не відбувалося.</p></p>
                 </div>
             </div>
             <div class="six columns feature-media right">
-                <section id="mySlider" class="splide" aria-label="Splide Basic HTML Example">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide"><img src="../images/nu_oua1.jpg" alt="1"></li>
-                            <li class="splide__slide"><img src="../images/nu_oua2.jpg" alt="2"></li>
-                            <li class="splide__slide"><img src="periods/img/img53.jpg" alt="3"></li>
-                            <li class="splide__slide"><img src="periods/img/img54.jpg" alt="4"></li>
-                            <li class="splide__slide"><img src="periods/img/img55.jpg" alt="5"></li>
-                            <li class="splide__slide"><img src="periods/img/img56.jpg" alt="6"></li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../images/nu_oua1.jpg" alt="1">
+                        </div>
+                        <div class="swiper-slide"><img src="../images/nu_oua2.jpg" alt="2">
+                        </div>
+                        <div class="swiper-slide"><img src="periods/img/img53.jpg" alt="3">
+                        </div>
+                        <div class="swiper-slide"><img src="periods/img/img54.jpg" alt="4">
+                        </div>
+                        <div class="swiper-slide"><img src="periods/img/img55.jpg" alt="4">
+                        </div>
+                        <div class="swiper-slide"><img src="periods/img/img56.jpg" alt="4">
+                        </div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -126,7 +145,8 @@
                             <li>
                                 <div class="uk-card uk-card-default">
                                     <div class="uk-card-media-top">
-                                        <img class="slider-img" src="../OUA/periods/img/imgCover1.jpeg" width="900" height="600"
+                                        <img class="slider-img" src="../OUA/periods/img/imgCover1.jpeg" width="900"
+                                             height="600"
                                              alt="Слайдер" loading="lazy">
                                     </div>
                                     <a href="periods/1817-1997.html">
@@ -154,13 +174,15 @@
                             <li>
                                 <div class="uk-card uk-card-default">
                                     <div class="uk-card-media-top">
-                                        <img class="slider-img" src="../OUA/periods/img/imgCover3-1.jpeg" width="900" height="600"
+                                        <img class="slider-img" src="../OUA/periods/img/imgCover3-1.jpeg" width="900"
+                                             height="600"
                                              alt="Слайдер"
                                              loading="lazy">
                                     </div>
                                     <a href="periods/2004-2009.html">
                                         <div class="uk-card-body fixed-size">
-                                            <h3 class="uk-card-title">Здобуття статусу ВНЗ <br> всеукраїнського значення</h3>
+                                            <h3 class="uk-card-title">Здобуття статусу ВНЗ <br> всеукраїнського значення
+                                            </h3>
                                             <p class="years-font-size">(2004-2009)</p>
                                         </div>
                                     </a>
@@ -169,13 +191,15 @@
                             <li>
                                 <div class="uk-card uk-card-default">
                                     <div class="uk-card-media-top">
-                                        <img class="slider-img" src="../OUA/periods/img/imgCover4.jpg" width="900" height="600"
+                                        <img class="slider-img" src="../OUA/periods/img/imgCover4.jpg" width="900"
+                                             height="600"
                                              alt="Слайдер"
                                              loading="lazy">
                                     </div>
                                     <a href="periods/2010-2014.html">
                                         <div id="f" class="uk-card-body fixed-size">
-                                            <h3 class="uk-card-title">Освітньо-наукове <br> та інфраструктурне розширення</h3>
+                                            <h3 class="uk-card-title">Освітньо-наукове <br> та інфраструктурне
+                                                розширення</h3>
                                             <p class="years-font-size">(2010-2014)</p>
                                         </div>
                                     </a>
@@ -184,7 +208,8 @@
                             <li>
                                 <div class="uk-card uk-card-default">
                                     <div class="uk-card-media-top">
-                                        <img class="slider-img" src="../OUA/periods/img/imgCover5.png" width="900" height="600"
+                                        <img class="slider-img" src="../OUA/periods/img/imgCover5.png" width="900"
+                                             height="600"
                                              alt="Слайдер"
                                              loading="lazy">
                                     </div>
@@ -199,7 +224,8 @@
                             <li>
                                 <div class="uk-card uk-card-default">
                                     <div class="uk-card-media-top">
-                                        <img class="slider-img" src="../OUA/periods/img/imgCover6.jpg" width="900" height="600"
+                                        <img class="slider-img" src="../OUA/periods/img/imgCover6.jpg" width="900"
+                                             height="600"
                                              alt="Слайдер"
                                              loading="lazy">
                                     </div>
@@ -381,12 +407,9 @@
 <!-- Java Script
 ================================================== -->
 
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../js/jquery-1.10.2.min.js"><\/script>')</script>
-<script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="../js/modernizr.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="../js/main.js"></script>
 <script src="../js/sectionAppearance.js"></script>
 <script src="../js/uikit3/uikit.min.js"></script>

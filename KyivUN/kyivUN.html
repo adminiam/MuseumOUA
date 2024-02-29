@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="media-queries.css">
-    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -100,16 +100,21 @@
                 </div>
             </div>
             <div class="six columns feature-media right">
-                <section id="mySlider" class="splide" aria-label="Splide Basic HTML Example">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide"><img src="periods/img/img1.jpg" alt="1"></li>
-                            <li class="splide__slide"><img src="periods/img/img2.jpg" alt="2"></li>
-                            <li class="splide__slide"><img src="periods/img/img3.jpg" alt="3"></li>
-                            <li class="splide__slide"><img src="periods/img/img4.jpg" alt="4"></li>
-                        </ul>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="periods/img/img1.jpg" alt="1">
+                        </div>
+                        <div class="swiper-slide"><img src="periods/img/img2.jpg" alt="2">
+                        </div>
+                        <div class="swiper-slide"><img src="periods/img/img3.jpg" alt="3">
+                        </div>
+                        <div class="swiper-slide"><img src="periods/img/img4.jpg" alt="4">
+                        </div>
                     </div>
-                </section>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -312,12 +317,9 @@
 <!-- Java Script
 ================================================== -->
 
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../js/jquery-1.10.2.min.js"><\/script>')</script>
-<script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="../js/modernizr.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="../js/main.js"></script>
 <script src="../js/sectionAppearance.js"></script>
 <script src="../js/uikit3/uikit.min.js"></script>
