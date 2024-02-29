@@ -67,16 +67,6 @@
 
     });
 
-    // const sliderIds = ['#mySlider', '#mySlider1', '#mySlider2', '#mySlider3', '#mySlider4', '#mySlider5', '#mySlider6', '#mySlider7'];
-    //
-    // sliderIds.forEach((sliderId) => {
-    //     new Splide(sliderId, {
-    //         /*pagination: false*/
-    //     }).mount();
-    // });
-    //
-    // new Splide( '.splide' ).mount( window.splide.Extensions );
-
     var swiper = new Swiper(".mySwiper", {
         loop: true,
         spaceBetween: 10,
