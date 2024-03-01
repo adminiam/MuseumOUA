@@ -114,6 +114,16 @@ header .header-social li a {
     color: #fff;
 }
 
+.img-documentary {
+    border-radius: 10px;
+    margin: 10px 0 10px 0;
+}
+
+.documentary-photo {
+    display: grid;
+    place-items: center;
+}
+
 header .header-social li a:hover {
     color: #11ABB0;
 }
