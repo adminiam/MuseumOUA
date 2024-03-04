@@ -1,64 +1,97 @@
+/*---------------------------------------------------------------------*/
+/*Swiper slider*/
+/*---------------------------------------------------------------------*/
+var swiperThumb = new Swiper(".mySwiper", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 5,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+var swiperMainCarousel = new Swiper(".mySwiper2", {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: swiperThumb,
+    },
+});
+var swiperCarousel = new Swiper(".mySwiper3", {
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: '.swiper-pagination',
+    },
+});
+var swiperFourSlides = new Swiper(".mySwiper-4-slides", {
+    spaceBetween: 10,
+    slidesPerView: 4
+});
+var swiperThreeSlides = new Swiper(".mySwiper-3-slides", {
+    spaceBetween: 10,
+    slidesPerView: 3
+});
+/*---------------------------------------------------------------------*/
 
 
-(function ($) {
+/*---------------------------------------------------------------------*/
+/*Section appearance*/
+/*---------------------------------------------------------------------*/
+document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('section');
+    const config = {
+        rootMargin: '0px',
+        threshold: 0.5
+    };
 
-    var toggle_button = $("<a>", {
-            id: "toggle-btn",
-            html: "Menu",
-            title: "Menu",
-            href: "#"
-        }
-    );
-    var nav_wrap = $('nav#nav-wrap')
-    var nav = $("ul#nav");
-
-    nav_wrap.find('a.mobile-btn').remove();
-    nav_wrap.prepend(toggle_button);
-
-    toggle_button.on("click", function (e) {
-        e.preventDefault();
-        nav.slideToggle("fast");
-    });
-
-    if (toggle_button.is(':visible')) nav.addClass('mobile');
-    $(window).resize(function () {
-        if (toggle_button.is(':visible')) nav.addClass('mobile');
-        else nav.removeClass('mobile');
-    });
-
-    $('ul#nav li a').on("click", function () {
-        if (nav.hasClass('mobile')) nav.fadeOut('fast');
-    });
-
-    $('.smoothscroll').on('click', function (e) {
-
-        e.preventDefault();
-
-        var target = this.hash,
-            $target = $(target);
-
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
-        }, 800, 'swing', function () {
-            window.location.hash = target;
+    let observer = new IntersectionObserver(function (entries, self) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+            } else {
+                entry.target.classList.remove('in-view');
+            }
         });
+    }, config);
 
+    sections.forEach(section => {
+        observer.observe(section);
     });
-    var swiper2 = new Swiper(".mySwiper3", {
-        loop: true,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-            el: '.swiper-pagination',
-        },
-    });
+});
+/*---------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------*/
+/*Animated text*/
+/*---------------------------------------------------------------------*/
+function checkWidth() {
+    const textElement = document.getElementById('animated-text');
+
+    if (!textElement) {
+        return;
+    }
+
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth < 570) {
+        textElement.style.whiteSpace = 'nowrap';
+    } else {
+        textElement.style.whiteSpace = 'normal';
+    }
+}
+
+window.addEventListener('load', checkWidth);
+window.addEventListener('resize', checkWidth);
+/*---------------------------------------------------------------------*/
 
 
 
 
 
 
-
-})(jQuery);
