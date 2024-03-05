@@ -54,6 +54,7 @@ html, body {
 
 body {
     background: linear-gradient(to bottom, #07575b, #c4dfe6) no-repeat fixed;
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -150,30 +151,7 @@ video {
     height: 600px;
     border-radius: 10px;
 }
-.sv-text-period-italic{
-    font-family: 'Montserrat Alternates', sans-serif;
-}
 
-.sv-text {
-    font-size: 16px;
-}
-
-.sv-text-period-small {
-    font-size: 12px;
-}
-
-.sv-text-period-medium {
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.sv-text-period-large {
-    font-size: 21px;
-}
-
-.sv-text-bold {
-    font-weight: bold;
-}
 
 .slider-linkTree{
     max-width:70% ;
