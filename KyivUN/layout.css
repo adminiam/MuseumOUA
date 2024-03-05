@@ -8,6 +8,7 @@ html, body {
 body {
     background: linear-gradient(to bottom, #07575b, #c4dfe6) no-repeat fixed;
     font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
 }
 
 .swiper {
@@ -18,24 +19,24 @@ body {
 }
 
 .swiper-button-next::after, .swiper-button-prev::after {
-    font-size: 35px!important;
-    font-weight: bold!important;
+    font-size: 35px !important;
+    font-weight: bold !important;
     color: #ffffff;
-    opacity: 0.7!important;
+    opacity: 0.7 !important;
 }
 
-.swiper-button-next:hover::after, .swiper-button-prev:hover::after{
-    color: #ffffff!important;
-    opacity: 1!important;
+.swiper-button-next:hover::after, .swiper-button-prev:hover::after {
+    color: #ffffff !important;
+    opacity: 1 !important;
 }
 
-.swiper-pagination-bullet{
-    margin-bottom: 40px!important;
-    background-color: #ccc!important;
+.swiper-pagination-bullet {
+    margin-bottom: 40px !important;
+    background-color: #ccc !important;
 }
 
-.swiper-pagination-bullet-active{
-    background: #fff!important;
+.swiper-pagination-bullet-active {
+    background: #fff !important;
 }
 
 .swiper-slide img {
@@ -43,7 +44,6 @@ body {
     height: 100%;
     border-radius: 10px;
 }
-
 
 
 .section-head {
@@ -141,16 +141,18 @@ header .header-social li a:hover {
     border: none;
     outline: none;
 }
-.nav-periods{
+
+.nav-periods {
     display: grid;
     place-items: center;
-    letter-spacing: 2px!important;
-    margin: 30px 0 0 30px!important;
+    letter-spacing: 2px !important;
+    margin: 30px 0 0 30px !important;
 }
 
-.nav-periods-font-size a{
-    font-size: 18px!important;
+.nav-periods-font-size a {
+    font-size: 18px !important;
 }
+
 /* nav-wrap */
 #nav-wrap {
     font-family: 'Rubik', sans-serif;
@@ -194,10 +196,6 @@ ul#nav li {
     position: relative;
     list-style: none;
     display: inline-block;
-}
-
-.a-underline {
-    text-decoration: underline;
 }
 
 .dropdown {
@@ -411,33 +409,6 @@ video {
     font-family: 'Montserrat', sans-serif;
 }
 
-.sv-text {
-    font-size: 16px;
-}
-
-.sv-text-period-small {
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.sv-text-period-medium {
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.sv-text-period-large {
-    font-size: 21px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.sv-text-bold {
-    font-weight: bold;
-}
-
-.sv-text-period-italic{
-    font-family: 'Montserrat Alternates', sans-serif;
-}
-
 
 /* ------------------------------------------------------------------ */
 /* d. Features Section
@@ -503,7 +474,6 @@ video {
 }
 
 
-
 .img, .video {
     border-radius: 10px;
 }
@@ -543,14 +513,14 @@ video {
     margin-left: 20px; /* Збережіть відстань зліва для тексту */
     margin-bottom: 20px;
 }
-#margin-bottom,#margin-bottom-1,#margin-bottom-2,#margin-bottom-3,#margin-bottom-4,#margin-bottom-5,#margin-bottom-6,#margin-bottom-7,#margin-bottom-8,#margin-bottom-9,#margin-bottom-10,#margin-bottom-11,#margin-bottom-12,#margin-bottom-13,#margin-bottom-14,#margin-bottom-15,#margin-bottom-16,#margin-bottom-17 {
+
+#margin-bottom, #margin-bottom-1, #margin-bottom-2, #margin-bottom-3, #margin-bottom-4, #margin-bottom-5, #margin-bottom-6, #margin-bottom-7, #margin-bottom-8, #margin-bottom-9, #margin-bottom-10, #margin-bottom-11, #margin-bottom-12, #margin-bottom-13, #margin-bottom-14, #margin-bottom-15, #margin-bottom-16, #margin-bottom-17 {
     margin-bottom: 0;
 }
 
 .margin-fixed-right {
     margin-right: 20px; /* Збережіть відстань справа для тексту */
 }
-
 
 
 /* ------------------------------------------------------------------ */
@@ -678,7 +648,11 @@ footer .copyright {
     max-width: 20px;
     max-height: 20px;
 }
-.button-period{margin:40px 0 40px 0}
+
+.button-period {
+    margin: 40px 0 40px 0
+}
+
 .photo-text {
     text-align: center;
     padding-top: 5px;

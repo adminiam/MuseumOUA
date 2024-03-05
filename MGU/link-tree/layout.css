@@ -12,24 +12,24 @@ html, body {
 }
 
 .swiper-button-next::after, .swiper-button-prev::after {
-    font-size: 35px!important;
-    font-weight: bold!important;
+    font-size: 35px !important;
+    font-weight: bold !important;
     color: #ffffff;
-    opacity: 0.7!important;
+    opacity: 0.7 !important;
 }
 
-.swiper-button-next:hover::after, .swiper-button-prev:hover::after{
-    color: #ffffff!important;
-    opacity: 1!important;
+.swiper-button-next:hover::after, .swiper-button-prev:hover::after {
+    color: #ffffff !important;
+    opacity: 1 !important;
 }
 
-.swiper-pagination-bullet{
-    margin-bottom: 40px!important;
-    background-color: #ccc!important;
+.swiper-pagination-bullet {
+    margin-bottom: 40px !important;
+    background-color: #ccc !important;
 }
 
-.swiper-pagination-bullet-active{
-    background: #fff!important;
+.swiper-pagination-bullet-active {
+    background: #fff !important;
 }
 
 .swiper-slide img {
@@ -49,7 +49,8 @@ html, body {
 
 body {
     background: linear-gradient(to bottom, #1b3a37, #58bea3) no-repeat fixed;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;;
 }
 
 header {
@@ -74,6 +75,7 @@ header .logo {
     z-index: 991;
     position: relative;
 }
+
 .oua-logo-img {
     width: 100px;
     height: auto;
@@ -114,10 +116,6 @@ header .header-social li a:hover {
     color: #11ABB0;
 }
 
-.a-underline {
-    text-decoration: underline;
-}
-
 .years-font-size {
     font-size: 18px;
 }
@@ -146,30 +144,6 @@ video {
     border-radius: 10px;
 }
 
-.sv-text {
-    font-size: 16px;
-}
-
-.sv-text-period-small {
-    font-size: 12px;
-}
-
-.sv-text-period-medium {
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.sv-text-period-italic {
-    font-family: 'Montserrat Alternates', sans-serif;
-}
-
-.sv-text-period-large {
-    font-size: 21px;
-}
-
-.sv-text-bold {
-    font-weight: bold;
-}
 
 .slider-linkTree {
     max-width: 70%;

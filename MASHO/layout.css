@@ -9,6 +9,7 @@ html, body {
 
 body {
     background: linear-gradient(to bottom, #0A2B4B, #c3f3ff) no-repeat fixed;
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -133,9 +134,6 @@ section.in-view {
     opacity: 1;
     transform: translateY(0);
 }
-.a-underline {
-    text-decoration: underline;
-}
 
 video {
     width: 100%;
@@ -152,32 +150,6 @@ video {
     font-family: 'Montserrat', sans-serif;
 }
 
-.sv-text {
-    font-size: 16px;
-}
-
-.sv-text-period-small {
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.sv-text-period-medium {
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.sv-text-period-large {
-    font-size: 21px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.sv-text-bold {
-    font-weight: bold;
-}
-
-.sv-text-period-italic{
-    font-family: 'Montserrat Alternates', sans-serif;
-}
 
 .swiper {
     width: 100%;

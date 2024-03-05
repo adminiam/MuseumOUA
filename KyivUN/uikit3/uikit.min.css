@@ -5583,8 +5583,12 @@ ul.uk-nav-sub {
 }
 
 .uk-text-large {
-    font-size: 1.5rem;
+    font-size: 21px;
     line-height: 1.5
+}
+
+.uk-text-underline {
+    text-decoration: underline;
 }
 
 .uk-text-default {
@@ -5597,7 +5601,7 @@ ul.uk-nav-sub {
 }
 
 .uk-text-normal {
-    font-weight: 400
+    font-weight: 500
 }
 
 .uk-text-bold {
