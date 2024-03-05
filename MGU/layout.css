@@ -225,34 +225,6 @@ video {
     font-weight: bold;
 }
 
-.sv-text {
-    font-size: 16px;
-}
-
-.sv-text-period-small {
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.sv-text-period-medium {
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.sv-text-period-large {
-    font-size: 21px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.sv-text-period-italic {
-    font-family: 'Montserrat Alternates', sans-serif;
-}
-
-.sv-text-bold {
-    font-weight: bold;
-}
-
-
 .swiper {
     width: 100%;
     max-width: 800px;

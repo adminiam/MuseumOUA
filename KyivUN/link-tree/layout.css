@@ -17,24 +17,24 @@ html, body {
 }
 
 .swiper-button-next::after, .swiper-button-prev::after {
-    font-size: 35px!important;
-    font-weight: bold!important;
+    font-size: 35px !important;
+    font-weight: bold !important;
     color: #ffffff;
-    opacity: 0.7!important;
+    opacity: 0.7 !important;
 }
 
-.swiper-button-next:hover::after, .swiper-button-prev:hover::after{
-    color: #ffffff!important;
-    opacity: 1!important;
+.swiper-button-next:hover::after, .swiper-button-prev:hover::after {
+    color: #ffffff !important;
+    opacity: 1 !important;
 }
 
-.swiper-pagination-bullet{
-    margin-bottom: 40px!important;
-    background-color: #ccc!important;
+.swiper-pagination-bullet {
+    margin-bottom: 40px !important;
+    background-color: #ccc !important;
 }
 
-.swiper-pagination-bullet-active{
-    background: #fff!important;
+.swiper-pagination-bullet-active {
+    background: #fff !important;
 }
 
 .swiper-slide img {
@@ -56,10 +56,6 @@ body {
     background: linear-gradient(to bottom, #07575b, #c4dfe6) no-repeat fixed;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
-}
-
-.a-underline{
-    text-decoration: underline;
 }
 
 header {
@@ -88,10 +84,6 @@ header .logo {
 .all-logo-img {
     width: 210px;
     height: auto;
-}
-
-.a-underline {
-    text-decoration: underline;
 }
 
 .oua-logo-img {
@@ -153,17 +145,20 @@ video {
 }
 
 
-.slider-linkTree{
-    max-width:70% ;
+.slider-linkTree {
+    max-width: 70%;
 }
+
 section {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-img{max-width: 100%;
-border-radius: 10px}
+img {
+    max-width: 100%;
+    border-radius: 10px
+}
 
 #universities-carousel, #video-carousel, #sv-information {
     padding-top: 8.3em;

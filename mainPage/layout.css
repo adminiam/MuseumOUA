@@ -8,6 +8,7 @@ html, body {
 body {
     background: no-repeat linear-gradient(214deg, rgba(68, 45, 27, 1) 0%, rgba(209, 162, 121, 1) 50%, rgba(68, 45, 27, 1) 100%);
     font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
     overflow: hidden;
 }
 
@@ -182,10 +183,6 @@ video {
     overflow: hidden;
     border-right: 3px solid white;
     animation: cursor 0.95s step-end infinite, printed_text 4s steps(26);
-}
-
-.sv-text {
-    font-size: 18px;
 }
 
 .splide__track {
