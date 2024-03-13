@@ -1,6 +1,3 @@
-/*---------------------------------------------------------------------*/
-/*Swiper slider*/
-/*---------------------------------------------------------------------*/
 var swiperThumb = new Swiper(".mySwiper", {
     loop: true,
     spaceBetween: 10,
@@ -37,12 +34,7 @@ var swiperThreeSlides = new Swiper(".mySwiper-3-slides", {
     spaceBetween: 10,
     slidesPerView: 3
 });
-/*---------------------------------------------------------------------*/
 
-
-/*---------------------------------------------------------------------*/
-/*Section appearance*/
-/*---------------------------------------------------------------------*/
 document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('section');
     const config = {
@@ -64,12 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(section);
     });
 });
-/*---------------------------------------------------------------------*/
-
-
-/*---------------------------------------------------------------------*/
-/*Animated text*/
-/*---------------------------------------------------------------------*/
 function checkWidth() {
     const textElement = document.getElementById('animated-text');
 
@@ -88,7 +74,6 @@ function checkWidth() {
 
 window.addEventListener('load', checkWidth);
 window.addEventListener('resize', checkWidth);
-/*---------------------------------------------------------------------*/
 
 
 
