@@ -44,6 +44,7 @@ html, body {
 
 body {
     background: linear-gradient(to bottom, #001E3F, #457391) no-repeat fixed;
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -317,10 +318,6 @@ video {
     margin-right: 20px; /* Збережіть відстань справа для тексту */
 }
 
-.h2-period {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-}
 
 /* ------------------------------------------------------------------ */
 /* j. Footer
