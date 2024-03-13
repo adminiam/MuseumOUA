@@ -6979,6 +6979,10 @@ iframe[data-uk-cover], iframe[uk-cover] {
         margin-top: 70px !important
     }
 
+    .uk-margin-extra-large-top {
+        margin-top: 150px !important
+    }
+
     .uk-margin-large-bottom {
         margin-bottom: 70px !important
     }
