@@ -1,4 +1,21 @@
-/* Общие стили */
+/*=====================================================================
+
+TOC:
+a. General Styles
+b. Swiper-Slider styles
+c. Video styles
+d. Text-animation styles
+e. Go-Top-Button styles
+f. Overlay Button styles
+g. Column styles
+h. Common styles
+
+===================================================================== */
+
+
+/*---------------------------------------------------------------------*/
+/*General styles*/
+/*---------------------------------------------------------------------*/
 html, body {
     scroll-behavior: smooth;
     position: relative;
@@ -10,6 +27,156 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     overflow: hidden;
+}
+
+header {
+    background: #1f150e no-repeat fixed;
+    /*linear-gradient(to bottom, #1f150e, #ddbc95) no-repeat fixed;*/
+    /*#575757*/
+    height: 115px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 990;
+}
+
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+li {
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.all-logo-img {
+    width: 210px;
+    height: auto;
+}
+
+/*---------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------*/
+/*Swiper-Slider styles*/
+/*---------------------------------------------------------------------*/
+.swiper {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 0;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 35px !important;
+    font-weight: bold !important;
+    color: #ffffff;
+    opacity: 0.7 !important;
+}
+
+.swiper-button-next:hover::after, .swiper-button-prev:hover::after {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: #ccc !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #fff !important;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.uk-navbar-dropdown-nav li a {
+    display: block;
+}
+
+#offcanvas-nav .uk-offcanvas-bar {
+    background-color: #1f150e;
+    height: 430px;
+    margin: 115px 0 0 0;
+}
+
+.uk-navbar-nav > li > a:hover,
+.uk-navbar-nav > li > a:focus,
+.uk-navbar-nav > li > a:active,
+.uk-nav > li > label:hover,
+.uk-nav > li > a:hover {
+    color: #685040;
+}
+
+/*---------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------*/
+/*Video styles*/
+/*---------------------------------------------------------------------*/
+.video-yt {
+    width: 900px;
+    height: 500px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.img,
+.video {
+    border-radius: 10px;
+}
+
+/*---------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------*/
+/*Text-animation styles*/
+/*---------------------------------------------------------------------*/
+.wrapper-animated-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.animated-text {
+    width: 58rem;
+    height: 4rem;
+    color: white;
+    font-size: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid white;
+    animation: cursor 0.95s step-end infinite, printed_text 4s steps(26);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 @keyframes cursor {
@@ -32,264 +199,12 @@ body {
     }
 }
 
-.section-head {
-    padding: 0 4%;
-    text-align: center;
-}
+/*---------------------------------------------------------------------*/
 
-.section-head h1 {
-    font: 20px/36px 'montserrat-bold', sans-serif;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-bottom: 12px;
-}
 
-li {
-    text-align: center;
-}
-
-/* Стили заголовка */
-
-header {
-    background: #1f150e no-repeat fixed;
-    /*linear-gradient(to bottom, #1f150e, #ddbc95) no-repeat fixed;*/
-    /*#575757*/
-    height: 115px;
-    width: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 990;
-}
-
-.all-logo-img {
-    width: 210px;
-    height: auto;
-}
-
-.uk-navbar-dropdown-nav li a {
-    display: block;
-}
-
-#dropdown-toggle:checked + .uk-navbar-dropdown {
-    display: block;
-}
-
-.uk-navbar-dropdown {
-    display: none;
-}
-
-#offcanvas-nav .uk-offcanvas-bar {
-    background-color: #1f150e;
-    height: 430px;
-    margin: 115px 0 0 0;
-}
-
-.uk-navbar-nav > li > a:hover,
-.uk-navbar-nav > li > a:focus,
-.uk-navbar-nav > li > a:active,
-.uk-nav > li > label:hover,
-.uk-nav > li > a:hover {
-    color: #685040;
-}
-
-.border-bottom {
-    border-bottom: 2px solid #2D2E34;
-    padding: 0 0 10px 0;
-    text-align: center;
-}
-
-section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-section.in-view {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Стили раздела Hero */
-#hero {
-    /*padding-top: 9vh;*/
-    overflow: hidden;
-    position: relative;
-    height: 100vh;
-}
-
-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.video-yt {
-    width: 900px;
-    height: 500px;
-}
-
-.video-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.button-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.custom-button {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #e1e1e1;
-    font-size: 17px;
-    border-radius: 5px;
-    padding: 20px 30px;
-    border: none;
-    cursor: pointer;
-}
-
-.custom-button:hover {
-    background-color: rgba(62, 225, 255, 0.56);
-    color: #e1e1e1;
-}
-
-.wrapper-animated-text {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.animated-text {
-    width: 58rem;
-    height: 4rem;
-    color: white;
-    font-size: 40px;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid white;
-    animation: cursor 0.95s step-end infinite, printed_text 4s steps(26);
-}
-
-.splide__track {
-    border-radius: 10px;
-}
-
-.splide__arrow {
-    background: none !important;
-    width: 2.8em !important;
-}
-
-.splide__arrow svg {
-    width: 2.8em !important;
-    height: 2.8em !important;
-    fill: rgba(255, 255, 255, 1) !important;
-}
-
-/* Стили раздела Features */
-#universities-carousel,
-#video-carousel,
-#sv-information {
-    padding-top: 155px;
-    padding-bottom: 78px;
-}
-
-#universities-carousel .feature,
-#video-carousel .feature,
-#sv-information .feature {
-    margin-top: 30px;
-    margin-bottom: 54px;
-}
-
-.feature-media {
-    display: flex;
-    align-items: center;
-}
-
-#universities-carousel .right,
-#video-carousel .right,
-#sv-information .right {
-    float: right;
-}
-
-#universities-carousel .left,
-#video-carousel .left,
-#sv-information .left {
-    float: left;
-}
-
-#universities-carousel h3,
-#video-carousel h3,
-#sv-information h3 {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.swiper {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    margin: 0;
-}
-
-.swiper-button-next::after, .swiper-button-prev::after {
-    font-size: 35px!important;
-    font-weight: bold!important;
-    color: #ffffff;
-    opacity: 0.7!important;
-}
-
-.swiper-button-next:hover::after, .swiper-button-prev:hover::after{
-    color: #ffffff!important;
-    opacity: 1!important;
-}
-
-.swiper-pagination-bullet{
-    background-color: #ccc!important;
-}
-
-.swiper-pagination-bullet-active{
-    background: #fff!important;
-}
-
-.swiper-slide img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-
-.display {
-    display: flex;
-}
-
-.img,
-.video {
-    border-radius: 10px;
-}
-
-.six.columns.right.text,
-.six.columns.left.text {
-    border-radius: 10px;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.2);
-    margin: 0 0 0 15px;
-}
-
-/* Стили кнопки "Наверх" */
+/*---------------------------------------------------------------------*/
+/*Go-Top-Button styles*/
+/*---------------------------------------------------------------------*/
 .go-top-container {
     text-align: center;
 }
@@ -312,6 +227,88 @@ video {
     max-width: 20px;
     max-height: 20px;
 }
+
+/*---------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------*/
+/*Overlay Button styles*/
+/*---------------------------------------------------------------------*/
+.custom-button {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #e1e1e1;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 20px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*---------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------*/
+/*Column styles*/
+/*---------------------------------------------------------------------*/
+#universities-carousel, #video-carousel, #sv-information {
+    padding-top: 155px;
+    padding-bottom: 78px;
+}
+
+#universities-carousel .feature, #video-carousel .feature, #sv-information .feature {
+    margin-top: 30px;
+    margin-bottom: 54px;
+}
+
+.feature-media {
+    display: flex;
+    align-items: center;
+}
+
+.six.columns.right.text,
+.six.columns.left.text {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0 0 0 15px;
+}
+
+#universities-carousel h3, #video-carousel h3, #sv-information h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#hero {
+    /*padding-top: 9vh;*/
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+.display {
+    display: flex;
+}
+
+/*---------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------*/
+/*Common styles*/
+/*---------------------------------------------------------------------*/
+.border-bottom {
+    border-bottom: 2px solid #2D2E34;
+    padding: 0 0 10px 0;
+    text-align: center;
+}
+
+/*---------------------------------------------------------------------*/
 
 
 
