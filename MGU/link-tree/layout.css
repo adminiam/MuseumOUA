@@ -82,11 +82,14 @@ header .logo {
 }
 
 .img-documentary {
+    max-width: 600px;
     border-radius: 10px;
     margin: 10px 0 10px 0;
 }
 
 .documentary-photo {
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: grid;
     place-items: center;
 }
