@@ -27,7 +27,6 @@ html, body {
 }
 
 .swiper-pagination-bullet{
-    margin-bottom: 40px!important;
     background-color: #ccc!important;
 }
 
@@ -279,7 +278,6 @@ video {
     text-align: center;
     padding-top: 5px;
 }
-
 .six.columns.right.text, .six.columns.left.text {
     border-radius: 20px;
     padding: 20px;
