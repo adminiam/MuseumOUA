@@ -50,7 +50,8 @@ html, body {
 body {
     background: linear-gradient(to bottom, #1b3a37, #58bea3) no-repeat fixed;
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
 }
 
 header {

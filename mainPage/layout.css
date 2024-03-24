@@ -19,7 +19,8 @@ h. Common styles
 html, body {
     scroll-behavior: smooth;
     position: relative;
-    overflow-x: hidden
+    overflow-x: hidden;
+    text-align: justify;
 }
 
 body {
