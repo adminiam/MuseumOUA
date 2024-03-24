@@ -27,7 +27,6 @@ html, body {
 }
 
 .swiper-pagination-bullet{
-    margin-bottom: 40px!important;
     background-color: #ccc!important;
 }
 
@@ -44,6 +43,7 @@ html, body {
 
 body {
     background: linear-gradient(to bottom, #001E3F, #457391) no-repeat fixed;
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -278,7 +278,6 @@ video {
     text-align: center;
     padding-top: 5px;
 }
-
 .six.columns.right.text, .six.columns.left.text {
     border-radius: 20px;
     padding: 20px;
@@ -317,10 +316,6 @@ video {
     margin-right: 20px; /* Збережіть відстань справа для тексту */
 }
 
-.h2-period {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-}
 
 /* ------------------------------------------------------------------ */
 /* j. Footer
