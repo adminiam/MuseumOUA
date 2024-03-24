@@ -62,6 +62,7 @@ html, body {
 body {
     background: linear-gradient(to bottom, #001E3F, #457391) no-repeat fixed;
     font-family: 'Montserrat', sans-serif;
+    text-align: justify;
 }
 
 .a-underline{
