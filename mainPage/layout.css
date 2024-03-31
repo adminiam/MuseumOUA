@@ -245,6 +245,14 @@ video {
     cursor: pointer;
 }
 
+.custom-button:hover {
+    background-color: rgba(47, 167, 190, 0.56);
+}
+
+a.custom-button:hover{
+    color: #ffffff;
+}
+
 .button-container {
     position: absolute;
     top: 50%;
