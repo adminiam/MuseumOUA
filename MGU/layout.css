@@ -32,15 +32,6 @@ body {
     opacity: 1 !important;
 }
 
-.swiper-pagination-bullet {
-    margin-bottom: 40px !important;
-    background-color: #ccc !important;
-}
-
-.swiper-pagination-bullet-active {
-    background: #fff !important;
-}
-
 .swiper-slide img {
     width: 100%;
     height: 100%;

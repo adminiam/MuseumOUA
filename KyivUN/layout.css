@@ -26,6 +26,7 @@ body {
     background: linear-gradient(to bottom, #07575b, #c4dfe6) no-repeat fixed;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    text-align: justify;
 }
 
 header {
@@ -97,15 +98,6 @@ footer {
     opacity: 1 !important;
 }*/
 
-.swiper-pagination-bullet {
-    margin-bottom: 40px !important;
-    background-color: #ccc !important;
-}
-
-.swiper-pagination-bullet-active {
-    background: #fff !important;
-}
-
 .swiper-slide img {
     width: 100%;
     height: 100%;
@@ -138,8 +130,7 @@ footer {
 /*---------------------------------------------------------------------*/
 .video-yt {
     width: 900px;
-    height: 600px;
-    border-radius: 10px;
+    height: 500px;
 }
 
 .video-container {
@@ -153,41 +144,6 @@ footer {
 }
 
 /*---------------------------------------------------------------------*/
-
-
-/*!*---------------------------------------------------------------------*!
-!*Text-animation styles*!
-!*---------------------------------------------------------------------*!
-.wrapper-animated-text {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.animated-text {
-    width: 58.4rem;
-    color: white;
-    font-size: 45px;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid white;
-    animation: cursor 0.95s step-end infinite, printed_text 5s steps(26);
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-!*---------------------------------------------------------------------*!*/
 
 
 /*---------------------------------------------------------------------*/
@@ -365,6 +321,13 @@ footer ul li a:visited {
 
 .years-font-size {
     font-size: 18px;
+}
+
+#universities-carousel h3, #video-carousel h3, #sv-information h3 {
+    font: 16px/24px 'montserrat-bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* color: #ffffff; */
 }
 
 /*---------------------------------------------------------------------*/
