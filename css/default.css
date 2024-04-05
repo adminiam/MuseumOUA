@@ -171,12 +171,15 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
+.main-pages-decoration{
+    text-decoration: none;
+}
+
 /* 2. Typography
       Vertical rhythm with leading derived from 6
 --------------------------------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-    text-align: left;
     color: #ffffff;
     font-family: 'montserrat-bold', sans-serif;
     font-weight: normal;
@@ -194,6 +197,7 @@ h1 {
 }
 
 h2 {
+    text-align: left;
     font-size: 28px;
     line-height: 36px;
     margin-bottom: 6px;
