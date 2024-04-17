@@ -5,15 +5,27 @@
 *   05-02-2014
 /* ================================================================== */
 
-@media only screen and (max-width: 992px) {
-    h3 {
-
-    }
-}
-
 /* screenwidth less than or equal 900px
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 900px) {
+
+    section{
+        opacity: unset;
+        transform: unset;
+        transition: unset;
+    }
+
+    section.in-view {
+        opacity: unset;
+        transform: unset;
+    }
+
+    body {
+        text-align: left;
+    }
+    p{
+        font-size: 16px!important;
+    }
 
     /* General and Common Styles */
     .section-head h1 {
@@ -85,11 +97,11 @@
 
 @media only screen and (max-width: 1280px) {
 
-    .feature{
+    .feature {
         flex-direction: column;
     }
 
-    .container-left-text, .container-right-text{
+    .container-left-text, .container-right-text {
         width: auto;
     }
 
@@ -97,31 +109,31 @@
         margin: 0 0 10px 0;
     }
 
-    .margin-fixed-left{
+    .margin-fixed-left {
         margin: 0 0 20px 0;
     }
 
-    #margin-bottom{
+    #margin-bottom {
         margin-bottom: 20px;
     }
 
-    .img-misc{
+    .img-misc {
         margin: 0 0 20px 0;
     }
 
-    #margin-bottom-1{
+    #margin-bottom-1 {
         margin: 0 0 20px 0;
     }
 
-    #margin-bottom-2{
+    #margin-bottom-2 {
         margin: 0 0 20px 0;
     }
 
-    #margin-bottom-3{
+    #margin-bottom-3 {
         margin: 0 0 20px 0;
     }
 
-    #margin-bottom-7{
+    #margin-bottom-7 {
         margin: 0 0 20px 0;
     }
 
@@ -379,7 +391,7 @@
 
 }
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1200px) {
     .uk-navbar-nav {
         font-size: 13px;
     }
@@ -410,13 +422,6 @@
 
 /* make sure the menu is visible on larger screens
   -------------------------------------------------------------------------- */
-@media only screen and (max-width: 1400px) {
-  
-
-}
-
-
-
 @media only screen and (max-width: 1199px) {
     .fixed-size {
         height: 110px;
@@ -426,7 +431,7 @@
 
 @media only screen and (max-width: 1034px) {
     .fixed-size {
-        height: 110px;
+        height: 130px;
         padding: 20px 30px;
 
     }
@@ -486,8 +491,8 @@
     }
 }
 
-    .dropdown-toggle:hover {
-        color: #ffffff;
+.dropdown-toggle:hover {
+    color: #ffffff;
 }
 
 @media only screen and (max-width: 545px) {

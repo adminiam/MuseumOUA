@@ -194,12 +194,6 @@ video {
     object-fit: cover;
 }
 
-.video-yt {
-    width: 900px;
-    height: 500px;
-}
-
-
 .video-container {
     position: relative;
     width: 100%;

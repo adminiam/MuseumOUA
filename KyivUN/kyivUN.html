@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="media-queries.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -197,11 +198,9 @@
                         <li>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
-                                    <iframe class="slider-img video-yt"
-                                            src="https://www.youtube.com/embed/rgx9i5dfEO4?si=JNE6FzrzMUyTbSQb"
-                                            title="YouTube video player"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            allowfullscreen></iframe>
+                                    <video class="video-js vjs-default-skin" controls data-youtube-id="rgx9i5dfEO4">
+                                        <source src="https://www.youtube.com/watch?v=rgx9i5dfEO4" type="video/youtube">
+                                    </video>
                                 </div>
                                 <div class="uk-card-body fixed-size">
                                     <h3 class="uk-card-title">Перший День знань у самостійному Київському університеті
@@ -212,11 +211,9 @@
                         <li>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
-                                    <iframe class="slider-img video-yt"
-                                            src="https://www.youtube.com/embed/cT929pUHjws?si=udWXVJ-W7RzaWtuv"
-                                            title="YouTube video player" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <video class="video-js vjs-default-skin" controls data-youtube-id="cT929pUHjws">
+                                        <source src="https://www.youtube.com/watch?v=cT929pUHjws" type="video/youtube">
+                                    </video>
                                 </div>
                                 <div class="uk-card-body fixed-size">
                                     <h3 class="uk-card-title">Урочисте відкриття спортивно-оздоровчого комплексу</h3>
@@ -226,11 +223,9 @@
                         <li>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
-                                    <iframe class="slider-img video-yt"
-                                            src="https://www.youtube.com/embed/3cFcoU-PRRo?si=yvJkIQEzl7fZkTAH"
-                                            title="YouTube video player" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <video class="video-js vjs-default-skin" controls data-youtube-id="3cFcoU-PRRo">
+                                        <source src="https://www.youtube.com/watch?v=3cFcoU-PRRo" type="video/youtube">
+                                    </video>
                                 </div>
                                 <div class="uk-card-body fixed-size">
                                     <h3 class="uk-card-title">Міс Київського інституту інтелектуальної власності 2019
@@ -243,11 +238,9 @@
                         <li>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
-                                    <iframe class="slider-img video-yt"
-                                            src="https://www.youtube.com/embed/flItbPfkdJc?si=Hh707p6yAKSWl0lN"
-                                            title="YouTube video player" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <video class="video-js vjs-default-skin" controls data-youtube-id="flItbPfkdJc">
+                                        <source src="https://www.youtube.com/watch?v=flItbPfkdJc" type="video/youtube">
+                                    </video>
                                 </div>
                                 <div class="uk-card-body fixed-size">
                                     <h3 class="uk-card-title">Зустріч студентів КІІВП із відомим журналістом та шоуменом
@@ -321,6 +314,8 @@
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/videojs-youtube@3.0.1/dist/Youtube.min.js"></script>
 <script src="../js/main.js"></script>
 <script src="../js/uikit3/uikit.min.js"></script>
 <script src="../js/uikit3/uikit-icons.min.js"></script>

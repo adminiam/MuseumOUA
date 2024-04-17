@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="media-queries.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -187,11 +188,9 @@
                         <li>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
-                                    <iframe class="slider-img video-yt"
-                                            src="https://www.youtube.com/embed/T5lcaUo0UdA?si=R2jFuNU4lJfJ8rJW"
-                                            title="YouTube video player" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <video class="video-js vjs-default-skin" controls data-youtube-id="T5lcaUo0UdA">
+                                        <source src="https://www.youtube.com/watch?v=T5lcaUo0UdA" type="video/youtube">
+                                    </video>
                                 </div>
                                 <div class="uk-card-body fixed-size">
                                     <h3 class="uk-card-title">Створення шкільного парламенту</h3>
@@ -201,11 +200,9 @@
                         <li>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
-                                    <iframe class="slider-img video-yt"
-                                            src="https://www.youtube.com/embed/LQ2PW9CTEv4?si=UKMWWiQL3H2uiikN"
-                                            title="YouTube video player" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <video class="video-js vjs-default-skin" controls data-youtube-id="LQ2PW9CTEv4">
+                                        <source src="https://www.youtube.com/watch?v=LQ2PW9CTEv4" type="video/youtube">
+                                    </video>
                                 </div>
                                 <div class="uk-card-body fixed-size">
                                     <h3 class="uk-card-title">Відкриття Міжнародної академічної школи Одеса</h3>
@@ -215,21 +212,22 @@
                         <li>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
-                                    <iframe class="slider-img video-yt" src="https://www.youtube.com/embed/5h911nR9JxE?si=eCPWbEiMKrqBDgyP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <video class="video-js vjs-default-skin" controls data-youtube-id="5h911nR9JxE">
+                                        <source src="https://www.youtube.com/watch?v=5h911nR9JxE" type="video/youtube">
+                                    </video>
                                 </div>
                                 <div class="uk-card-body fixed-size">
-                                    <h3 class="uk-card-title">Відкриття спортивно-оздоровчого комплексу Школи майбутнього</h3>
+                                    <h3 class="uk-card-title">Відкриття спортивно-оздоровчого комплексу Школи
+                                        майбутнього</h3>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
-                                    <iframe class="slider-img video-yt" id="yt-player"
-                                            src="https://www.youtube.com/embed/Uota3BwK0-g?si=aTDZEQtT6bj8STWd"
-                                            title="YouTube video player"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            allowfullscreen></iframe>
+                                    <video class="video-js vjs-default-skin" controls data-youtube-id="Uota3BwK0-g">
+                                        <source src="https://www.youtube.com/watch?v=Uota3BwK0-g" type="video/youtube">
+                                    </video>
                                 </div>
                                 <div class="uk-card-body fixed-size">
                                     <h3 class="uk-card-title">МАШО: історія створення школи майбутнього</h3>
@@ -302,6 +300,8 @@
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/videojs-youtube@3.0.1/dist/Youtube.min.js"></script>
 <script src="../js/main.js"></script>
 <script src="../js/uikit3/uikit.min.js"></script>
 <script src="../js/uikit3/uikit-icons.min.js"></script>

@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="media-queries.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/videojs-resolution-switcher@0.4.2/lib/videojs-resolution-switcher.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -224,12 +226,9 @@
                         <li>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
-                                    <iframe class="slider-img video-yt"
-                                            src="https://www.youtube.com/embed/E25D-qVl5vs?si=9wtxrYKMBTqOKAwy"
-                                            title="YouTube video player" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+                                    <video class="video-js vjs-default-skin" controls data-youtube-id="E25D-qVl5vs">
+                                        <source src="https://www.youtube.com/watch?v=E25D-qVl5vs" type="video/youtube">
+                                    </video>
                                 </div>
                                 <div class="uk-card-body fixed-size">
                                     <h3 class="uk-card-title">Кінофільм з нагоди 20-ї річниці заснування університету</h3>
@@ -239,11 +238,9 @@
                         <li>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
-                                    <iframe class="slider-img video-yt"
-                                            src="https://www.youtube.com/embed/rQ141HwooQc?si=WCbU9Xc8c7uD2kXq"
-                                            title="YouTube video player"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            allowfullscreen></iframe>
+                                    <video class="video-js vjs-default-skin" controls data-youtube-id="rQ141HwooQc">
+                                        <source src="https://www.youtube.com/watch?v=rQ141HwooQc" type="video/youtube">
+                                    </video>
                                 </div>
                                 <div class="uk-card-body fixed-size">
                                     <h3 class="uk-card-title">Міжнародний гуманітарний університет: 20 років
@@ -254,11 +251,9 @@
                         <li>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
-                                    <iframe class="slider-img video-yt"
-                                            src="https://www.youtube.com/embed/DGRP-N0UXGk?si=L4oS58Im28qpms9i"
-                                            title="YouTube video player" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <video class="video-js vjs-default-skin" controls data-youtube-id="DGRP-N0UXGk">
+                                        <source src="https://www.youtube.com/watch?v=DGRP-N0UXGk" type="video/youtube">
+                                    </video>
                                 </div>
                                 <div class="uk-card-body fixed-size">
                                     <h3 class="uk-card-title">Кінофільм з нагоди 15-ї річниці заснування університету</h3>
@@ -270,11 +265,9 @@
                         <li>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
-                                    <iframe class="slider-img video-yt"
-                                            src="https://www.youtube.com/embed/Y17CR8LNqNI?si=3Ele8K1hnXzIn7jd"
-                                            title="YouTube video player" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <video class="video-js vjs-default-skin" controls data-youtube-id="Y17CR8LNqNI">
+                                        <source src="https://www.youtube.com/watch?v=Y17CR8LNqNI" type="video/youtube">
+                                    </video>
                                 </div>
                                 <div class="uk-card-body fixed-size">
                                     <h3 class="uk-card-title">Урочисте вручення дипломів магістрам 2017 року
@@ -361,6 +354,9 @@
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/videojs-youtube@3.0.1/dist/Youtube.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/videojs-resolution-switcher@0.4.2/lib/videojs-resolution-switcher.min.js"></script>
 <script src="../js/main.js"></script>
 <script src="../js/uikit3/uikit.min.js"></script>
 <script src="../js/uikit3/uikit-icons.min.js"></script>

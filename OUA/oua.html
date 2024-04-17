@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="media-queries.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -249,11 +250,9 @@
                         <li>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
-                                    <iframe class="slider-img video-yt"
-                                            src="https://www.youtube.com/embed/EQzQDR6_YCY?si=9kc-6xKp0hp5TJvq"
-                                            title="YouTube video player" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <video class="video-js vjs-default-skin" controls data-youtube-id="EQzQDR6_YCY">
+                                        <source src="https://www.youtube.com/watch?v=EQzQDR6_YCY" type="video/youtube">
+                                    </video>
                                 </div>
                                 <div class="uk-card-body fixed-size">
                                     <h3 class="uk-card-title">Історія розвитку Одеської школи права</h3>
@@ -263,11 +262,9 @@
                         <li>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
-                                    <iframe class="slider-img video-yt"
-                                            src="https://www.youtube.com/embed/kXJgEq6fNNw?si=qPI3RAHDObFRKGHq"
-                                            title="YouTube video player" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <video class="video-js vjs-default-skin" controls data-youtube-id="kXJgEq6fNNw">
+                                        <source src="https://www.youtube.com/watch?v=kXJgEq6fNNw" type="video/youtube">
+                                    </video>
                                 </div>
                                 <div class="uk-card-body fixed-size">
                                     <h3 class="uk-card-title">Кінофільм з нагоди 20-ї річниці заснування університету</h3>
@@ -277,11 +274,9 @@
                         <li>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
-                                    <iframe class="slider-img video-yt"
-                                            src="https://www.youtube.com/embed/Y4r1tRaQjWk?si=zmKGm4Jj_Pu_c01t"
-                                            title="YouTube video player"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            allowfullscreen></iframe>
+                                    <video class="video-js vjs-default-skin" controls data-youtube-id="Y4r1tRaQjWk">
+                                        <source src="https://www.youtube.com/watch?v=Y4r1tRaQjWk" type="video/youtube">
+                                    </video>
                                 </div>
                                 <div class="uk-card-body fixed-size">
                                     <h3 class="uk-card-title">Кінофільм з нагоди 25-ї річниці заснування університету</h3>
@@ -291,11 +286,9 @@
                         <li>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
-                                    <iframe class="slider-img video-yt"
-                                            src="https://www.youtube.com/embed/onbRh33MLRs?si=ZRDlK8FoScsLXuR8"
-                                            title="YouTube video player" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <video class="video-js vjs-default-skin" controls data-youtube-id="onbRh33MLRs">
+                                        <source src="https://www.youtube.com/watch?v=onbRh33MLRs" type="video/youtube">
+                                    </video>
                                 </div>
                                 <div class="uk-card-body fixed-size">
                                     <h3 class="uk-card-title">День знань в Одеській юридичній академії</h3>
@@ -394,6 +387,8 @@
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/videojs-youtube@3.0.1/dist/Youtube.min.js"></script>
 <script src="../js/main.js"></script>
 <script src="../js/uikit3/uikit.min.js"></script>
 <script src="../js/uikit3/uikit-icons.min.js"></script>
