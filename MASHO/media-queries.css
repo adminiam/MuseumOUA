@@ -15,6 +15,21 @@
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 900px) {
 
+    section{
+        opacity: unset;
+        transform: unset;
+        transition: unset;
+    }
+
+    section.in-view {
+        opacity: unset;
+        transform: unset;
+    }
+
+    body {
+        text-align: left;
+    }
+
     /* General and Common Styles */
     .section-head h1 {
         font: 18px/30px 'montserrat-bold', sans-serif;
@@ -425,7 +440,7 @@
 
     @media only screen and (max-width: 1034px) {
         .fixed-size {
-            height: 110px;
+            height: 130px;
             padding: 20px 30px;
 
         }
@@ -441,6 +456,10 @@
     }
 
     @media only screen and (max-width: 878px) {
+        .fixed-size {
+            height: 160px;
+        }
+
         .video-yt {
             width: 600px;
             height: 300px;
@@ -512,7 +531,11 @@
         }
     }
 
-    @media only screen and (max-width: 345px) {
+    @media only screen and (max-width: 395px) {
+        .fixed-size {
+            height: 180px;
+        }
+
         .animated-text {
             width: 22.3rem;
             font-size: 17px;

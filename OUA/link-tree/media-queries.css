@@ -16,6 +16,17 @@
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 900px) {
 
+    section{
+        opacity: unset;
+        transform: unset;
+        transition: unset;
+    }
+
+    section.in-view {
+        opacity: unset;
+        transform: unset;
+    }
+
     /* General and Common Styles */
     .section-head h1 {
         font: 18px/30px 'montserrat-bold', sans-serif;

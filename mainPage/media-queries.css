@@ -1,5 +1,19 @@
-
 @media only screen and (max-width: 900px) {
+
+    section{
+        opacity: unset;
+        transform: unset;
+        transition: unset;
+    }
+
+    section.in-view {
+        opacity: unset;
+        transform: unset;
+    }
+
+    body {
+        text-align: left;
+    }
 
     #features .feature {
         margin-bottom: 30px;
@@ -24,12 +38,7 @@
 
 }
 
-@media only screen and (max-width: 1350px) {
-    .video-yt {
-        width: 600px;
-        height: 450px;
-    }
-
+@media only screen and (max-width: 1450px) {
     header {
         height: 90px;
     }
@@ -48,7 +57,7 @@
         padding: 15px;
     }
 
-    #offcanvas-nav .uk-offcanvas-bar{
+    #offcanvas-nav .uk-offcanvas-bar {
         margin: 90px 0 0 0;
     }
 }
@@ -69,7 +78,7 @@
     }
 
 
-    #go-top {
+    /*#go-top {
         position: absolute;
         top: -24px;
         left: 50%;
@@ -100,10 +109,9 @@
 
     #go-top a:hover {
         background: #93654d;
-    }
+    }*/
 
 }
-
 
 
 @media only screen and (max-width: 1199px) {
@@ -118,11 +126,6 @@
         height: 153px;
         padding: 20px 30px;
 
-    }
-
-    .video-yt {
-        width: 600px;
-        height: 350px;
     }
 
     .display {
@@ -141,10 +144,7 @@
 }
 
 @media only screen and (max-width: 878px) {
-    .video-yt {
-        width: 600px;
-        height: 300px;
-    }
+
 }
 
 @media only screen and (max-width: 768px) {

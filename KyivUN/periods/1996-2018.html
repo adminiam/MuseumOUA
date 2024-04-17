@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../layout.css">
     <link rel="stylesheet" href="../media-queries.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -260,10 +261,9 @@
                         <div class="swiper-slide"><img src="img/img75.jpg" alt="">
                             <p class="photo-text">Червень 2017 року. Урочисте відкриття гуртожитку КІІВП</p></div>
                         <div class="swiper-slide">
-                            <iframe class="video-yt" src="https://www.youtube.com/embed/f053cPPuey0?si=1LdT97375kh9lfrp"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
+                            <video class="video-js vjs-default-skin" controls data-youtube-id="f053cPPuey0">
+                                <source src="https://www.youtube.com/watch?v=f053cPPuey0" type="video/youtube">
+                            </video>
                             <p class="photo-text">Червень 2017 року. Урочисте відкриття гуртожитку КІІВП</p></div>
                     </div>
                     <div class="swiper-button-prev"></div>
@@ -467,10 +467,9 @@
                                 переваги співробітництва із Відомством патентів та торговельних марок Азербайджанської
                                 Республіки.</p></div>
                         <div class="swiper-slide">
-                            <iframe class="video-yt" src="https://www.youtube.com/embed/ef6E8cuT4c8?si=VceXypli4HOSAcE3"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
+                            <video class="video-js vjs-default-skin" controls data-youtube-id="ef6E8cuT4c8">
+                                <source src="https://www.youtube.com/watch?v=ef6E8cuT4c8" type="video/youtube">
+                            </video>
                         </div>
                     </div>
                     <div class="swiper-button-prev"></div>
@@ -519,6 +518,8 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/videojs-youtube@3.0.1/dist/Youtube.min.js"></script>
 <script src="../../js/main.js"></script>
 <script src="../../js/uikit3/uikit.min.js"></script>
 <script src="../../js/uikit3/uikit-icons.min.js"></script>

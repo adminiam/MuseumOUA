@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(section);
     });
 });
+
 function checkWidth() {
     const textElement = document.getElementById('animated-text');
 
@@ -74,6 +75,29 @@ function checkWidth() {
 
 window.addEventListener('load', checkWidth);
 window.addEventListener('resize', checkWidth);
+
+function initVideoPlayers() {
+    var videos = document.querySelectorAll('video');
+    for (var i = 0; i < videos.length; i++) {
+        var videoId = videos[i].getAttribute('data-youtube-id');
+        videojs(videos[i], {
+            fluid: true,
+            techOrder: ['youtube'],
+            controls: true,
+            nativeControlsForTouch: false,
+            sources: [{
+                src: 'https://www.youtube.com/watch?v=' + videoId,
+                type: 'video/youtube'
+            }],
+        });
+    }
+}
+
+if (window.addEventListener) {
+    window.addEventListener('load', initVideoPlayers, false);
+} else if (window.attachEvent) {
+    window.attachEvent('onload', initVideoPlayers);
+}
 
 
 
