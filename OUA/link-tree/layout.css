@@ -123,11 +123,6 @@ video {
 .slider-linkTree{
     max-width:70% ;
 }
-section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
 
 img{max-width: 100%;
 border-radius: 10px}

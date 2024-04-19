@@ -15,6 +15,10 @@
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 900px) {
 
+    body {
+        text-align: left;
+    }
+
     /* General and Common Styles */
     .section-head h1 {
         font: 18px/30px 'montserrat-bold', sans-serif;

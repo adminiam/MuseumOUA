@@ -16,6 +16,10 @@
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 900px) {
 
+    body {
+        text-align: left;
+    }
+
     section{
         opacity: unset;
         transform: unset;
