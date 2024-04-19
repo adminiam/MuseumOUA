@@ -77,19 +77,27 @@ window.addEventListener('load', checkWidth);
 window.addEventListener('resize', checkWidth);
 
 function initVideoPlayers() {
+    // Исключение фонового видео
+    var backgroundVideo = document.getElementById('background-video');
+    if (backgroundVideo) {
+        backgroundVideo.removeAttribute('data-youtube-id');
+    }
+
     var videos = document.querySelectorAll('video');
     for (var i = 0; i < videos.length; i++) {
         var videoId = videos[i].getAttribute('data-youtube-id');
-        videojs(videos[i], {
-            fluid: true,
-            techOrder: ['youtube'],
-            controls: true,
-            nativeControlsForTouch: false,
-            sources: [{
-                src: 'https://www.youtube.com/watch?v=' + videoId,
-                type: 'video/youtube'
-            }],
-        });
+        if (videos[i] !== backgroundVideo) { // Проверка, чтобы не инициализировать фоновое видео
+            videojs(videos[i], {
+                fluid: true,
+                techOrder: ['youtube'],
+                controls: true,
+                nativeControlsForTouch: false,
+                sources: [{
+                    src: 'https://www.youtube.com/watch?v=' + videoId,
+                    type: 'video/youtube'
+                }],
+            });
+        }
     }
 }
 
