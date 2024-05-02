@@ -143,19 +143,6 @@ footer {
 /*---------------------------------------------------------------------*/
 /*Go-Top-Button styles*/
 /*---------------------------------------------------------------------*/
-.custom-button {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #e1e1e1;
-    font-size: 17px;
-    border-radius: 5px;
-    padding: 20px 30px;
-    border: none;
-    cursor: pointer;
-}
-
-.custom-button:hover {
-    background-color: rgba(62, 225, 255, 0.56);
-}
 
 .go-top-container {
     text-align: center;
@@ -231,8 +218,6 @@ footer {
     border-radius: 20px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.2);
-    /*margin: 0 15px 0 15px;
-    width: auto;*/
 }
 
 
@@ -290,6 +275,8 @@ footer ul li a:visited {
 .photo-text {
     text-align: center;
     padding-top: 5px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .img-misc {
