@@ -1,0 +1,124 @@
+/*TODO ко всем кнопкам сделать обращение hover*/
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+html, body {
+    scroll-behavior: smooth;
+    position: relative;
+    overflow-x: hidden;
+    text-align: justify;
+}
+
+.go-top-container {
+    text-align: center;
+}
+
+.go-top-button {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 50px;
+}
+
+#kyivUN-body {
+    background: linear-gradient(to bottom, #07575b, #c4dfe6) no-repeat fixed;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+}
+
+#kyivUN-header {
+    background: linear-gradient(to bottom, #07575b, #c4dfe6) no-repeat fixed;
+    height: 115px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 990;
+}
+
+#kyivUN-button {
+    background: #1d5e56;
+}
+
+#mainpage-body {
+    background: no-repeat linear-gradient(214deg, rgba(68, 45, 27, 1) 0%, rgba(209, 162, 121, 1) 50%, rgba(68, 45, 27, 1) 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+#mainpage-header {
+    background: #1f150e no-repeat fixed;
+    height: 115px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 990;
+}
+
+#mainpage-button {
+    background-color: #211f17;
+}
+
+#masho-body {
+    background: linear-gradient(to bottom, #0A2B4B, #c3f3ff) no-repeat fixed;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+#masho-header {
+    background: linear-gradient(to bottom, #0A2B4B, #c3f3ff) no-repeat fixed;
+    height: 107px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 990;
+}
+
+#masho-button {
+    background: #132B4A;
+}
+
+#mgu-body {
+    background: linear-gradient(to bottom, #1b3a37, #58bea3) no-repeat fixed;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+#mgu-header {
+    background: linear-gradient(to bottom, #1b3a37, #58bea3) no-repeat fixed;
+    height: 115px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 990;
+}
+
+#mgu-button {
+    background: #1d5e56;
+}
+
+#oua-body {
+    background: linear-gradient(to bottom, #001E3F, #457391) no-repeat fixed;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+#oua-header {
+    background: linear-gradient(to bottom, #001E3F, #457391) no-repeat fixed;
+    height: 115px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 990;
+}
+
+#oua-button{
+    background: #132B4A;
+}
