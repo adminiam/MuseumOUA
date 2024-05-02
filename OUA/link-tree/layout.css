@@ -133,6 +133,21 @@ border-radius: 10px}
 
 }
 
+.video-container {
+    position: relative;
+    padding-bottom: 66.60%;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
 #universities-carousel .feature, #video-carousel .feature, #sv-information .feature {
     margin-top: 30px;
     margin-bottom: 54px;
