@@ -224,7 +224,6 @@ video {
     /*color: #ffffff;*/
 }
 
-
 .honor-title {
     color: white;
     text-align: center;
@@ -235,9 +234,11 @@ video {
     border-radius: 10px;
 }
 
-.photo-text{
+.photo-text {
     text-align: center;
     padding-top: 5px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .six.columns.right.text, .six.columns.left.text {
