@@ -87,13 +87,6 @@
 
 }
 
-@media only screen and (max-width: 1350px) {
-    .video-yt {
-        width: 650px;
-        height: 440px;
-    }
-}
-
 @media only screen and (max-width: 1280px) {
 
     .container-left-text, .container-right-text{
@@ -415,6 +408,9 @@
 
 }
 
+
+
+
 @media only screen and (max-width: 1199px) {
     .fixed-size {
         height: 110px;
@@ -429,22 +425,12 @@
 
     }
 
-    .video-yt {
-        width: 600px;
-        height: 350px;
-    }
 
     .row .six {
         width: 90%;
     }
 }
 
-@media only screen and (max-width: 878px) {
-    .video-yt {
-        width: 600px;
-        height: 300px;
-    }
-}
 
 @media only screen and (max-width: 768px) {
     .animated-text {
