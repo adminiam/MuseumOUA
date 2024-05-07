@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Музей МОК</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="mainPage/uikit3/uikit.min.css"/>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="mainPage/layout.css">
+    <link rel="stylesheet" href="mainPage/media-queries.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body id="mainpage-body">
+<header id="mainpage-header">
+    <div class="wrapper">
+        <nav class="uk-navbar-container uk-visible@m uk-navbar" uk-navbar="mode: click">
+            <div class="uk-navbar-center">
+                <a class="uk-logo" href="#">
+                    <img class="all-logo-img" alt="" src="images/all-logos.png">
+                </a>
+                <ul class="uk-navbar-nav">
+                    <li><a href="MASHO/masho.html">Міжнародна академічна<br>школа Одеса</a></li>
+                    <li>
+                        <a href="#">Національний університет<br>"Одеська юридична академія"<span
+                                uk-drop-parent-icon></span></a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav uk-animation-slide-bottom-medium">
+                                <li class="border-bottom"><a href="OUA/oua.html">НУ "ОЮА"</a></li>
+                                <li><a href="https://www.onua.edu.ua/ua/virtualnyi-tur-universytetom">Віртуальний тур
+                                    університетом</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="MGU/mgu.html">Міжнародний гуманітарний<br>університет</a></li>
+                    <li><a href="KyivUN/kyivUN.html">Київський університет інтелектуальної<br>власності та права НУ
+                        «ОЮА»</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="uk-navbar uk-navbar-container uk-margin uk-hidden@m">
+            <div class="uk-navbar-right">
+                <a class="uk-navbar-toggle" href="#offcanvas-nav" uk-toggle>
+                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left"></span>
+                </a>
+            </div>
+            <div class="uk-navbar-center">
+                <a class="uk-logo" href="#">
+                    <img class="all-logo-img" alt="" src="images/all-logos.png">
+                </a>
+            </div>
+        </nav>
+        <div id="offcanvas-nav" uk-offcanvas="flip: true; mode: slide">
+            <div class="uk-offcanvas-bar uk-overflow-hidden">
+                <ul class="uk-nav">
+                    <li class="border-bottom"><a href="MASHO/masho.html">Міжнародна академічна школа Одеса</a></li>
+                    <li class="border-bottom">
+                        <a class="uk-margin-small-bottom" href="#">Національний університет "Одеська юридична
+                            академія"</a>
+                        <ul class="uk-nav-sub">
+                            <li><a class="uk-text-muted uk-text-left" href="OUA/oua.html"><span
+                                    uk-icon="icon: chevron-right"></span>НУ "ОЮА"</a></li>
+                            <li><a class="uk-text-muted uk-text-left"
+                                   href="https://www.onua.edu.ua/ua/virtualnyi-tur-universytetom"><span
+                                    uk-icon="icon: chevron-right"></span>Віртуальний тур університетом</a></li>
+                        </ul>
+                    </li>
+                    <li class="border-bottom"><a href="MGU/mgu.html">Міжнародний гуманітарний університет</a></li>
+                    <li class="border-bottom"><a href="KyivUN/kyivUN.html">Київський університет інтелектуальної
+                        власності та права НУ «ОЮА»</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="sections-container">
+    <section id="hero">
+        <div class="video-container">
+            <div class="overlay"></div>
+            <video id="background-video" autoplay muted loop>
+                <source src="video/masho.mp4" type="video/mp4">
+            </video>
+            <div class="wrapper-animated-text">
+                <div class="animated-text">Вітаємо вас у нашому музеї</div>
+            </div>
+            <div class="button-container">
+                <a href="#universities-carousel" class="custom-button main-pages-decoration">
+                    До наших навчальних закладів
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id='universities-carousel'>
+        <div class="honor-container">
+            <div class="row feature responsive">
+                <div class="uk-slider-container-offset mobile-size" uk-slider>
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="slider-img" src="images/masho-od.jpg" width="900" height="600"
+                                             alt="Слайдер" loading="lazy">
+                                    </div>
+                                    <a class="main-pages-decoration" href="MASHO/masho.html">
+                                        <div class="uk-card-body fixed-size">
+                                            <h3 class="uk-card-title">Міжнародна академічна<br>школа Одеса</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="slider-img" src="images/nu-oua.jpg" width="900" height="600"
+                                             alt="Слайдер" loading="lazy">
+                                    </div>
+                                    <a class="main-pages-decoration" href="OUA/oua.html">
+                                        <div class="uk-card-body fixed-size">
+                                            <h3 class="uk-card-title">Національний університет "Одеська юридична
+                                                академія"</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="slider-img" src="images/mgu-od.jpg" width="900" height="600"
+                                             alt="Слайдер"
+                                             loading="lazy">
+                                    </div>
+                                    <a class="main-pages-decoration" href="MGU/mgu.html">
+                                        <div class="uk-card-body fixed-size">
+                                            <h3 class="uk-card-title">Міжнародний гуманітарний<br>університет</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="slider-img" src="images/kyiv-UN2.jpg" width="900" height="600"
+                                             alt="Слайдер"
+                                             loading="lazy">
+                                    </div>
+                                    <a class="main-pages-decoration" href="KyivUN/kyivUN.html">
+                                        <div id="f" class="uk-card-body fixed-size">
+                                            <h3 class="uk-card-title">Київський університет інтелектуальної власності та
+                                                права НУ
+                                                «ОЮА»</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                           uk-slidenav-previous
+                           uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                           uk-slider-item="next"></a>
+                    </div>
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="video-carousel">
+        <div class="honor-container">
+            <div class="row feature responsive">
+                <div class="uk-slider-container-offset mobile-size" uk-slider>
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="Uota3BwK0-g">
+                                            <source src="https://www.youtube.com/watch?v=Uota3BwK0-g" type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">МАШО: історія створення школи майбутнього</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="Y4r1tRaQjWk">
+                                            <source src="https://www.youtube.com/watch?v=Y4r1tRaQjWk" type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">Кінофільм з нагоди 25-ї річниці заснування
+                                            Національного університету "Одеська юридична академія"</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="rQ141HwooQc">
+                                            <source src="https://www.youtube.com/watch?v=rQ141HwooQc" type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">Міжнародний гуманітарний університет: 20 років
+                                            успіху</h3>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="rgx9i5dfEO4">
+                                            <source src="https://www.youtube.com/watch?v=rgx9i5dfEO4" type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">Ювілейний День знань Київського університету
+                                            інтелектуальної власності та права</h3>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                           uk-slidenav-previous
+                           uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                           uk-slider-item="next"></a>
+                    </div>
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id='sv-information'>
+        <div class="row feature design display">
+            <div class="six columns feature-media left img-center">
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/svimg1.jpg" alt="1">
+                        </div>
+                        <div class="swiper-slide"><img src="images/svimg2.jpg" alt="2">
+                        </div>
+                        <div class="swiper-slide"><img src="images/svimg3.jpg" alt="3">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="six columns right text">
+                <h1>Про Засновника</h1>
+                <h2>Ківалов Сергій Васильович</h2>
+                <p>Відомий український політик, державний і громадський діяч, народний депутат України
+                    III–VIII
+                    скликань, –
+                    президент Національного університету «Одеська юридична академія», а також Міжнародного гуманітарного
+                    університету та Київського університету інтелектуальної власності та права, доктор юридичних наук,
+                    професор, академік, заслужений юрист України, почесний працівник прокуратури України, академік
+                    Національної академії правових наук України, керівник Південного регіонального наукового центру
+                    Національної академії правових наук України, академік Національної академії педагогічних наук
+                    України,
+                    відомий в Україні та далеко за її межами фахівець з адміністративного права та процесу, митного
+                    права,
+                    теорії державного управління, удостоєний численних державних та відомчих нагород.
+                </p>
+            </div>
+        </div>
+        <div class="go-top-container">
+            <a href="#universities-carousel" id="mainpage-button" class="go-top-button">
+                <div class="go-top-text">
+                    <img src="images/to%20top.svg" alt="1">
+                </div>
+            </a>
+        </div>
+    </section>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/videojs-youtube@3.0.1/dist/Youtube.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/uikit3/uikit.min.js"></script>
+<script src="js/uikit3/uikit-icons.min.js"></script>
+</body>
+</html>
+
