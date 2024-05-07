@@ -2,10 +2,10 @@
   "name": "vanilla",
   "version": "1.0.0",
   "description": "JavaScript example starter project",
-  "main": "mainPage/index.html",
+  "main": "index.html",
   "scripts": {
-    "start": "parcel mainPage/index.html --open",
-    "build": "parcel build mainPage/index.html"
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
   },
   "dependencies": {
     "@splidejs/splide": "4.0.7",
