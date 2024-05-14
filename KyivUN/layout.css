@@ -286,6 +286,7 @@ footer ul li a:visited {
     padding-top: 5px;
     background: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    white-space: pre-line;
 }
 
 .img-misc {
