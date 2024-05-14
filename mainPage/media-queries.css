@@ -60,6 +60,9 @@
     #offcanvas-nav .uk-offcanvas-bar {
         margin: 90px 0 0 0;
     }
+
+    a:hover {
+    }
 }
 
 @media only screen and (max-width: 1280px) {

@@ -96,6 +96,8 @@
         font-size: 14px;
 
     }
+    a:hover {
+    }
 }
 
 @media only screen and (max-width: 1280px) {
