@@ -209,6 +209,11 @@ video {
     border-radius: 10px;
 }
 
+.video-border{
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
 .slider-yt {
     border-radius: 10px;
     width: 900px;

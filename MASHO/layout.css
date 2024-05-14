@@ -142,6 +142,11 @@ video {
     object-fit: cover;
 }
 
+.video-border {
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
 .swiper {
     width: 100%;
     max-width: 800px;

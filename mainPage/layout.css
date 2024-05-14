@@ -111,6 +111,13 @@ video {
     display: block;
 }
 
+.uk-card-body {
+     display: flex;
+     align-items: center;
+     height: 100%;
+     flex-direction: column;
+ }
+/*TODO изменить*/
 #offcanvas-nav .uk-offcanvas-bar {
     background-color: #1f150e;
     height: 430px;
@@ -141,6 +148,12 @@ video {
 .video {
     border-radius: 10px;
 }
+
+.video-border {
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
 
 /*---------------------------------------------------------------------*/
 
