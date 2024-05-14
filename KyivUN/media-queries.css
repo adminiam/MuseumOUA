@@ -89,6 +89,8 @@
         width: 650px;
         height: 440px;
     }
+    a:hover {
+    }
 }
 
 @media only screen and (max-width: 1280px) {
