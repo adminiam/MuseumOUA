@@ -77,7 +77,6 @@ window.addEventListener('load', checkWidth);
 window.addEventListener('resize', checkWidth);
 
 function initVideoPlayers() {
-    // Исключение фонового видео
     var backgroundVideo = document.getElementById('background-video');
     if (backgroundVideo) {
         backgroundVideo.removeAttribute('data-youtube-id');
