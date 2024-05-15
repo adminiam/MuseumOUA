@@ -1819,7 +1819,8 @@ select.uk-form-width-xsmall {
 
 
 .uk-card-body {
-    display: flow-root;
+    display: grid;
+    place-items: center;
     padding: 35px 15px 0 15px;
 }
 
@@ -3910,7 +3911,7 @@ ul.uk-nav-sub {
     --uk-position-offset: 15px;
     --uk-position-shift-offset: 0;
     --uk-position-viewport-offset: 15px;
-    width: 245px;
+    width: 261px;
     border-radius: 0 0 10px 10px;
     padding: 25px;
     background: linear-gradient(to bottom, #1f150e, #1f1707) no-repeat fixed;
