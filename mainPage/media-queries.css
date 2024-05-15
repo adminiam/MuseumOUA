@@ -61,7 +61,8 @@
         margin: 90px 0 0 0;
     }
 
-    a:hover {
+    .uk-navbar-dropdown{
+        width: 213px;
     }
 }
 
@@ -129,7 +130,7 @@
 
 @media only screen and (max-width: 1034px) {
     .fixed-size {
-        height: 153px;
+        height: 150px;
         padding: 20px 30px;
 
     }
@@ -192,8 +193,8 @@
 
 @media only screen and (max-width: 520px) {
     .animated-text {
-        width: 36.5rem;
-        font-size: 25px;
+        width: 33.5rem;
+        font-size: 23px;
     }
 
     .custom-button {
@@ -208,7 +209,7 @@
 
 @media only screen and (max-width: 345px) {
     .animated-text {
-        width: 22.3rem;
+        width: 24.9rem;
         font-size: 17px;
     }
 

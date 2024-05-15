@@ -131,7 +131,7 @@ video {
 /*---------------------------------------------------------------------*/
 /*Video styles*/
 /*---------------------------------------------------------------------*/
-video{
+video {
     position: absolute;
     z-index: -1;
 }
@@ -146,7 +146,7 @@ video{
     overflow: hidden;
 }
 
-#video-container{
+#video-container {
     height: 100%;
     width: 100vw;
     background-image: url("video/masho.mp4");
@@ -258,7 +258,7 @@ video{
     background-color: rgba(47, 167, 190, 0.56);
 }
 
-a.custom-button:hover{
+a.custom-button:hover {
     color: #ffffff;
 }
 
