@@ -241,8 +241,9 @@ video {
 
 .photo-text {
     text-align: center;
-    padding-top: 5px;
+    margin: 0 0 10px 0;
     background: rgba(0, 0, 0, 0.2);
+    white-space: pre-line; /*FIXME выглядит не очень, надо что-то придумать*/
     border-radius: 10px;
 }
 
