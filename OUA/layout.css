@@ -285,14 +285,12 @@ video {
 .photo-text {
     text-align: center;
     margin: 0 0 10px 0;
-    white-space: pre-line; /*FIXME выглядит не очень, надо что-то придумать*/
+    white-space: pre-line;
 }
 .six.columns.right.text, .six.columns.left.text {
     border-radius: 20px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.2);
-    /*margin: 0 15px 0 15px;
-    width: auto;*/
 }
 
 .left-size {
