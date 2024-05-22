@@ -104,6 +104,7 @@ footer {
 
 #offcanvas-nav .uk-offcanvas-bar {
     background: linear-gradient(to bottom, #07575b, #c4dfe6) no-repeat fixed;
+    height: 375px;
     margin: 110px 0 0 0;
 }
 
