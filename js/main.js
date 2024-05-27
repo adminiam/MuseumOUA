@@ -106,6 +106,18 @@ if (window.addEventListener) {
     window.attachEvent('onload', initVideoPlayers);
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+    var video = document.getElementById('background-video');
+    video.play().catch(function (error) {
+        // Автозапуск может быть заблокирован, ждем взаимодействия с пользователем
+        document.body.addEventListener('click', function () {
+            video.play();
+        });
+    });
+});
+
+
+
 
 
 
