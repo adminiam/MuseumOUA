@@ -111,17 +111,17 @@ header .header-social li a:hover {
     display: none;
 }
 
-#offcanvas-nav .uk-offcanvas-bar {
+#offcanvas-nav-masho .uk-offcanvas-bar-masho {
     background: linear-gradient(to bottom, #0A2B4B, #c3f3ff) no-repeat fixed;
-    height: 375px;
+    height: 450px;
     margin: 110px 0 0 0;
 }
 
-.uk-navbar-nav > li > a:hover,
-.uk-navbar-nav > li > a:focus,
-.uk-navbar-nav > li > a:active,
-.uk-nav > li > label:hover,
-.uk-nav > li > a:hover {
+.uk-navbar-nav-masho > li > a:hover,
+.uk-navbar-nav-masho > li > a:focus,
+.uk-navbar-nav-masho > li > a:active,
+.uk-nav-masho > li > label:hover,
+.uk-nav-masho > li > a:hover {
     color: #2c6dc9;
 }
 
@@ -287,9 +287,8 @@ video {
 /* ------------------------------------------------------------------ */
 
 footer {
-    color: #3c4753;
     font-size: 17px;
-    line-height: 24px;
+    line-height: 1.5em;
     position: relative;
 }
 

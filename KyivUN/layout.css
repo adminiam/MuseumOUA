@@ -102,17 +102,17 @@ footer {
     display: block;
 }
 
-#offcanvas-nav .uk-offcanvas-bar {
+#offcanvas-nav-kyivUN .uk-offcanvas-bar-kyivUN {
     background: linear-gradient(to bottom, #07575b, #c4dfe6) no-repeat fixed;
-    height: 375px;
+    height: 450px;
     margin: 110px 0 0 0;
 }
 
-.uk-navbar-nav > li > a:hover,
-.uk-navbar-nav > li > a:focus,
-.uk-navbar-nav > li > a:active,
-.uk-nav > li > label:hover,
-.uk-nav > li > a:hover {
+.uk-navbar-nav-kyivUN > li > a:hover,
+.uk-navbar-nav-kyivUN > li > a:focus,
+.uk-navbar-nav-kyivUN > li > a:active,
+.uk-nav-kyivUN > li > label:hover,
+.uk-nav-kyivUN > li > a:hover {
     color: #66a5ad;
 }
 
