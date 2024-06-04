@@ -136,17 +136,17 @@ header .header-social li a:hover {
     display: none;
 }
 
-#offcanvas-nav .uk-offcanvas-bar {
+#offcanvas-nav-oua .uk-offcanvas-bar-oua {
     background: linear-gradient(to bottom, #102746, #235881) no-repeat fixed;
-    height: 375px;
+    height: 450px;
     margin: 110px 0 0 0;
 }
 
-.uk-navbar-nav > li > a:hover,
-.uk-navbar-nav > li > a:focus,
-.uk-navbar-nav > li > a:active,
-.uk-nav > li > label:hover,
-.uk-nav > li > a:hover {
+.uk-navbar-nav-oua > li > a:hover,
+.uk-navbar-nav-oua > li > a:focus,
+.uk-navbar-nav-oua > li > a:active,
+.uk-nav-oua > li > label:hover,
+.uk-nav-oua > li > a:hover {
     color: #2c6dc9;
 }
 
