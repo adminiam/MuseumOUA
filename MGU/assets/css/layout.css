@@ -253,13 +253,13 @@ video {
     border-radius: 10px;
 }
 
-#universities-carousel, #video-carousel, #sv-information {
+#universities-carousel, #video-carousel, #main-information {
     padding-top: 155px;
     padding-bottom: 78px;
 
 }
 
-#universities-carousel .feature, #video-carousel .feature, #sv-information .feature {
+#universities-carousel .feature, #video-carousel .feature, #main-information .feature {
     margin-top: 30px;
     margin-bottom: 54px;
 
@@ -290,15 +290,15 @@ video {
     padding: 0 20px; /* Додайте відступи, щоб зберегти відстань між текстом та фото */
 }
 
-#universities-carousel .right, #video-carousel .right, #sv-information .right {
+#universities-carousel .right, #video-carousel .right, #main-information .right {
     float: right;
 }
 
-#universities-carousel .left, #video-carousel .left, #sv-information .left {
+#universities-carousel .left, #video-carousel .left, #main-information .left {
     float: left;
 }
 
-#universities-carousel h3, #video-carousel h3, #sv-information h3 {
+#universities-carousel h3, #video-carousel h3, #main-information h3 {
     font: 16px/24px 'montserrat-bold', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
