@@ -123,17 +123,13 @@ video {
     z-index: -1;
 }
 
-.img,
-.video {
-    border-radius: 10px;
-}
 
-.video-border {
+.video-border-mainPage {
     border-radius: 10px 10px 0 0;
     overflow: hidden;
 }
 
-#video-container {
+#video-container-mainPage {
     height: 100%;
     width: 100vw;
     background-color: transparent;
@@ -148,14 +144,14 @@ video {
 /*---------------------------------------------------------------------*/
 /*Text-animation styles*/
 /*---------------------------------------------------------------------*/
-.wrapper-animated-text {
+.wrapper-animated-text-mainPage {
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.animated-text {
+.animated-text-mainPage {
     width: 58rem;
     height: 4rem;
     color: white;
@@ -166,7 +162,7 @@ video {
     animation: cursor 0.95s step-end infinite, printed_text 4s steps(26);
 }
 
-.overlay {
+.overlay-mainPage {
     position: absolute;
     top: 0;
     left: 0;
@@ -213,7 +209,6 @@ video {
 }
 
 .go-top-button:hover {
-    text-decoration: none;
     background: #93654d;
 }
 
@@ -230,7 +225,7 @@ video {
 /*---------------------------------------------------------------------*/
 /*Overlay Button styles*/
 /*---------------------------------------------------------------------*/
-.custom-button-mp {
+.custom-button-mainPage {
     background-color: rgba(0, 0, 0, 0.6);
     color: #e1e1e1;
     font-size: 17px;
@@ -240,15 +235,15 @@ video {
     cursor: pointer;
 }
 
-.custom-button-mp:hover {
+.custom-button-mainPage:hover {
     background-color: rgba(47, 167, 190, 0.56);
 }
 
-a.custom-button-mp:hover {
+a.custom-button-mainPage:hover {
     color: #ffffff;
 }
 
-.button-container-mp {
+.button-container-mainPage {
     position: absolute;
     z-index: 2;
     top: 50%;
@@ -262,19 +257,14 @@ a.custom-button-mp:hover {
 /*---------------------------------------------------------------------*/
 /*Column styles*/
 /*---------------------------------------------------------------------*/
-#universities-carousel, #video-carousel, #sv-information {
+#universities-carousel, #video-carousel, #main-information{
     padding-top: 155px;
     padding-bottom: 78px;
 }
 
-#universities-carousel .feature, #video-carousel .feature, #sv-information .feature {
+#universities-carousel .feature, #video-carousel .feature, #main-information .feature {
     margin-top: 30px;
     margin-bottom: 54px;
-}
-
-.feature-media {
-    display: flex;
-    align-items: center;
 }
 
 .six.columns.right.text,
@@ -285,7 +275,7 @@ a.custom-button-mp:hover {
     margin: 0 0 0 15px;
 }
 
-#universities-carousel h3, #video-carousel h3, #sv-information h3 {
+#universities-carousel h3, #video-carousel h3, #main-information h3 {
     text-transform: uppercase;
     letter-spacing: 1px;
 }

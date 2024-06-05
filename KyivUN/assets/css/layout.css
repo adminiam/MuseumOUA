@@ -187,13 +187,13 @@ footer {
 /*---------------------------------------------------------------------*/
 /*Column styles*/
 /*---------------------------------------------------------------------*/
-#universities-carousel, #video-carousel, #sv-information {
+#universities-carousel, #video-carousel, #main-information {
     padding-top: 155px;
     padding-bottom: 78px;
 
 }
 
-#universities-carousel .feature, #video-carousel .feature, #sv-information .feature {
+#universities-carousel .feature, #video-carousel .feature, #main-information .feature {
     margin-top: 30px;
     margin-bottom: 54px;
 

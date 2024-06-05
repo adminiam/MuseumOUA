@@ -9,7 +9,7 @@
     <!--<link rel="icon" href="src/img/logo/all_logos_UN.png" type="image/x-icon">-->
     <link rel="stylesheet" href="MainPage/assets/uikit3/uikit.min.css"/>
     <link rel="stylesheet" href="assets/css/default.css">
-    <link rel="stylesheet" href="MainPage/assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="MainPage/assets/css/media-queries.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
         <nav class="uk-navbar-container uk-visible@m uk-navbar" uk-navbar="mode: click">
             <div class="uk-navbar-center">
                 <a class="uk-logo" href="#">
-                    <img class="all-logo-img" alt="" src="src/img/logo/all_logos_UN.png">
+                    <img class="all-logos-UN" alt="" src="src/img/logo/all_logos_UN.png">
                 </a>
                 <ul class="uk-navbar-nav uk-navbar-nav-mainPage">
                     <li><a href="MASHO/masho.html">Міжнародна академічна<br>школа Одеса</a></li>
@@ -80,17 +80,17 @@
 </header>
 <div class="sections-container">
     <section id="overlay_misc">
-        <div class="overlay-mp"></div>
-        <div id="video-container">
+        <div class="overlay-mainPage"></div>
+        <div id="video-container-mainPage">
         </div>
         <video id="background-video" autoplay muted loop playsinline>
             <source src="src/video/masho.mp4" type="video/mp4">
         </video>
-        <div class="wrapper-animated-text-mp">
-            <div class="animated-text-mp">Вітаємо вас у нашому музеї</div>
+        <div class="wrapper-animated-text-mainPage">
+            <div class="animated-text-mainPage">Вітаємо вас у нашому музеї</div>
         </div>
-        <div class="button-container-mp">
-            <a href="#universities-carousel" class="custom-button-mp main-pages-decoration">
+        <div class="button-container-mainPage">
+            <a href="#universities-carousel" class="custom-button-mainPage main-pages-decoration">
                 До наших навчальних закладів
             </a>
         </div>
@@ -178,7 +178,7 @@
                         <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
                             <li>
                                 <div class="uk-card uk-card-default">
-                                    <div class="uk-card-media-top video-border">
+                                    <div class="uk-card-media-top video-border-mainPage">
                                         <video class="video-js vjs-default-skin" controls data-youtube-id="Uota3BwK0-g">
                                             <source src="https://www.youtube.com/watch?v=Uota3BwK0-g"
                                                     type="video/youtube">
@@ -191,7 +191,7 @@
                             </li>
                             <li>
                                 <div class="uk-card uk-card-default">
-                                    <div class="uk-card-media-top video-border">
+                                    <div class="uk-card-media-top video-border-mainPage">
                                         <video class="video-js vjs-default-skin" controls data-youtube-id="Y4r1tRaQjWk">
                                             <source src="https://www.youtube.com/watch?v=Y4r1tRaQjWk"
                                                     type="video/youtube">
@@ -205,7 +205,7 @@
                             </li>
                             <li>
                                 <div class="uk-card uk-card-default">
-                                    <div class="uk-card-media-top video-border">
+                                    <div class="uk-card-media-top video-border-mainPage">
                                         <video class="video-js vjs-default-skin" controls data-youtube-id="rQ141HwooQc">
                                             <source src="https://www.youtube.com/watch?v=rQ141HwooQc"
                                                     type="video/youtube">
@@ -220,7 +220,7 @@
 
                             <li>
                                 <div class="uk-card uk-card-default">
-                                    <div class="uk-card-media-top video-border">
+                                    <div class="uk-card-media-top video-border-mainPage">
                                         <div class="video-container">
                                             <video class="video-js vjs-default-skin" controls
                                                    data-youtube-id="rgx9i5dfEO4">
@@ -248,9 +248,9 @@
             </div>
         </div>
     </section>
-    <section id='sv-information'>
-        <div class="row feature design display">
-            <div class="six columns feature-media left img-center">
+    <section id='main-information'>
+        <div class="row design display">
+            <div class="six columns left img-center">
                 <div class="swiper mySwiper3">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img src="src/img/svimg1.jpg" alt="1">
@@ -264,7 +264,7 @@
                     <div class="swiper-button-next"></div>
                 </div>
             </div>
-            <div class="six columns right text">
+            <div class="six columns right text margin-mainPage">
                 <h1>Про Засновника</h1>
                 <h2>Ківалов Сергій Васильович</h2>
                 <p>Відомий український політик, державний і громадський діяч, народний депутат України
@@ -282,7 +282,7 @@
             </div>
         </div>
         <div class="go-top-container">
-            <a href="#universities-carousel" id="mainpage-button" class="go-top-button">
+            <a href="#" class="go-top-button go-top-button-mainPage">
                 <div class="go-top-text">
                     <img src="src/img/to%20top.svg" alt="1">
                 </div>
