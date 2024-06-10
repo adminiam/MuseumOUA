@@ -6,35 +6,9 @@
         transition: unset;
     }
 
-    section.in-view {
-        opacity: unset;
-        transform: unset;
-    }
-
     body {
         text-align: left;
     }
-
-    #features .feature {
-        margin-bottom: 30px;
-    }
-
-    #features .right {
-        padding-left: 18px;
-    }
-
-
-    /* Footer
-    ------------------------------------------------------------------- */
-    footer .right-cols .columns {
-        width: 50% !important;
-    }
-
-    footer .right-cols .columns:last-child {
-        clear: left;
-        float: left;
-    }
-
 }
 
 @media only screen and (max-width: 1450px) {
@@ -83,11 +57,6 @@
         width: 210px;
         margin: 0 auto;
     }
-
-    #offcanvas-nav-mainPage .uk-offcanvas-bar-mainpage {
-         margin: 90px 0 0 0;
-     }
-
 }
 
 
@@ -117,10 +86,6 @@
         .row .six {
             width: 90%;
         }
-    }
-
-    @media only screen and (max-width: 878px) {
-
     }
 
     @media only screen and (max-width: 768px) {
