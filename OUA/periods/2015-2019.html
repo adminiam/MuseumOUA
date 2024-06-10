@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../assets/uikit3/uikit.min.css"/>
     <link rel="stylesheet" href="../../assets/css/default.css">
-    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
     <link rel="stylesheet" href="../assets/css/media-queries.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,15 +19,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital@1&display=swap" rel="stylesheet">
-
 </head>
-<body>
-<header>
+<body id="oua-body">
+<header id="oua-header">
     <div class="wrapper">
         <nav class="uk-navbar-container uk-visible@m uk-navbar" uk-navbar="mode: click">
             <div class="uk-navbar-center">
                 <a class="uk-logo" href="../oua.html">
-                    <img class="oua-logo-img" alt="" src="../../src/img/logo/oua_logo.png">
+                    <img class="oua-logo" alt="" src="../../src/img/logo/oua_logo.png">
                 </a>
                 <ul class="uk-navbar-nav">
                     <li><a href="1817-1997.html">1817-1997</a></li>
@@ -48,7 +47,7 @@
             </div>
             <div class="uk-navbar-center">
                 <a class="uk-logo" href="../oua.html">
-                    <img class="oua-logo-img" alt="" src="../../src/img/logo/oua_logo.png">
+                    <img class="oua-logo" alt="" src="../../src/img/logo/oua_logo.png">
                 </a>
             </div>
         </nav>
@@ -80,7 +79,7 @@
                             <p class="photo-text">Вересень 2019 року. В рамках програми «Школи американського права» перед студентами НУ «ОЮА» із лекцією виступив адвокат, арбітр і старший юрист ЄСПЛ Рой Гонас</p>
                         </div>
                         <div class="swiper-slide">
-                            <div class="video-container">
+                            <div class="video-container-videoYT">
                             <iframe height="100%" width="100%"
                                     src="https://www.youtube.com/embed/VNL-ckjrd1Y?si=N42O56AjpMNPgEh2"
                                     title="YouTube video player" frameborder="0"
@@ -158,7 +157,7 @@
                 <div class="swiper mySwiper3">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="video-container">
+                            <div class="video-container-videoYT">
                                 <iframe height="100%" width="100%"
                                         src="https://www.youtube.com/embed/N6NsxhkPO7E?si=9DSnBvzH2E9kDAOy"
                                         title="YouTube video player" frameborder="0"
@@ -167,7 +166,7 @@
                                 <p class="photo-text">Враження студентів Юракадемії від проходження стажування в Швейцарії</p>
                         </div>
                         <div class="swiper-slide">
-                            <div class="video-container">
+                            <div class="video-container-videoYT">
                                 <iframe height="100%" width="100%"
                                         src="https://www.youtube.com/embed/5LYYZXkkMy0?si=B7wtgrkqCUZdSCoi"
                                         title="YouTube video player" frameborder="0"
@@ -258,7 +257,7 @@
                             <p class="photo-text">2016 рік. Президент НУ «ОЮА» Сергій Ківалов разом із студентами на
                                 107-ому засіданні Венеціанської комісії у місті Мілан</p></div>
                         <div class="swiper-slide">
-                            <div class="video-container">
+                            <div class="video-container-videoYT">
                                 <iframe height="100%" width="100%"
                                         src="https://www.youtube.com/embed/cN5Ybphb6uw?si=RT4AFfHtrnH3GQPJ"
                                         title="YouTube video player" frameborder="0"
@@ -348,7 +347,7 @@
                             <p class="photo-text">Червень 2019 року. Міжнародна науково-практична конференція «Юриспруденція Європейського Суду з прав людини у цифрову еру» за участю суддів ЄСПЛ, Верховного Суду, Антикорупційного суду України, видатних адвокатів та науковців</p>
                         </div>
                         <div class="swiper-slide">
-                            <div class="video-container">
+                            <div class="video-container-videoYT">
                                 <iframe height="100%" width="100%"
                                         src="https://www.youtube.com/embed/-CtaEZEWmio?si=nB4aVeWYiQsZFyRA"
                                         title="YouTube video player" frameborder="0"
@@ -390,7 +389,7 @@
                 </div>
             </div>
             <div id="margin-bottom-3" class="six columns feature-media right">
-                <div class="video-container">
+                <div class="video-container-videoYT">
                     <iframe height="100%" width="100%"
                             src="https://www.youtube.com/embed/VEPdh_yf3GY?si=ioQBBKQpZlxylqQq"
                             title="YouTube video player"
@@ -593,7 +592,7 @@
             </div>
         </div>
         <div class="go-top-container">
-            <a href="#sv-information" class="go-top-button button-period">
+            <a href="#sv-information" class="go-top-button go-top-button-oua">
                 <div class="go-top-text">
                     <img src="../../src/img/to%20top.svg" alt="1">
                 </div>

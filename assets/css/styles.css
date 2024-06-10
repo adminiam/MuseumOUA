@@ -48,6 +48,10 @@ footer {
     z-index: 990;
 }
 
+#kyivUN-body,#mainpage-body,#masho-body,#mgu-body,#oua-body {
+    overflow-y: hidden;
+}
+
 #kyivUN-body, #kyivUN-header {
     background: linear-gradient(to bottom, #07575b, #c4dfe6) no-repeat fixed;
 }
@@ -71,6 +75,8 @@ footer {
 #oua-body, #oua-header {
     background: linear-gradient(to bottom, #001E3F, #457391) no-repeat fixed;
 }
+
+
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .go-top-container {
@@ -150,6 +156,14 @@ footer {
     width: 100%;
     height: 100%;
     border-radius: 10px;
+}
+
+.mySwiper .swiper-slide {
+    opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -322,6 +336,36 @@ a.custom-button-mainPage:hover {
     overflow: hidden;
 }
 
+.video-container-link-tree iframe {
+    position: absolute;
+    max-width: 900px;
+    max-height: 600px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.video-container-link-tree {
+    position: relative;
+    overflow: hidden;
+}
+
+.video-container-videoYT {
+    position: relative;
+    padding-bottom: 66.60%;
+    overflow: hidden;
+}
+
+.video-container-videoYT iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 #universities-carousel, #video-carousel, #main-information {
     padding-top: 155px;
@@ -347,10 +391,21 @@ a.custom-button-mainPage:hover {
     flex-direction: row-reverse;
 }
 
+.feature-column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .feature-media {
     flex: 1;
     max-width: 100%;
     height: auto;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 .display {
@@ -443,4 +498,32 @@ a.custom-button-mainPage:hover {
 .social-media-item-wrapper:hover .social-media-color {
     display: inline;
     pointer-events: auto;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.photo-text {
+    text-align: center;
+    margin: 0 0 10px 0;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    white-space: pre-line;
+}
+
+.documentary-photo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.img-documentary-mgu, .img-documentary-oua {
+    width: 900px;
+    height: 600px;
+    border-radius: 10px;
+    margin: 10px 0 10px 0;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#padding-container {
+    padding-bottom: 40%;
 }
