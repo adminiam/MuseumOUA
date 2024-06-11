@@ -134,13 +134,13 @@ border-radius: 10px}
 
 }
 
-.video-container {
+.video-container-videoYT {
     position: relative;
     padding-bottom: 66.60%;
     overflow: hidden;
 }
 
-.video-container iframe {
+.video-container-videoYT iframe {
     position: absolute;
     top: 0;
     left: 0;
