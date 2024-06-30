@@ -48,7 +48,7 @@ footer {
     z-index: 990;
 }
 
-#kyivUN-body,#mainpage-body,#masho-body,#mgu-body,#oua-body {
+#kyivUN-body, #mainpage-body, #masho-body, #mgu-body, #oua-body {
     overflow-y: hidden;
 }
 
@@ -75,7 +75,6 @@ footer {
 #oua-body, #oua-header {
     background: linear-gradient(to bottom, #001E3F, #457391) no-repeat fixed;
 }
-
 
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -403,11 +402,6 @@ a.custom-button-mainPage:hover {
     height: auto;
 }
 
-.wrapper {
-    display: flex;
-    justify-content: center;
-}
-
 .display {
     display: flex;
 }
@@ -526,4 +520,9 @@ a.custom-button-mainPage:hover {
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 #padding-container {
     padding-bottom: 40%;
+}
+
+
+.video-border {
+    border-radius: 10px 10px 0 0!important;
 }

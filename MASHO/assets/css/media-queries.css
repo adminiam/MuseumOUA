@@ -1,18 +1,3 @@
-/* 
-=====================================================================
-*   Woo Media Queries
-*   url: styleshout.com
-*   05-02-2014
-/* ================================================================== */
-
-@media only screen and (max-width: 992px) {
-    h3 {
-
-    }
-}
-
-/* screenwidth less than or equal 900px
---------------------------------------------------------------------- */
 @media only screen and (max-width: 900px) {
     section {
         opacity: unset;
@@ -59,10 +44,6 @@
             margin: 0 0 20px 0;
         }
 
-        #margin-bottom,#margin-bottom-1,#margin-bottom-2,#margin-bottom-3,#margin-bottom-7 {
-            margin-bottom: 20px;
-        }
-
         .img-misc {
             margin: 0 0 20px 0;
         }
@@ -71,6 +52,7 @@
             position: relative;
             background: transparent;
         }
+
         /* Header Styles
         -------------------------------------------------------------------- */
         header .logo {

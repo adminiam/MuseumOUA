@@ -1819,8 +1819,8 @@ select.uk-form-width-xsmall {
 
 
 .uk-card-body {
-    display: flow-root;
-    padding: 35px 15px 0 15px;
+    display: grid;
+    place-items: center;
 }
 
 

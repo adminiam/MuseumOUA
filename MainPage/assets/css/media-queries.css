@@ -1,5 +1,4 @@
 @media only screen and (max-width: 900px) {
-
     section {
         opacity: unset;
         transform: unset;
@@ -12,7 +11,7 @@
 }
 
 @media only screen and (max-width: 1450px) {
-    #mainpage-header     {
+    #mainpage-header {
         height: 90px;
     }
 
