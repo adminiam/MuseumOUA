@@ -113,15 +113,13 @@
 @media only screen and (max-width: 1199px) {
     .fixed-size {
         height: 110px;
-        padding: 20px 30px;
+        padding: 0 10px 0 10px;
     }
 }
 
 @media only screen and (max-width: 1034px) {
     .fixed-size {
         height: 130px;
-        padding: 20px 30px;
-
     }
 
     .video-yt {
@@ -137,8 +135,6 @@
 @media only screen and (max-width: 878px) {
     .fixed-size {
         height: 150px;
-        padding: 20px 30px;
-
     }
 
     .video-yt {

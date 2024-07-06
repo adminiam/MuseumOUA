@@ -239,6 +239,11 @@ footer {
     color: #2c6dc9;
 }
 
+.uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
+    column-gap: unset !important;
+    margin-top: 25px !important;
+}
+
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .wrapper-animated-text-mainPage {
     position: absolute;
@@ -366,10 +371,13 @@ a.custom-button-mainPage:hover {
 
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-#universities-carousel, #video-carousel, #main-information {
-    padding-top: 155px;
-    padding-bottom: 78px;
 
+section:first-of-type, section:not(:first-child) {
+    margin: 10.6em 0 0 0;
+}
+
+section:last-of-type {
+    margin-bottom: 3.125em;
 }
 
 #universities-carousel .feature, #video-carousel .feature, #main-information .feature {
@@ -428,10 +436,6 @@ a.custom-button-mainPage:hover {
 
 .margin-mainPage {
     margin: 0 0 0 15px;
-}
-
-.fix-position {
-    margin-top: 150px;
 }
 
 .margin-fixed-right {
@@ -517,12 +521,8 @@ a.custom-button-mainPage:hover {
     margin: 10px 0 10px 0;
 }
 
-/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 #padding-container {
     padding-bottom: 40%;
 }
 
-
-.video-border {
-    border-radius: 10px 10px 0 0!important;
-}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
