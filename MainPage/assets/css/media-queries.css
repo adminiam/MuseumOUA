@@ -11,12 +11,8 @@
 }
 
 @media only screen and (max-width: 1450px) {
-    #mainpage-header {
-        height: 90px;
-    }
-
     .all-logos-UN {
-        width: 160px;
+        width: 185px;
         height: auto;
     }
 
