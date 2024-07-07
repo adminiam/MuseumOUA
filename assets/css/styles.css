@@ -80,6 +80,7 @@ footer {
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .go-top-container {
     text-align: center;
+    margin: 0 0 20px 0;
 }
 
 .go-top-text {
@@ -273,7 +274,7 @@ footer {
 }
 
 #overlay_misc {
-    /*padding-top: 9vh;*/
+    margin: unset;
     overflow: hidden;
     position: relative;
     height: 100vh;
@@ -335,7 +336,7 @@ a.custom-button-mainPage:hover {
     z-index: 1;
 }
 
-.video-border-mainPage {
+.video-card-border {
     border-radius: 10px 10px 0 0;
     overflow: hidden;
 }
