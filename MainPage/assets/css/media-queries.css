@@ -10,6 +10,27 @@
     }
 }
 
+@media only screen and (max-width: 1519px) {
+    .display {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fixed-size {
+        height: 150px;
+        padding: 20px 30px;
+
+    }
+
+    .six.columns.right.text, .six.columns.left.text {
+        margin: 10px 0 0 0;
+    }
+
+    .row .six {
+        width: 90%;
+    }
+}
+
 @media only screen and (max-width: 1450px) {
     .all-logos-UN {
         width: 185px;
@@ -59,28 +80,6 @@
     .fixed-size {
         height: 110px;
         padding: 20px 30px;
-    }
-
-    @media only screen and (max-width: 1034px) {
-        .fixed-size {
-            height: 150px;
-            padding: 20px 30px;
-
-        }
-
-        .display {
-            flex-direction: column;
-            align-items: center;
-
-        }
-
-        .six.columns.right.text, .six.columns.left.text {
-            margin: 10px 0 0 0;
-        }
-
-        .row .six {
-            width: 90%;
-        }
     }
 
     @media only screen and (max-width: 768px) {
@@ -146,6 +145,7 @@
         }
     }
 }
+
 
 
 
