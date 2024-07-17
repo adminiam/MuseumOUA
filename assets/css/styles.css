@@ -336,12 +336,12 @@ a.custom-button-mainPage:hover {
     z-index: 1;
 }
 
-.video-border-mainPage {
+.video-border-carousel {
     border-radius: 10px 10px 0 0;
     overflow: hidden;
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     justify-content: center;
 }
@@ -528,7 +528,7 @@ section:last-of-type {
     margin: 10px 0 10px 0;
 }
 
-.img-misc{
+.img-misc {
     border-radius: 10px;
 }
 
