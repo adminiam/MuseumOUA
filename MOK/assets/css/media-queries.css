@@ -76,21 +76,11 @@
 }
 
 
-@media only screen and (max-width: 1199px) {
-    .fixed-size {
-        height: 110px;
-        padding: 20px 30px;
-    }
 
     @media only screen and (max-width: 768px) {
-        .animated-texainPage {
+        .animated-text-mainPage {
             width: 51rem;
-            color: white;
             font-size: 35px;
-            white-space: nowrap;
-            overflow: hidden;
-            border-right: 3px solid white;
-            animation: cursor 0.95s step-end infinite, printed_text 5s steps(26);
         }
 
         .custom-button-mainPage {
@@ -144,7 +134,7 @@
             top: 44%;
         }
     }
-}
+
 
 
 
