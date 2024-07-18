@@ -92,7 +92,7 @@ footer {
 .go-top-button {
     display: inline-block;
     padding: 15px 25px;
-    margin: 10px 0 0 0;
+    margin: 10px 0 10px 0;
     border-radius: 50px;
 }
 
@@ -530,6 +530,10 @@ section:last-of-type {
 
 .img-misc {
     border-radius: 10px;
+}
+
+.margin-top-photo{
+    margin: 10px 0 0 0!important;
 }
 
 #padding-container {

@@ -18,6 +18,7 @@ var swiperMainCarousel = new Swiper(".mySwiper2", {
 });
 var swiperCarousel = new Swiper(".mySwiper3", {
     loop: true,
+    spaceBetween: 10,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

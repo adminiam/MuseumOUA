@@ -15,6 +15,12 @@
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 900px) {
 
+    section {
+        opacity: unset;
+        transform: unset;
+        transition: unset;
+    }
+
     body {
         text-align: left;
     }
