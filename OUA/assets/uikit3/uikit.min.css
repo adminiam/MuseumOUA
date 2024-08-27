@@ -1896,9 +1896,9 @@ select.uk-form-width-xsmall {
     background-color:  #183b5b;
     border-radius: 10px;
     color: #666;
-    -webkit-box-shadow:0px 0px 15px 5px rgba(39,53,214,0.45);
-    -moz-box-shadow: 0px 0px 15px 5px rgba(39,53,214,0.45);
-    box-shadow: 0px 0px 15px 5px rgba(39,53,214,0.45);
+    -webkit-box-shadow:0px 0px 12px 7px rgba(77,77,77,1);
+    -moz-box-shadow: 0px 0px 12px 7px rgba(77,77,77,1);
+    box-shadow: 0px 0px 12px 7px rgba(77,77,77,1);
 }
 
 .uk-card-default .uk-card-title {
