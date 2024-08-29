@@ -41,13 +41,17 @@ footer {
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 #kyivUN-header, #mainpage-header, #masho-header, #mgu-header, #oua-header {
     transition: opacity 0.5s ease, top 0.5s ease;
-    opacity: 0;
+    opacity: 1;
     height: 115px;
     width: 100%;
     position: fixed;
     left: 0;
     top: 0;
     z-index: 990;
+}
+
+#mainpage-header{
+    opacity: 0;
 }
 
 #kyivUN-body, #mainpage-body, #masho-body, #mgu-body, #oua-body {

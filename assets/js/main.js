@@ -117,6 +117,32 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const header = document.getElementById('mainpage-header');
+    const overlayMisc = document.getElementById('overlay_misc');
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > overlayMisc.offsetHeight) {
+            header.style.position = 'fixed';
+            header.style.top = '0';
+            header.style.opacity = '1';
+        } else {
+            header.style.opacity = '0';
+            setTimeout(() => {
+                if (window.scrollY <= overlayMisc.offsetHeight) {
+                    header.style.position = 'absolute';
+                    header.style.top = '0';
+                }
+            }, 500);
+        }
+    });
+
+    header.style.position = 'absolute';
+    header.style.top = '0';
+    header.style.opacity = '0';
+});
+
+
 
 
 

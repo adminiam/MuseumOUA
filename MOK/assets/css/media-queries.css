@@ -25,10 +25,6 @@
     .six.columns.right.text, .six.columns.left.text {
         margin: 10px 0 0 0;
     }
-
-    .row .six {
-        width: 90%;
-    }
 }
 
 @media only screen and (max-width: 1450px) {
@@ -76,64 +72,67 @@
 }
 
 
-
-    @media only screen and (max-width: 768px) {
-        .animated-text-mainPage {
-            width: 51rem;
-            font-size: 35px;
-        }
-
-        .custom-button-mainPage {
-            font-size: 14px;
-            padding: 15px 20px;
-            white-space: nowrap;
-        }
-
-        .wrapper-animated-text-mainPage {
-            top: 44%;
-        }
-
-        .all-logos-UN {
-            width: 170px;
-            height: auto;
-        }
-
-        .row .six {
-            width: 90%;
-        }
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
     }
 
-    @media only screen and (max-width: 520px) {
-        .animated-text-mainPage {
-            width: 33.5rem;
-            font-size: 23px;
-        }
-
-        .custom-button-mainPage {
-            font-size: 12px;
-            padding: 15px 20px;
-        }
-
-        .wrapper-animated-text-mainPage {
-            top: 43%;
-        }
+    .animated-text-mainPage {
+        width: 51rem;
+        font-size: 35px;
     }
 
-    @media only screen and (max-width: 345px) {
-        .animated-text-mainPage {
-            width: 24.9rem;
-            font-size: 17px;
-        }
-
-        .custom-button-mainPage {
-            font-size: 11px;
-            padding: 15px 15px;
-        }
-
-        .wrapper-animated-text-mainPage {
-            top: 44%;
-        }
+    .custom-button-mainPage {
+        font-size: 14px;
+        padding: 15px 20px;
+        white-space: nowrap;
     }
+
+    .wrapper-animated-text-mainPage {
+        top: 44%;
+    }
+
+    .all-logos-UN {
+        width: 170px;
+        height: auto;
+    }
+
+    .row .six {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .animated-text-mainPage {
+        width: 33.5rem;
+        font-size: 23px;
+    }
+
+    .custom-button-mainPage {
+        font-size: 12px;
+        padding: 15px 20px;
+    }
+
+    .wrapper-animated-text-mainPage {
+        top: 43%;
+    }
+}
+
+@media only screen and (max-width: 345px) {
+    .animated-text-mainPage {
+        width: 24.9rem;
+        font-size: 17px;
+    }
+
+    .custom-button-mainPage {
+        font-size: 11px;
+        padding: 15px 15px;
+    }
+
+    .wrapper-animated-text-mainPage {
+        top: 44%;
+    }
+}
 
 
 

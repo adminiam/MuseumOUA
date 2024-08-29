@@ -128,10 +128,6 @@
         width: 600px;
         height: 350px;
     }
-
-    .row .six {
-        width: 90%;
-    }
 }
 
 @media only screen and (max-width: 878px) {
@@ -146,6 +142,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
     .animated-text {
         width: 45.5rem;
         color: white;
@@ -178,7 +178,7 @@
     }
 
     .row .six {
-        width: 90%;
+        width: auto;
     }
 }
 
