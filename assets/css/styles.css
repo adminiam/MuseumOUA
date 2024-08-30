@@ -81,6 +81,13 @@ footer {
 #oua-body, #oua-header {
     background: linear-gradient(to bottom, #001E3F, #457391) no-repeat fixed;
 }
+.link-pages-body {
+    background: linear-gradient(214deg, rgba(68, 45, 27, 1) 0%, rgba(209, 162, 121, 1) 50%, rgba(68, 45, 27, 1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+    margin: 0;
+}
 
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
