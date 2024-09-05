@@ -377,6 +377,7 @@ a.custom-button-mainPage:hover {
     position: relative;
     padding-bottom: 66.60%;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .video-container-videoYT iframe {
