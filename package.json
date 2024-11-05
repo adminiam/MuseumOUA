@@ -11,7 +11,9 @@
     "@splidejs/splide": "4.0.7",
     "@splidejs/splide-extension-video": "0.7.1",
     "font-awesome": "^4.7.0",
-    "fontello": "^0.5.0"
+    "fontello": "^0.5.0",
+    "prompt-sync": "^4.2.0",
+    "readline-sync": "^1.4.10"
   },
   "resolutions": {
     "@babel/preset-env": "7.13.8"
