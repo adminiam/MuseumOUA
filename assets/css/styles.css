@@ -9,7 +9,14 @@ body {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
 }
-
+.documentary-body{
+  padding-top: 10%;
+}
+@media (max-width: 768px) {
+    .documentary-body {
+        padding-top: 30%;
+    }
+}
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 section {
     opacity: 0;
