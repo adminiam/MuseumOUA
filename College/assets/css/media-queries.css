@@ -1,0 +1,238 @@
+@media only screen and (max-width: 900px) {
+    section {
+        opacity: unset;
+        transform: unset;
+        transition: unset;
+    }
+
+    body {
+        text-align: left;
+    }
+
+}
+
+@media only screen and (max-width: 1350px) {
+    .video-yt {
+        width: 650px;
+        height: 440px;
+    }
+
+    .uk-navbar-nav {
+        font-size: 14px;
+    }
+
+    a:hover {
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .row.feature.design.display.reverse {
+        flex-direction: column-reverse;
+    }
+
+    .uk-text-large {
+        font-size: 16px;
+    }
+
+    .feature {
+        flex-direction: column;
+    }
+
+    .container-left-text, .container-right-text {
+        width: auto;
+    }
+
+    .margin-fixed-right {
+        margin: 0 0 10px 0;
+    }
+
+    .margin-fixed-left {
+        margin: 0 0 20px 0;
+    }
+
+    .section-head {
+        padding: 0 30px;
+    }
+
+    .dropdown-menu {
+        position: relative;
+        background: transparent;
+    }
+
+    /* Header Styles
+    -------------------------------------------------------------------- */
+    header .logo {
+        margin: 0 auto;
+        position: sticky;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .logo-img {
+        width: 180px;
+        margin: 0 auto;
+    }
+
+    /* Go To Top Button */
+    #go-top {
+        position: absolute;
+        top: -24px;
+        left: 50%;
+        margin-left: -30px;
+        text-align: center;
+        z-index: 889;
+    }
+
+    #go-top a {
+        text-decoration: none;
+        border: 0 none;
+        display: block;
+        width: 60px;
+        height: 60px;
+        background: #132B4A;
+
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+
+        color: #fff;
+        font-size: 21px;
+        line-height: 60px;
+        border-radius: 100%;
+    }
+
+    #go-top a:hover {
+        background: #365471;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .uk-navbar-nav {
+        font-size: 13px;
+    }
+}
+
+/* make sure the menu is visible on larger screens
+  -------------------------------------------------------------------------- */
+@media only screen and (max-width: 1199px) {
+    .fixed-size {
+        height: 110px;
+        padding: 20px 30px;
+    }
+}
+
+@media only screen and (max-width: 1034px) {
+    .fixed-size {
+        height: 155px;
+        padding: 20px 30px;
+
+    }
+
+    .video-yt {
+
+        width: 600px;
+        height: 350px;
+    }
+
+}
+
+@media only screen and (max-width: 878px) {
+    .video-yt {
+        width: 600px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .animated-text {
+        width: 45.5rem;
+        color: white;
+        font-size: 35px;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid white;
+        animation: cursor 0.95s step-end infinite, printed_text 5s steps(26);
+    }
+
+    .custom-button {
+        font-size: 14px;
+        padding: 15px 20px;
+    }
+
+    .wrapper-animated-text {
+        top: 44%;
+    }
+
+    .oua-logo-img {
+        margin: 6px 0 0 0;
+        width: 90px;
+        height: auto;
+    }
+
+    header {
+        background: linear-gradient(to bottom, #001E3F, #457391) no-repeat fixed;
+        height: 110px;
+        width: 100%;
+    }
+
+    .row .six {
+        width: auto;
+    }
+}
+
+.dropdown-toggle:hover {
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 545px) {
+    .mobile-size {
+        padding: 10px;
+        margin: 0 20px;
+    }
+}
+
+
+@media only screen and (max-width: 520px) {
+    .animated-text {
+        width: 32.5rem;
+        font-size: 25px;
+    }
+
+    .custom-button {
+        font-size: 12px;
+        padding: 15px 20px;
+    }
+
+    .wrapper-animated-text {
+        top: 43%;
+    }
+}
+
+@media only screen and (max-width: 345px) {
+    .animated-text {
+        width: 22.3rem;
+        font-size: 17px;
+    }
+
+    .custom-button {
+        font-size: 11px;
+        padding: 15px 15px;
+    }
+
+    .wrapper-animated-text {
+        top: 44%;
+    }
+}
+
+
+
+
+
+
