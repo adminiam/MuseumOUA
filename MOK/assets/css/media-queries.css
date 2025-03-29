@@ -78,8 +78,10 @@
     }
 
     .animated-text-mainPage {
-        width: 52rem;
-        font-size: 35px;
+        width: 33rem;
+        font-size: 33px;
+        height: 3.1rem;
+        animation: cursor 0.95s step-end infinite, printed_text 3s steps(30);
     }
 
     .custom-button-mainPage {
@@ -104,8 +106,10 @@
 
 @media only screen and (max-width: 520px) {
     .animated-text-mainPage {
-        width: 34.3rem;
+        width: 23rem;
         font-size: 23px;
+        height: 2.79rem;
+        animation: cursor 0.95s step-end infinite, printed_text 3s steps(30);
     }
 
     .custom-button-mainPage {
@@ -120,8 +124,9 @@
 
 @media only screen and (max-width: 345px) {
     .animated-text-mainPage {
-        width: 25.6rem;
+        width: 17rem;
         font-size: 17px;
+        animation: cursor 0.95s step-end infinite, printed_text 3s steps(30);
     }
 
     .custom-button-mainPage {

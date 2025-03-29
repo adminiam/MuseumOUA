@@ -9,14 +9,14 @@ body {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
 }
-.documentary-body{
-  padding-top: 10%;
+
+.documentary-body {
+    padding-top: 10%;
 }
-@media (max-width: 768px) {
-    .documentary-body {
-        padding-top: 30%;
-    }
+.mobile-text {
+    display: none;
 }
+
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 section {
     opacity: 0;
@@ -57,7 +57,7 @@ footer {
     z-index: 990;
 }
 
-#mainpage-header{
+#mainpage-header {
     opacity: 0;
 }
 
@@ -73,7 +73,7 @@ footer {
     background: no-repeat linear-gradient(214deg, rgba(68, 45, 27, 1) 0%, rgba(209, 162, 121, 1) 50%, rgba(68, 45, 27, 1) 100%);
 }
 
-#link-pages-body{
+#link-pages-body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -273,14 +273,14 @@ footer {
 }
 
 .animated-text-mainPage {
-    width: 59rem;
+    width: 99rem;
     height: 3.7rem;
     color: white;
     font-size: 40px;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid white;
-    animation: cursor 0.95s step-end infinite, printed_text 6s steps(40);
+    animation: cursor 0.95s step-end infinite, printed_text 7s steps(60);
 }
 
 .overlay-mainPage {
@@ -299,7 +299,19 @@ footer {
     position: relative;
     height: 100vh;
 }
+@media (max-width: 768px) {
+    .documentary-body {
+        padding-top: 30%;
+    }
 
+    .desktop-text {
+        display: none;
+    }
+
+    .mobile-text {
+        display: block;
+    }
+}
 @keyframes cursor {
     0% {
         border-color: white;
@@ -553,8 +565,8 @@ section:last-of-type {
     border-radius: 10px;
 }
 
-.margin-top-photo{
-    margin: 10px 0 0 0!important;
+.margin-top-photo {
+    margin: 10px 0 0 0 !important;
 }
 
 #padding-container {
