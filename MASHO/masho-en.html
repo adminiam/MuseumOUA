@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Музей МАШО</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="../src/favicon/Masho/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../src/favicon/Masho/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../src/favicon/Masho/favicon-16x16.png">
+    <link rel="manifest" href="../src/favicon/Masho/site.webmanifest">
+    <link rel="stylesheet" href="assets/uikit3/uikit.min.css"/>
+    <link rel="stylesheet" href="../assets/css/default.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body id="masho-body">
+<header id="masho-header">
+    <div>
+        <nav class="uk-navbar-container uk-visible@m uk-navbar" uk-navbar="mode: click">
+            <div class="uk-navbar-center">
+                <a class="uk-logo" href="../index.html">
+                    <img class="masho-logo" alt="" src="../src/img/logos/masho_logo.png">
+                </a>
+                <ul class="uk-navbar-nav uk-navbar-nav-masho">
+                    <li><a href="../MASHO/masho-en.html">Odesa International<br>Academic School</a></li>
+                    <li>
+                        <a href="#">National University<br> "Odesa Law Academy"<span
+                                uk-drop-parent-icon></span></a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-nav-masho uk-navbar-dropdown-nav uk-animation-slide-bottom-medium">
+                                <li class="border-bottom"><a href="../OUA/oua-en.html">NU"OLA"</a></li>
+                                <li><a href="https://www.onua.edu.ua/ua/virtualnyi-tur-universytetom">Virtual tour</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="../MGU/mgu-en.html">International Humanities<br>University</a></li>
+                    <li><a href="../KyivUN/kyivUN-en.html">Kyiv University of Intellectual<br>Property and Law
+                        NU"OLA"</a>
+                    </li>
+                    <li class="language-selector language-color-masho">
+                        <div class="current-language " id="lang-selector-toggle">
+                            <img src="../src/svg/uk.svg" alt="English" class="flag-icon">
+                            <span class="language-name">EN</span>
+                            <span uk-icon="icon: chevron-down"></span>
+                        </div>
+                        <div class="language-dropdown language-color-masho" id="lang-dropdown">
+                            <a href="masho.html" class="language-option" data-lang="en">
+                                <img src="../src/svg/ua.svg" alt="Ukrainian" class="flag-icon">
+                                <span class="language-name">UA</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="uk-navbar uk-navbar-container uk-margin uk-hidden@m">
+            <div class="uk-navbar-right">
+                <a class="uk-navbar-toggle" href="#offcanvas-nav-masho" uk-toggle>
+                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left"></span>
+                </a>
+            </div>
+            <div class="uk-navbar-center">
+                <a class="uk-logo" href="../index.html">
+                    <img class="masho-logo" alt="" src="../src/img/logos/masho_logo.png">
+                </a>
+            </div>
+        </nav>
+        <div id="offcanvas-nav-masho" uk-offcanvas="flip: true; mode: slide">
+            <div class="uk-offcanvas-bar uk-overflow-hidden uk-offcanvas-bar-masho">
+                <ul class="uk-nav">
+                    <li class="border-bottom"><a href="../MASHO/masho.html">Odesa International Academic School</a></li>
+                    <li class="border-bottom">
+                        <a class="uk-margin-small-bottom" href="#">National University "Odesa Law Academy"</a>
+                        <ul class="uk-nav-sub">
+                            <li><a class="uk-text-muted uk-text-left" href="../OUA/oua.html"><span
+                                    uk-icon="icon: chevron-right"></span>NU"OLA"</a></li>
+                            <li><a class="uk-text-muted uk-text-left"
+                                   href="https://www.onua.edu.ua/ua/virtualnyi-tur-universytetom"><span
+                                    uk-icon="icon: chevron-right"></span>Virtual tour of the university</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="border-bottom"><a href="../MGU/mgu.html">International Humanities University</a></li>
+                    <li class="border-bottom"><a href="../KyivUN/kyivUN.html">Kyiv University of Intellectual Property
+                        and Law NU"OLA"</a></li>
+                    <li><a href="masho.html">
+                        <img src="../src/svg/ua.svg" alt="Ukrainian" class="flag-icon">
+                        <span class="language-name">UA</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="sections-container">
+    <section id='main-information'>
+        <div class="row feature design fix-position">
+            <div class="container-left-text">
+                <div class="six columns left text margin-fixed-left">
+                    <p>
+                    <h2>International Academic School Odessa</h2>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Opened its doors in 2020 to the best students and teachers in Ukraine. The
+                    School of the Future has everything needed to prepare talented boys and girls for adult life. In a
+                    relatively short period, I.A.S.O. has become a place where winners of regional and national
+                    Olympiads in all disciplines are nurtured. Bright and comfortable classrooms, high-quality and
+                    convenient sports infrastructure (two swimming pools, an indoor sports hall, and an open-air
+                    stadium), a modern cinema and concert hall, as well as a café-dining hall that always serves
+                    delicious and healthy meals. Even after school hours, children want to stay at the institution with
+                    their peers.
+                </div>
+                <div id="margin-bottom-1" class="six columns left text margin-fixed-left">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;From the beginning of construction to the commissioning of the facility,
+                        nine years passed. The educational project had many skeptics and outright opponents. However, a
+                        team of like-minded individuals, led by the idea's author – Serhii Kivalov, brought the project
+                        to completion. I.A.S.O. became the first school in Odessa built from scratch in the 21st
+                        century. It continues to lead in all aspects—quality of education, learning conditions, and the
+                        level of both teachers and students. The School of the Future always looks ahead and continues
+                        to implement dozens of other projects: underground learning classrooms in shelters, comfortable
+                        student relaxation rooms, a virtual museum, and many more. Welcome to the International Academic
+                        School Odessa!</p>
+                </div>
+            </div>
+            <div class="six columns feature-media right">
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../src/img/Masho/periods/img1.jpg" alt="1"></div>
+                        <div class="swiper-slide"><img src="../src/img/Masho/periods/img2.jpg" alt="2"></div>
+                        <div class="swiper-slide"><img src="../src/img/Masho/periods/img3.jpg" alt="3"></div>
+                        <div class="swiper-slide"><img src="../src/img/Masho/periods/img4.jpg" alt="4"></div>
+                        <div class="swiper-slide"><img src="../src/img/Masho/periods/img5.jpg" alt="5"></div>
+                        <div class="swiper-slide"><img src="../src/img/Masho/periods/img6.jpg" alt="6"></div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id='universities-carousel'>
+        <div class="honor-container">
+            <div class="row responsive">
+                <div class="uk-slider-container-offset mobile-size" uk-slider>
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="slider-img" src="../src/img/Masho/periods/imgCover1.jpg" width="900"
+                                             height="600"
+                                             alt="Слайдер" loading="lazy">
+                                    </div>
+                                    <a class="main-pages-decoration" href="periods-en/2011-2017.html">
+                                        <div class="uk-card-body fixed-size">
+                                            <h3 class="uk-card-title">The birth of the idea and the construction<br> of
+                                                the School
+                                                of the Future</h3>
+                                            <p class="years-font-size">(2011-2017 years)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="slider-img" src="../src/img/Masho/periods/imgCover2.jpg" width="900"
+                                             height="600"
+                                             alt="Слайдер" loading="lazy">
+                                    </div>
+                                    <a class="main-pages-decoration" href="periods-en/2018-2024.html">
+                                        <div class="uk-card-body fixed-size">
+                                            <h3 class="uk-card-title">Completion of construction and opening<br>of an
+                                                innovative educational institution"</h3>
+                                            <p class="years-font-size">(2018-2024 years)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                           uk-slidenav-previous
+                           uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                           uk-slider-item="next"></a>
+                    </div>
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="video-carousel">
+        <div class="honor-container">
+            <div class="row responsive">
+                <div class="uk-slider-container-offset mobile-size" uk-slider>
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="T5lcaUo0UdA">
+                                            <source src="https://www.youtube.com/watch?v=T5lcaUo0UdA"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">Establishment of a school parliament</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="LQ2PW9CTEv4">
+                                            <source src="https://www.youtube.com/watch?v=LQ2PW9CTEv4"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">Opening of the Odesa International Academic
+                                            School</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="5h911nR9JxE">
+                                            <source src="https://www.youtube.com/watch?v=5h911nR9JxE"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">Opening of the School of the Future sports and
+                                            recreation complex</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="Uota3BwK0-g">
+                                            <source src="https://www.youtube.com/watch?v=Uota3BwK0-g"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">The story of creating a school of the future</h3>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                           uk-slidenav-previous
+                           uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                           uk-slider-item="next"></a>
+                    </div>
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="go-top-container">
+            <a href="#" class="go-top-button go-top-button-masho">
+                <div class="go-top-text">
+                    <img src="../src/svg/to-top.svg" alt="1">
+                </div>
+            </a>
+        </div>
+    </section>
+</div>
+<footer>
+    <div class="footer-main">
+        <div class="footer-address">
+            <a href="https://maps.app.goo.gl/zaXC1Rght7Eby8Jh8" target="_blank">Odessa, Academic 30</a>
+        </div>
+        <div class="footer-social-media">
+            <div class="social-media-item-wrapper instagram">
+                <div class="social-media-dark">
+                    <a href="https://masho.od.ua/" target="_blank">
+                        <img src="../src/svg/website.svg" alt="Instagram" width="28" height="28">
+                    </a>
+                </div>
+                <div class="social-media-color">
+                    <a href="https://masho.od.ua/" target="_blank">
+                        <img src="../src/svg/website.svg" alt="Instagram" width="28" height="28">
+                    </a>
+                </div>
+            </div>
+
+            <div class="social-media-item-wrapper instagram">
+                <div class="social-media-dark">
+                    <a href="https://www.instagram.com/masho.odessa/" target="_blank">
+                        <img src="../src/svg/insta.svg" alt="Instagram" width="28" height="28">
+                    </a>
+                </div>
+                <div class="social-media-color">
+                    <a href="https://www.instagram.com/masho.odessa/" target="_blank">
+                        <img src="../src/svg/instagram-color.svg" alt="Instagram" width="28" height="28">
+                    </a>
+                </div>
+            </div>
+            <div class="social-media-item-wrapper facebook">
+                <div class="social-media-dark">
+                    <a href="https://www.facebook.com/masho.odessa" target="_blank">
+                        <img src="../src/svg/fb.svg" alt="Facebook" width="28" height="28">
+                    </a>
+                </div>
+                <div class="social-media-color">
+                    <a href="https://www.facebook.com/masho.odessa" target="_blank">
+                        <img src="../src/svg/facebook-color-2.svg" alt="Facebook" width="28" height="28">
+                    </a>
+                </div>
+            </div>
+            <div class="social-media-item-wrapper phone">
+                <div class="social-media-dark">
+                    <a href="tel:+380503345555" target="_blank">
+                        <img src="../src/svg/phone-black.svg" alt="Phone" width="28" height="28">
+                    </a>
+                </div>
+                <div class="social-media-color">
+                    <a href="tel:+380503345555" target="_blank">
+                        <img src="../src/svg/phone-color.svg" alt="Phone" width="28" height="28">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/videojs-youtube@3.0.1/dist/Youtube.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/uikit3/uikit.min.js"></script>
+<script src="../assets/js/uikit3/uikit-icons.min.js"></script>
+</body>
+</html>
+
