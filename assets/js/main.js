@@ -141,7 +141,24 @@ document.addEventListener('DOMContentLoaded', function () {
     header.style.top = '0';
     header.style.opacity = '0';
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const langToggle = document.getElementById('lang-selector-toggle');
+    const langDropdown = document.getElementById('lang-dropdown');
+    const langOptions = document.querySelectorAll('.language-option');
+    const currentLang = document.querySelector('.current-language');
+    const currentLangImg = currentLang.querySelector('.flag-icon');
+    const currentLangName = currentLang.querySelector('.language-name');
+    langToggle.addEventListener('click', function(e) {
+        e.stopPropagation();
+        langDropdown.classList.toggle('show');
+    });
+    document.addEventListener('click', function(e) {
+        if (!langDropdown.contains(e.target) && !langToggle.contains(e.target)) {
+            langDropdown.classList.remove('show');
+        }
+    });
 
+});
 
 
 
