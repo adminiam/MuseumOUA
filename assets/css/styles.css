@@ -56,7 +56,12 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+.uk-navbar-nav-index {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .language-color-mgu{
     background: linear-gradient(to bottom, #2B4742, #326c66) no-repeat fixed;
 }
@@ -69,6 +74,9 @@ body {
 }
 .language-color-kyiv{
     background: linear-gradient(to bottom, #07575b, #c4dfe6) no-repeat fixed;
+}
+.language-color-index{
+    background: linear-gradient(to bottom, #1f150e, #1f1707) no-repeat fixed;
 }
 .flag-icon {
     width: 24px;
@@ -366,7 +374,16 @@ footer {
     border-right: 3px solid white;
     animation: cursor 0.95s step-end infinite, printed_text 7s steps(60);
 }
-
+.animated-text-mainPage-en {
+    width: 109rem;
+    height: 3.7rem;
+    color: white;
+    font-size: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid white;
+    animation: cursor 0.95s step-end infinite, printed_text 7s steps(70);
+}
 .overlay-mainPage {
     position: absolute;
     top: 0;

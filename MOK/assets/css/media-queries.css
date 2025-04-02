@@ -83,7 +83,12 @@
         height: 3.1rem;
         animation: cursor 0.95s step-end infinite, printed_text 3s steps(30);
     }
-
+    .animated-text-mainPage-en {
+        width: 26.7rem;
+        font-size: 33px;
+        height: 3.1rem;
+        animation: cursor 0.95s step-end infinite, printed_text 3s steps(25);
+    }
     .custom-button-mainPage {
         font-size: 14px;
         padding: 15px 20px;
@@ -111,7 +116,12 @@
         height: 2.79rem;
         animation: cursor 0.95s step-end infinite, printed_text 3s steps(30);
     }
-
+    .animated-text-mainPage-en {
+        width: 19rem;
+        font-size: 23px;
+        height: 2.79rem;
+        animation: cursor 0.95s step-end infinite, printed_text 3s steps(20);
+    }
     .custom-button-mainPage {
         font-size: 12px;
         padding: 15px 20px;
@@ -128,7 +138,11 @@
         font-size: 17px;
         animation: cursor 0.95s step-end infinite, printed_text 3s steps(30);
     }
-
+    .animated-text-mainPage-en {
+        width: 14rem;
+        font-size: 17px;
+        animation: cursor 0.95s step-end infinite, printed_text 3s steps(30);
+    }
     .custom-button-mainPage {
         font-size: 11px;
         padding: 15px 15px;
