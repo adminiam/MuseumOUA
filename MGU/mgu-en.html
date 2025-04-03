@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Музей МГУ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="../src/favicon/MGU/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../src/favicon/MGU/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../src/favicon/MGU/favicon-16x16.png">
+    <link rel="manifest" href="../src/favicon/MGU/site.webmanifest">
+    <link rel="stylesheet" href="assets/uikit3/uikit.min.css"/>
+    <link rel="stylesheet" href="../assets/css/default.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body id="mgu-body">
+<header id="mgu-header">
+    <div>
+        <nav class="uk-navbar-container uk-visible@m uk-navbar" uk-navbar="mode: click">
+            <div class="uk-navbar-center">
+                <a class="uk-logo" href="../index-en.html">
+                    <img class="mgu-logo" alt="" src="../src/img/logos/mgu_logo.png">
+                </a>
+                <ul class="uk-navbar-nav uk-navbar-nav-mgu">
+                    <li><a href="../MASHO/masho.html">Odesa International<br>Academic School</a></li>
+                    <li>
+                        <a href="#">National University<br>"Odesa Law Academy"<span uk-drop-parent-icon></span></a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-nav-mgu uk-navbar-dropdown-nav uk-animation-slide-bottom-medium">
+                                <li class="border-bottom"><a href="../OUA/oua.html">NU "OLA"</a></li>
+                                <li><a href="https://www.onua.edu.ua/ua/virtualnyi-tur-universytetom">Virtual Tour</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="../MGU/mgu.html">International Humanities<br>University</a></li>
+                    <li><a href="../KyivUN/kyivUN.html">Kyiv University of Intellectual<br>Property and Law NU"OLA"</a>
+                    </li>
+                    <li class="language-selector language-color-mgu">
+                        <div class="current-language" id="lang-selector-toggle">
+                            <img src="../src/svg/uk.svg" alt="Ukrainian" class="flag-icon">
+                            <span class="language-name">EN</span>
+                            <span uk-icon="icon: chevron-down"></span>
+                        </div>
+                        <div class="language-dropdown language-color-mgu" id="lang-dropdown">
+                            <a href="mgu.html" class="language-option" data-lang="en">
+                                <img src="../src/svg/ua.svg" alt="English" class="flag-icon">
+                                <span class="language-name">UA</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="uk-navbar uk-navbar-container uk-margin uk-hidden@m">
+            <div class="uk-navbar-right">
+                <a class="uk-navbar-toggle" href="#offcanvas-nav-mgu" uk-toggle>
+                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left"></span>
+                </a>
+            </div>
+            <div class="uk-navbar-center">
+                <a class="uk-logo" href="../index.html">
+                    <img class="mgu-logo" alt="" src="../src/img/logos/mgu_logo.png">
+                </a>
+            </div>
+        </nav>
+        <div id="offcanvas-nav-mgu" uk-offcanvas="flip: true; mode: slide">
+            <div class="uk-offcanvas-bar uk-overflow-hidden uk-offcanvas-bar-mgu">
+                <ul class="uk-nav">
+                    <li class="border-bottom"><a href="../MASHO/masho.html">Odesa International Academic School</a></li>
+                    <li class="border-bottom">
+                        <a class="uk-margin-small-bottom" href="#">National University "Odesa Law Academy"</a>
+                        <ul class="uk-nav-sub">
+                            <li><a class="uk-text-muted uk-text-left" href="../OUA/oua.html"><span
+                                    uk-icon="icon: chevron-right"></span>NU "OLA"</a></li>
+                            <li><a class="uk-text-muted uk-text-left"
+                                   href="https://www.onua.edu.ua/ua/virtualnyi-tur-universytetom"><span
+                                    uk-icon="icon: chevron-right"></span>Virtual Tour</a></li>
+                        </ul>
+                    </li>
+                    <li class="border-bottom"><a href="../MGU/mgu.html">International Humanities University</a></li>
+                    <li class="border-bottom"><a href="../KyivUN/kyivUN.html">Kyiv University of Intellectual Property
+                        and Law NU"OLA"</a></li>
+                    <li><a href="mgu.html">
+                        <img src="../src/svg/ua.svg" alt="Ukrainian" class="flag-icon">
+                        <span class="language-name">UA</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="sections-container">
+    <section id='main-information'>
+        <div class="row feature design fix-position">
+            <div class="container-left-text">
+                <div class="six columns left text margin-fixed-left">
+                    <h2>The International Humanitarian University</h2>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;The International Humanitarian University (IHU) has evolved over 20
+                        years from an initial cohort of seven students into a robust institution with a large community,
+                        setting a benchmark for non-state higher education establishments. Despite its relatively young
+                        age, IHU has gained recognition both within Ukraine and internationally. The university actively
+                        engages in career guidance activities, regularly hosting open days for prospective students and
+                        their parents. Consequently, IHU consistently achieves record enrollments of first-year
+                        students.
+                    </p>
+                </div>
+                <div id="margin-bottom-1" class="six columns left text margin-fixed-left">
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;The university's administration remains attuned to the demands of the
+                        labor market, continually refining its curriculum and monitoring employment trends. Students are
+                        introduced to potential employers early in their studies and undertake internships at renowned
+                        medical institutions, financial organizations, law enforcement agencies, hotels, restaurants,
+                        law firms, and linguistic bureaus. IHU operates its own medical and two dental clinics.
+                        Additionally, the university maintains an extensive exchange program, collaborating with
+                        numerous countries worldwide. No circumstance hinders the progress of this ambitious and
+                        goal-oriented institution, which the International Humanitarian University undoubtedly
+                        represents.
+                    </p>
+                </div>
+            </div>
+
+            <div class="six columns feature-media right">
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../src/img/MGU/periods/img1.jpg" alt="1">
+                        </div>
+                        <div class="swiper-slide"><img src="../src/img/MGU/periods/img2.jpg" alt="2">
+                        </div>
+                        <div id="knowledgeDay" class="swiper-slide"><img src="../src/img/MGU/periods/img3.jpg" alt="3">
+                        </div>
+                        <div class="swiper-slide"><img src="../src/img/MGU/periods/img4.jpg" alt="4">
+                        </div>
+                        <div class="swiper-slide"><img src="../src/img/MGU/periods/img5.jpg" alt="4">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id='universities-carousel'>
+        <div class="honor-container">
+            <div class="row responsive">
+                <div class="uk-slider-container-offset mobile-size" uk-slider>
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="slider-img" src="../src/img/MGU/periods/imgCover1.jpg" width="900"
+                                             height="600"
+                                             alt="Slider" loading="lazy">
+                                    </div>
+                                    <a class="main-pages-decoration" href="periods-en/2002-2006.html">
+                                        <div class="uk-card-body fixed-size">
+                                            <h3 class="uk-card-title">University Foundation <br>and Its First Projects</h3>
+                                            <p class="years-font-size">(2002-2006)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="slider-img" src="../src/img/MGU/periods/imgCover2.jpg" width="900"
+                                             height="600"
+                                             alt="Slider" loading="lazy">
+                                    </div>
+                                    <a class="main-pages-decoration" href="periods-en/2007-2011.html">
+                                        <div class="uk-card-body fixed-size">
+                                            <h3 class="uk-card-title">Expansion and Development</h3>
+                                            <p class="years-font-size">(2007-2011)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="slider-img" src="../src/img/MGU/periods/imgCover3.jpg" width="900"
+                                             height="600"
+                                             alt="Slider"
+                                             loading="lazy">
+                                    </div>
+                                    <a class="main-pages-decoration" href="periods-en/2012-2017.html">
+                                        <div class="uk-card-body fixed-size">
+                                            <h3 class="uk-card-title">Pro Bono Publico Activities</h3>
+                                            <p class="years-font-size">(2012-2017)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="slider-img" src="../src/img/MGU/periods/imgCover4.jpg" width="900"
+                                             height="600"
+                                             alt="Slider"
+                                             loading="lazy">
+                                    </div>
+                                    <a class="main-pages-decoration" href="periods-en/2018-2024.html">
+                                        <div id="f" class="uk-card-body fixed-size">
+                                            <h3 class="uk-card-title">Best University in International Activities</h3>
+                                            <p class="years-font-size">(2018-2024)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                           uk-slidenav-previous
+                           uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                           uk-slider-item="next"></a>
+                    </div>
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="video-carousel">
+        <div class="honor-container">
+            <div class="row responsive">
+                <div class="uk-slider-container-offset mobile-size" uk-slider>
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="E25D-qVl5vs">
+                                            <source src="https://www.youtube.com/watch?v=E25D-qVl5vs"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">Feature Film for the 20th Anniversary of the University</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="rQ141HwooQc">
+                                            <source src="https://www.youtube.com/watch?v=rQ141HwooQc"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">International Humanities University: 20 Years of Success</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="DGRP-N0UXGk">
+                                            <source src="https://www.youtube.com/watch?v=DGRP-N0UXGk"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">Feature Film for the 15th Anniversary of the University</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="Y17CR8LNqNI">
+                                            <source src="https://www.youtube.com/watch?v=Y17CR8LNqNI"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">Solemn Graduation Ceremony for 2017 Master's Graduates</h3>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                           uk-slidenav-previous
+                           uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                           uk-slider-item="next"></a>
+                    </div>
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="go-top-container">
+            <a href="#" class="go-top-button go-top-button-mgu">
+                <div class="go-top-text">
+                    <img src="../src/svg/to-top.svg" alt="1">
+                </div>
+            </a>
+        </div>
+    </section>
+</div>
+<footer>
+    <div class="footer-main">
+        <div class="footer-address">
+            <a href="https://maps.app.goo.gl/3FVB5B1Ribcqb9Pn7" target="_blank">м.Одеса, Фонтанська дорога 33</a>
+        </div>
+        <div class="footer-social-media">
+            <div class="social-media-item-wrapper instagram">
+                <div class="social-media-dark">
+                    <a href="https://www.instagram.com/mgu_od/" target="_blank">
+                        <img src="../src/svg/insta.svg" alt="Instagram" width="28" height="28">
+                    </a>
+                </div>
+                <div class="social-media-color">
+                    <a href="https://www.instagram.com/mgu_od/" target="_blank">
+                        <img src="../src/svg/instagram-color.svg" alt="Instagram" width="28" height="28">
+                    </a>
+                </div>
+            </div>
+            <div class="social-media-item-wrapper youTube">
+                <div class="social-media-dark">
+                    <a href="https://www.youtube.com/channel/UC6VTJo0XfmcQQn7t8ZPxXnw" target="_blank">
+                        <img src="../src/svg/yt.svg" alt="Youtube" width="28" height="28">
+                    </a>
+                </div>
+                <div class="social-media-color">
+                    <a href="https://www.youtube.com/channel/UC6VTJo0XfmcQQn7t8ZPxXnw" target="_blank">
+                        <img src="../src/svg/youtube-color.svg" alt="Instagram" width="28" height="28">
+                    </a>
+                </div>
+            </div>
+            <div class="social-media-item-wrapper facebook">
+                <div class="social-media-dark">
+                    <a href="https://www.facebook.com/MGU.Odessa/" target="_blank">
+                        <img src="../src/svg/fb.svg" alt="Facebook" width="28" height="28">
+                    </a>
+                </div>
+                <div class="social-media-color">
+                    <a href="https://www.facebook.com/MGU.Odessa/" target="_blank">
+                        <img src="../src/svg/facebook-color-2.svg" alt="Facebook" width="28" height="28">
+                    </a>
+                </div>
+            </div>
+            <div class="social-media-item-wrapper phone">
+                <div class="social-media-dark">
+                    <a href="tel:+380487198838" target="_blank">
+                        <img src="../src/svg/phone-black.svg" alt="Phone" width="28" height="28">
+                    </a>
+                </div>
+                <div class="social-media-color">
+                    <a href="tel:+380487198838" target="_blank">
+                        <img src="../src/svg/phone-color.svg" alt="Phone" width="28" height="28">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/videojs-youtube@3.0.1/dist/Youtube.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/videojs-resolution-switcher@0.4.2/lib/videojs-resolution-switcher.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/uikit3/uikit.min.js"></script>
+<script src="../assets/js/uikit3/uikit-icons.min.js"></script>
+</body>
+</html>
