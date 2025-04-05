@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>IEC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="src/favicon/MOK/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/favicon/MOK/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/favicon/MOK/favicon-16x16.png">
+    <link rel="manifest" href="src/favicon/MOK/site.webmanifest">
+    <link rel="stylesheet" href="MOK/assets/uikit3/uikit.min.css"/>
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="MOK/assets/css/media-queries.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body id="mainpage-body">
+<header id="mainpage-header">
+    <div>
+        <nav class="uk-navbar-container uk-visible@m uk-navbar" uk-navbar="mode: click">
+            <div class="uk-navbar-center">
+                <a class="uk-logo" href="#">
+                    <img class="all-logos-UN" alt="" src="src/img/logos/all_logos_UN.png">
+                </a>
+                <ul class="uk-navbar-nav uk-navbar-nav-mainPage">
+                    <li><a href="MASHO/masho-en.html">International Academic<br>School Odesa</a></li>
+                    <li>
+                        <a href="#">National University<br>"Odesa Law Academy"<span
+                                uk-drop-parent-icon></span></a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-nav-mainPage uk-navbar-dropdown-nav uk-animation-slide-bottom-medium">
+                                <li class="border-bottom"><a href="OUA/oua-en.html">NU "OLA"</a></li>
+                                <li><a href="https://www.onua.edu.ua/ua/virtualnyi-tur-universytetom">Virtual university
+                                    tour</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="MGU/mgu-en.html">International Humanitarian<br>University</a></li>
+                    <li><a href="KyivUN/kyivUN-en.html">Kyiv University<br> of Intellectual Property and Law</a></li>
+                    <li class="language-selector language-color-index">
+                        <div class="current-language" id="lang-selector-toggle">
+                            <img src="src/svg/uk.svg" alt="Ukrainian" class="flag-icon">
+                            <span class="language-name">EN</span>
+                            <span uk-icon="icon: chevron-down"></span>
+                        </div>
+                        <div class="language-dropdown language-color-index" id="lang-dropdown">
+                            <a href="index.html" class="language-option" data-lang="en">
+                                <img src="src/svg/ua.svg" alt="English" class="flag-icon">
+                                <span class="language-name">UA</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="uk-navbar uk-navbar-container uk-margin uk-hidden@m">
+            <div class="uk-navbar-right">
+                <a class="uk-navbar-toggle" href="#offcanvas-nav-mainPage" uk-toggle>
+                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left"></span>
+                </a>
+            </div>
+            <div class="uk-navbar-center">
+                <a class="uk-logo" href="#">
+                    <img class="all-logos-UN" alt="" src="src/img/logos/all_logos_UN.png">
+                </a>
+            </div>
+        </nav>
+        <div id="offcanvas-nav-mainPage" uk-offcanvas="flip: true; mode: slide">
+            <div class="uk-offcanvas-bar uk-overflow-hidden uk-offcanvas-bar-mainpage">
+                <ul class="uk-nav">
+                    <li class="border-bottom"><a href="MASHO/masho-en.html">International Academic School Odesa</a></li>
+                    <li class="border-bottom">
+                        <a class="uk-margin-small-bottom" href="#">National University "Odesa Law Academy"</a>
+                        <ul class="uk-nav-sub">
+                            <li><a class="uk-text-muted uk-text-left" href="OUA/oua-en.html"><span
+                                    uk-icon="icon: chevron-right"></span>NU "OLA"</a></li>
+                            <li><a class="uk-text-muted uk-text-left"
+                                   href="https://www.onua.edu.ua/ua/virtualnyi-tur-universytetom"><span
+                                    uk-icon="icon: chevron-right"></span>Virtual university tour</a></li>
+                        </ul>
+                    </li>
+                    <li class="border-bottom"><a href="MGU/mgu-en.html">International Humanitarian University</a></li>
+                    <li class="border-bottom"><a href="KyivUN/kyivUN-en.html">Kyiv University of Intellectual Property and
+                        Law</a></li>
+                    <li><a href="index.html">
+                        <img src="src/svg/ua.svg" alt="Ukrainian" class="flag-icon">
+                        <span class="language-name">UA</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="sections-container">
+    <section id="overlay_misc">
+        <div class="overlay-mainPage"></div>
+        <div id="video-container-mainPage">
+        </div>
+        <video id="background-video" autoplay muted loop playsinline>
+            <source src="src/video/masho.mp4" type="video/mp4">
+        </video>
+        <div class="wrapper-animated-text-mainPage">
+            <div class="animated-text-mainPage-en desktop-text">Welcome to the International Educational Corporation</div>
+            <div class="animated-text-mainPage-en mobile-text">Welcome to IEC</div>
+        </div>
+        <div class="button-container-mainPage">
+            <a href="#un-carousel" class="custom-button-mainPage main-pages-decoration">
+                To educational institutions
+            </a>
+        </div>
+    </section>
+    <div id="un-carousel"></div>
+    <section id='universities-carousel'>
+        <div class="honor-container">
+            <div class="row responsive">
+                <div class="uk-slider-container-offset mobile-size" uk-slider>
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="slider-img" src="src/img/MainPagesPhoto/masho-od.jpg" width="900"
+                                             height="600"
+                                             alt="Slider" loading="lazy">
+                                    </div>
+                                    <a class="main-pages-decoration" href="MASHO/masho-en.html">
+                                        <div class="uk-card-body fixed-size">
+                                            <h3 class="uk-card-title">International Academic<br>School Odesa</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="slider-img" src="src/img/MainPagesPhoto/nu-oua.jpg"
+                                             alt="Slider" loading="lazy">
+                                    </div>
+                                    <a class="main-pages-decoration" href="OUA/oua-en.html">
+                                        <div class="uk-card-body fixed-size">
+                                            <h3 class="uk-card-title">National University <br>"Odesa Law Academy"</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="slider-img" src="src/img/MainPagesPhoto/mgu-od.jpg"
+                                             alt="Slider"
+                                             loading="lazy">
+                                    </div>
+                                    <a class="main-pages-decoration" href="MGU/mgu-en.html">
+                                        <div class="uk-card-body fixed-size">
+                                            <h3 class="uk-card-title">International Humanitarian<br>University</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="slider-img" src="src/img/MainPagesPhoto/kyiv-UN2.jpg" width="900"
+                                             height="600"
+                                             alt="Slider"
+                                             loading="lazy">
+                                    </div>
+                                    <a class="main-pages-decoration" href="KyivUN/kyivUN-en.html">
+                                        <div class="uk-card-body fixed-size">
+                                            <h3 class="uk-card-title">Kyiv University of Intellectual<br>
+                                                Property and Law</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="slider-img" src="src/img/College/img_1.jpg" width="900" height="600"
+                                             alt="Slider"
+                                             loading="lazy">
+                                    </div>
+                                    <a class="main-pages-decoration" href="College/college-en.html">
+                                        <div class="uk-card-body fixed-size">
+                                            <h3 class="uk-card-title">Professional College</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="slider-img" src="src/img/Frankivsk/img_4.jpg" width="900"
+                                             height="600"
+                                             alt="Slider"
+                                             loading="lazy">
+                                    </div>
+                                    <a class="main-pages-decoration" href="Frankivsk/frankivsk-en.html">
+                                        <div class="uk-card-body fixed-size">
+                                            <h3 class="uk-card-title">Ivano-Frankivsk Educational and Scientific<br>
+                                                Law Institute</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="slider-img" src="src/img/Chernivtsi/img_3.jpg" width="900"
+                                             height="600"
+                                             alt="Slider"
+                                             loading="lazy">
+                                    </div>
+                                    <a class="main-pages-decoration" href="Chernivtsi/chernivtsi-en.html">
+                                        <div class="uk-card-body fixed-size">
+                                            <h3 class="uk-card-title">Chernivtsi Educational and Scientific<br>Law
+                                                Institute</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                           uk-slidenav-previous
+                           uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                           uk-slider-item="next"></a>
+                    </div>
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="video-carousel">
+        <div class="honor-container">
+            <div class="row responsive">
+                <div class="uk-slider-container-offset mobile-size" uk-slider>
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="Uota3BwK0-g">
+                                            <source src="https://www.youtube.com/watch?v=Uota3BwK0-g"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">IASO: history of creating the school of the
+                                            future</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="Y4r1tRaQjWk">
+                                            <source src="https://www.youtube.com/watch?v=Y4r1tRaQjWk"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">Film commemorating the 25th anniversary of the
+                                            National University "Odesa Law Academy"</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="rQ141HwooQc">
+                                            <source src="https://www.youtube.com/watch?v=rQ141HwooQc"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">International Humanitarian University: 20 years
+                                            of success</h3>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <div class="video-container">
+                                            <video class="video-js vjs-default-skin" controls
+                                                   data-youtube-id="rgx9i5dfEO4">
+                                                <source src="https://www.youtube.com/watch?v=rgx9i5dfEO4"
+                                                        type="video/youtube">
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">Anniversary Knowledge Day at Kyiv University
+                                            of Intellectual Property and Law</h3>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                           uk-slidenav-previous
+                           uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                           uk-slider-item="next"></a>
+                    </div>
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id='main-information'>
+        <div class="row design display">
+            <div class="six columns left img-center">
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="src/img/MainPagesPhoto/svimg1.jpg" alt="1">
+                        </div>
+                        <div class="swiper-slide"><img src="src/img/MainPagesPhoto/svimg2.jpg" alt="2">
+                        </div>
+                        <div class="swiper-slide"><img src="src/img/MainPagesPhoto/svimg3.jpg" alt="3">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="six columns right text margin-mainPage">
+                <h1>About the Founder</h1>
+                <h2>Sergiy Kivalov</h2>
+                <p>Well-known Ukrainian politician, state and public figure, People's Deputy of Ukraine of the
+                    III–VIII
+                    convocations, president of the National University "Odesa Law Academy", as well as the International
+                    Humanitarian
+                    University, Kyiv University of Intellectual Property and Law, and International Academic School
+                    Odesa, Doctor of Law,
+                    professor, academician, Honored Lawyer of Ukraine, Honorary Employee of the Prosecutor's Office of
+                    Ukraine, academician
+                    of the National Academy of Legal Sciences of Ukraine, head of the Southern Regional Scientific
+                    Center
+                    of the National Academy of Legal Sciences of Ukraine, academician of the National Academy of
+                    Pedagogical Sciences
+                    of Ukraine,
+                    a specialist in administrative law and process, customs law, and theory of public administration
+                    known in Ukraine and far beyond its borders,
+                    awarded numerous state and departmental awards.
+                </p>
+            </div>
+        </div>
+        <div class="go-top-container">
+            <a href="#" class="go-top-button go-top-button-mainPage">
+                <div class="go-top-text">
+                    <img src="src/svg/to-top.svg" alt="1">
+                </div>
+            </a>
+        </div>
+    </section>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/videojs-youtube@3.0.1/dist/Youtube.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/uikit3/uikit.min.js"></script>
+<script src="assets/js/uikit3/uikit-icons.min.js"></script>
+</body>
+</html>

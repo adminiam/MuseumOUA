@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Музей НУ"ОЮА"</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="../src/favicon/OUA/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../src/favicon/OUA/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../src/favicon/OUA/favicon-16x16.png">
+    <link rel="manifest" href="../src/favicon/OUA/site.webmanifest">
+    <link rel="stylesheet" href="assets/uikit3/uikit.min.css"/>
+    <link rel="stylesheet" href="../assets/css/default.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body id="oua-body">
+<header id="oua-header">
+    <div>
+        <nav class="uk-navbar-container uk-visible@m uk-navbar" uk-navbar="mode: click">
+            <div class="uk-navbar-center">
+                <a class="uk-logo" href="../index-en.html">
+                    <img class="oua-logo" alt="" src="../src/img/logos/oua_logo.png">
+                </a>
+                <ul class="uk-navbar-nav uk-navbar-nav-oua">
+                    <li><a href="../MASHO/masho.html">Odesa International<br>Academic School</a></li>
+                    <li>
+                        <a href="../OUA/oua.html">National University<br>"Odesa Law Academy"<span
+                                uk-drop-parent-icon></span></a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-nav-oua uk-navbar-dropdown-nav uk-animation-slide-bottom-medium">
+                                <li class="border-bottom"><a href="../OUA/oua.html">NU "OLA"</a></li>
+                                <li><a href="https://www.onua.edu.ua/ua/virtualnyi-tur-universytetom">Virtual Tour of
+                                    the University</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="../MGU/mgu.html">International Humanities<br>University</a></li>
+                    <li><a href="../KyivUN/kyivUN.html">Kyiv University of Intellectual<br>Property and Law NU"OLA"</a>
+                    </li>
+                    <li class="language-selector language-color-oua">
+                        <div class="current-language" id="lang-selector-toggle">
+                            <img src="../src/svg/uk.svg" alt="Ukrainian" class="flag-icon">
+                            <span class="language-name">EN</span>
+                            <span uk-icon="icon: chevron-down"></span>
+                        </div>
+                        <div class="language-dropdown language-color-oua" id="lang-dropdown">
+                            <a href="frankivsk.html" class="language-option" data-lang="en">
+                                <img src="../src/svg/ua.svg" alt="English" class="flag-icon">
+                                <span class="language-name">UA</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="uk-navbar uk-navbar-container uk-margin uk-hidden@m">
+            <div class="uk-navbar-right">
+                <a class="uk-navbar-toggle" href="#offcanvas-nav-oua" uk-toggle>
+                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left"></span>
+                </a>
+            </div>
+            <div class="uk-navbar-center">
+                <a class="uk-logo" href="../index.html">
+                    <img class="oua-logo" alt="" src="../src/img/logos/oua_logo.png">
+                </a>
+            </div>
+        </nav>
+
+        <div id="offcanvas-nav-oua" uk-offcanvas="flip: true; mode: slide">
+            <div class="uk-offcanvas-bar uk-overflow-hidden uk-offcanvas-bar-oua">
+                <ul class="uk-nav">
+                    <li class="border-bottom"><a href="../MASHO/masho.html">Odesa International Academic School</a></li>
+                    <li class="border-bottom">
+                        <a class="uk-margin-small-bottom" href="#">National University "Odesa Law Academy"</a>
+                        <ul class="uk-nav-sub">
+                            <li><a class="uk-text-muted uk-text-left" href="../OUA/oua.html"><span
+                                    uk-icon="icon: chevron-right"></span>NU "OLA"</a></li>
+                            <li><a class="uk-text-muted uk-text-left"
+                                   href="https://www.onua.edu.ua/ua/virtualnyi-tur-universytetom"><span
+                                    uk-icon="icon: chevron-right"></span>Virtual Tour of the University</a></li>
+                        </ul>
+                    </li>
+                    <li class="border-bottom"><a href="../MGU/mgu.html">International Humanities University</a></li>
+                    <li class="border-bottom"><a href="../KyivUN/kyivUN.html">Kyiv University of Intellectual Property
+                        and Law NU"OLA"</a></li>
+                    <li><a href="frankivsk.html">
+                        <img src="../src/svg/ua.svg" alt="Ukrainian" class="flag-icon">
+                        <span class="language-name">UA</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="sections-container">
+    <section id='main-information'>
+        <div class="row feature design fix-position">
+            <div class="container-left-text">
+                <div class="six columns left text margin-fixed-left">
+                    <h2>Ivano-Frankivsk Educational and Scientific Law Institute</h2>
+                    <p>The Ivano-Frankivsk Educational and Scientific Law Institute is a leading educational institution
+                        that
+                        trains highly qualified specialists in the field of law. The institute combines years of
+                        experience,
+                        modern teaching methodologies, and a strong material and technical base, ensuring high-quality
+                        legal
+                        education.</p>
+                </div>
+                <div id="margin-bottom-1" class="six columns left text margin-fixed-left">
+                    <p>The institute began its operations in 2008 and has since evolved from an educational consulting
+                        center
+                        into a full-fledged educational and scientific institution. It is housed in an academic building
+                        covering
+                        over 4,000 square meters, featuring modern lecture halls, specialized laboratories, and a
+                        library. The
+                        institute provides comfortable conditions for learning and research, as well as opportunities
+                        for an
+                        active student life.</p>
+                </div>
+            </div>
+            <div class="six columns feature-media right">
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../src/img/Frankivsk/img_7.jpg" alt="7"></div>
+                        <div class="swiper-slide"><img src="../src/img/Frankivsk/img_2.jpg" alt="2"></div>
+                        <div class="swiper-slide"><img src="../src/img/Frankivsk/img_3.jpg" alt="3"></div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row feature">
+            <div class="six columns feature-media left">
+                <img class="img-misc" src="../src/img/Frankivsk/img_5.jpg" alt="5">
+            </div>
+            <div class="container-right-text">
+                <div class="six columns right text margin-fixed-right">
+                    <p>The Ivano-Frankivsk Educational and Scientific Law Institute was founded in 2008 as an
+                        educational consulting
+                        center of the Odesa National Law Academy. In 2010, it was reorganized into a faculty and later
+                        became
+                        the Prykarpattia Law Institute. The institute received its current name in 2022.</p>
+                    <p>One of the key indicators of the institute's academic, scientific, and community engagement
+                        success is the
+                        employment rate of its graduates. A combination of high-quality theoretical, practical, and
+                        personal
+                        training, along with a prestigious diploma, gives young specialists a competitive edge in the
+                        job market.</p>
+                </div>
+                <div class="six columns right text margin-fixed-right">
+                    <p>Graduates of the institute work in courts, the Security Service of Ukraine, the prosecutor’s
+                        office, the
+                        justice system, the national police, and other law enforcement agencies, as well as in
+                        government bodies
+                        and local self-government institutions. Many also contribute to human rights organizations or
+                        pursue
+                        careers in advocacy and notarial practice.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row feature design display reverse">
+            <div class="container-left-text">
+                <div class="six columns left text margin-fixed-left">
+                    <h2>Student Life</h2>
+                    <p>The institute's academic building has its own designated territory and includes:<br>
+                        • 3 lecture halls accommodating 140–150 students each;<br>
+                        • 3 lecture halls for 120–130 students each;<br>
+                        • 1 lecture hall for 80 students;<br>
+                        • 25 classrooms for seminars and practical sessions.</p>
+                    <p>Additionally, the institute features a forensic laboratory, a computer lab, and a specialized
+                        library with
+                        a reading room. For students' physical development, there is a stadium and a sports ground,
+                        while a cafeteria
+                        and cafés provide comfortable spaces for relaxation.</p>
+                </div>
+                <div class="six columns left text margin-fixed-left">
+                    <p>Students of the institute actively participate in scientific conferences, cultural events, and
+                        sports
+                        competitions. Creative clubs and a vocal ensemble are available, and intellectual tournaments
+                        are
+                        regularly held. The institute's football team, "Jurist", represents the institution in city and
+                        regional
+                        championships.</p>
+                    <p>Additionally, students are actively involved in charitable initiatives, support for the Armed
+                        Forces of Ukraine,
+                        and various volunteer programs.</p>
+                </div>
+            </div>
+            <div class="six columns feature-media right">
+                <img class="img-misc" src="../src/img/Frankivsk/img_6.jpg" alt="6">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row feature design display reverse">
+            <div class="container-left-text">
+                <div class="six columns left text margin-fixed-left">
+                    <h2>International Recognition</h2>
+                    <p>In 2021, the institute was visited by the Minister of Education and Science of Ukraine, Serhiy
+                        Shkarlet,
+                        which confirmed the institution's significance at the national level. The institute continues to
+                        integrate
+                        into the international educational space and improve the quality of legal education.</p>
+                    <p>The Ivano-Frankivsk Educational and Scientific Law Institute is a modern institution that trains
+                        highly
+                        qualified specialists for Ukraine's legal sector.</p>
+                </div>
+            </div>
+            <div class="six columns feature-media right">
+                <img class="img-misc" src="../src/img/Frankivsk/img_4.jpg" alt="4">
+            </div>
+        </div>
+    </section>
+    <section id="video-carousel">
+        <div class="honor-container">
+            <div class="row responsive">
+                <div class="uk-slider-container-offset mobile-size" uk-slider>
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="Yjyz6X1gUXY">
+                                            <source src="https://youtu.be/Yjyz6X1gUXY"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">History of the Development of the Odesa School of
+                                            Law</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="BPPuklLrQWc">
+                                            <source src="https://youtu.be/BPPuklLrQWc"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">For Applicants to the Ivano-Frankivsk Law
+                                            Institute</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="JvrPsuFIvs4">
+                                            <source src="https://youtu.be/JvrPsuFIvs4"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">Overview of the Ivano-Frankivsk Educational and
+                                            Scientific Law Institute</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="ADlpq6VHzRE">
+                                            <source src="https://youtu.be/ADlpq6VHzRE"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">Election of the Director of the Ivano-Frankivsk Law
+                                            Institute</h3>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                           uk-slidenav-previous
+                           uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                           uk-slider-item="next"></a>
+                    </div>
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="go-top-container">
+            <a href="#" class="go-top-button go-top-button-oua">
+                <div class="go-top-text">
+                    <img src="../src/svg/to-top.svg" alt="1">
+                </div>
+            </a>
+        </div>
+    </section>
+</div>
+<footer>
+    <div class="footer-main">
+        <div class="footer-address">
+            <a href="https://maps.app.goo.gl/VNCv7oxnQNMP8f8VA" target="_blank">Ivano-Frankivsk, Maksymovycha St. 13</a>
+        </div>
+        <div class="footer-social-media">
+            <div class="social-media-item-wrapper instagram">
+                <div class="social-media-dark">
+                    <a href="https://iflaw.edu.ua/" target="_blank">
+                        <img src="../src/svg/website.svg" alt="Instagram" width="28" height="28">
+                    </a>
+                </div>
+                <div class="social-media-color">
+                    <a href="https://iflaw.edu.ua/" target="_blank">
+                        <img src="../src/svg/website.svg" alt="Instagram" width="28" height="28">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="social-media-dark">
+                    <a href="mailto:dekanat_if@onua.edu.ua" target="_blank">
+                        <img src="../src/svg/mail.svg" alt="mail" width="28" height="28">
+                    </a>
+                </div>
+            </div>
+            <div class="social-media-item-wrapper phone">
+                <div class="social-media-dark">
+                    <a href="tel:+380342720751" target="_blank">
+                        <img src="../src/svg/phone-black.svg" alt="Phone" width="28" height="28">
+                    </a>
+                </div>
+                <div class="social-media-color">
+                    <a href="tel:+380342720751" target="_blank">
+                        <img src="../src/svg/phone-color.svg" alt="Phone" width="28" height="28">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/videojs-youtube@3.0.1/dist/Youtube.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/uikit3/uikit.min.js"></script>
+<script src="../assets/js/uikit3/uikit-icons.min.js"></script>
+</body>
+</html>

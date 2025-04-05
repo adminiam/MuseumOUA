@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Музей НУ"ОЮА"</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="../src/favicon/OUA/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../src/favicon/OUA/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../src/favicon/OUA/favicon-16x16.png">
+    <link rel="manifest" href="../src/favicon/OUA/site.webmanifest">
+    <link rel="stylesheet" href="assets/uikit3/uikit.min.css"/>
+    <link rel="stylesheet" href="../assets/css/default.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body id="oua-body">
+<header id="oua-header">
+    <div>
+        <nav class="uk-navbar-container uk-visible@m uk-navbar" uk-navbar="mode: click">
+            <div class="uk-navbar-center">
+                <a class="uk-logo" href="../index.html">
+                    <img class="oua-logo" alt="" src="../src/img/logos/oua_logo.png">
+                </a>
+                <ul class="uk-navbar-nav uk-navbar-nav-oua">
+                    <li><a href="../MASHO/masho.html">Міжнародна академічна<br>школа Одеса</a></li>
+                    <li>
+                        <a href="../OUA/oua.html">Національний університет<br>"Одеська юридична академія"<span
+                                uk-drop-parent-icon></span></a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-nav-oua uk-navbar-dropdown-nav uk-animation-slide-bottom-medium">
+                                <li class="border-bottom"><a href="../OUA/oua.html">НУ "ОЮА"</a></li>
+                                <li><a href="https://www.onua.edu.ua/ua/virtualnyi-tur-universytetom">Віртуальний тур
+                                    університетом</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="../MGU/mgu.html">Міжнародний гуманітарний<br>університет</a></li>
+                    <li><a href="../KyivUN/kyivUN.html">Київський університет інтелектуальної<br>власності та права НУ
+                        «ОЮА»</a></li>
+                    <li class="language-selector language-color-oua">
+                        <div class="current-language " id="lang-selector-toggle">
+                            <img src="../src/svg/ua.svg" alt="Ukrainian" class="flag-icon">
+                            <span class="language-name">UA</span>
+                            <span uk-icon="icon: chevron-down"></span>
+                        </div>
+                        <div class="language-dropdown language-color-oua" id="lang-dropdown">
+                            <a href="frankivsk-en.html" class="language-option" data-lang="en">
+                                <img src="../src/svg/uk.svg" alt="English" class="flag-icon">
+                                <span class="language-name">EN</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="uk-navbar uk-navbar-container uk-margin uk-hidden@m">
+            <div class="uk-navbar-right">
+                <a class="uk-navbar-toggle" href="#offcanvas-nav-oua" uk-toggle>
+                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left"></span>
+                </a>
+            </div>
+            <div class="uk-navbar-center">
+                <a class="uk-logo" href="../index.html">
+                    <img class="oua-logo" alt="" src="../src/img/logos/oua_logo.png">
+                </a>
+            </div>
+        </nav>
+
+        <div id="offcanvas-nav-oua" uk-offcanvas="flip: true; mode: slide">
+            <div class="uk-offcanvas-bar uk-overflow-hidden uk-offcanvas-bar-oua">
+                <ul class="uk-nav">
+                    <li class="border-bottom"><a href="../MASHO/masho.html">Міжнародна академічна школа Одеса</a></li>
+                    <li class="border-bottom">
+                        <a class="uk-margin-small-bottom" href="#">Національний університет "Одеська юридична
+                            академія"</a>
+                        <ul class="uk-nav-sub">
+                            <li><a class="uk-text-muted uk-text-left" href="../OUA/oua.html"><span
+                                    uk-icon="icon: chevron-right"></span>НУ "ОЮА"</a></li>
+                            <li><a class="uk-text-muted uk-text-left"
+                                   href="https://www.onua.edu.ua/ua/virtualnyi-tur-universytetom"><span
+                                    uk-icon="icon: chevron-right"></span>Віртуальний тур університетом</a></li>
+                        </ul>
+                    </li>
+                    <li class="border-bottom"><a href="../MGU/mgu.html">Міжнародний гуманітарний університет</a></li>
+                    <li class="border-bottom"><a href="../KyivUN/kyivUN.html">Київський університет інтелектуальної
+                        власності та права</a></li>
+                    <li><a href="frankivsk-en.html">
+                        <img src="../src/svg/uk.svg" alt="Ukrainian" class="flag-icon">
+                        <span class="language-name">EN</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</header>
+<div class="sections-container">
+    <section id='main-information'>
+        <div class="row feature design fix-position">
+            <div class="container-left-text">
+                <div class="six columns left text margin-fixed-left">
+                    <h2>Івано-Франківський навчально-науковий<br>юридичний інститут</h2>
+                    <p>Івано-Франківський навчально-науковий юридичний інститут – це провідний освітній заклад, який
+                        здійснює підготовку висококваліфікованих фахівців у галузі права. Інститут поєднує багаторічний
+                        досвід, сучасні методики навчання та міцну матеріально-технічну базу, що забезпечує якісну
+                        юридичну освіту.</p>
+                </div>
+                <div id="margin-bottom-1" class="six columns left text margin-fixed-left">
+                    <p>Інститут розпочав свою діяльність у 2008 році та з того часу пройшов шлях становлення від
+                        навчально-консультаційного центру до повноцінного навчально-наукового закладу. Інститут
+                        розташований у навчальному корпусі площею понад 4 тисячі квадратних метрів, що включає сучасні
+                        лекційні аудиторії, спеціалізовані лабораторії та бібліотеку. Тут створені комфортні умови для
+                        навчання та наукових досліджень, а також можливості для активного студентського життя.</p>
+                </div>
+            </div>
+            <div class="six columns feature-media right">
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../src/img/Frankivsk/img_7.jpg" alt="7"></div>
+                        <div class="swiper-slide"><img src="../src/img/Frankivsk/img_2.jpg" alt="2"></div>
+                        <div class="swiper-slide"><img src="../src/img/Frankivsk/img_3.jpg" alt="3"></div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row feature">
+            <div class="six columns feature-media left">
+                <img class="img-misc" src="../src/img/Frankivsk/img_5.jpg" alt="5">
+            </div>
+            <div class="container-right-text">
+                <div class="six columns right text margin-fixed-right">
+                    <p>Івано-Франківський навчально-науковий юридичний інститут був заснований у 2008 році як
+                        навчально-консультаційний центр Одеської національної юридичної академії. У 2010 році він був
+                        реорганізований у факультет, а згодом – у Прикарпатський юридичний інститут. Сучасну назву
+                        інститут отримав у 2022 році.</p>
+                    <p>Одним із головних показників навчальної, наукової та громадської роботи інституту є рівень
+                        працевлаштування студентів. Кваліфікована теоретична, практична та особистісна підготовка,
+                        спільно з престижним дипломом, забезпечують молодим фахівцям перевагу при працевлаштуванні та
+                        дають можливість бути конкурентоспроможними на ринку праці.</p>
+                </div>
+                <div class="six columns right text margin-fixed-right">
+                    <p>Випускники Інституту працюють у судах, Службі безпеки України, органах прокуратури, юстиції,
+                        національній поліції та інших правоохоронних органах, органах державної влади та місцевого
+                        самоврядування, в громадських правозахисних організаціях, займаються адвокатською та
+                        нотаріальною практикою.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row feature design display reverse">
+            <div class="container-left-text">
+                <div class="six columns left text margin-fixed-left">
+                    <h2>Студентське життя</h2>
+                    <p>Навчальний корпус інституту має власну територію та включає:<br>
+                        • 3 лекційні аудиторії на 140–150 студентів;<br>
+                        • 3 аудиторії на 120–130 студентів;<br>
+                        • аудиторію на 80 студентів;<br>
+                        • 25 аудиторій для семінарських і практичних занять.</p>
+                    <p>Крім того, інститут має криміналістичну лабораторію, комп’ютерний клас, спеціалізовану бібліотеку
+                        з читальним залом. Для фізичного розвитку студентів передбачені стадіон та спортивний майданчик,
+                        а для комфортного відпочинку – їдальня та кафетерії.</p>
+                </div>
+                <div class="six columns left text margin-fixed-left">
+                    <p>Студенти інституту беруть активну участь у наукових конференціях, культурних заходах та
+                        спортивних змаганнях. Діють творчі гуртки, вокальний ансамбль, проводяться інтелектуальні
+                        турніри. Футбольна команда "Юрист" представляє інститут на міських та обласних чемпіонатах.</p>
+                    <p>Також студенти активно залучені до благодійних ініціатив, допомоги Збройним Силам України та
+                        волонтерських програм.</p>
+                </div>
+            </div>
+            <div class="six columns feature-media right">
+                <img class="img-misc" src="../src/img/Frankivsk/img_6.jpg" alt="6">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row feature design display reverse">
+            <div class="container-left-text">
+                <div class="six columns left text margin-fixed-left">
+                    <h2>Міжнародне визнання</h2>
+                    <p>У 2021 році інститут відвідав міністр освіти і науки України Сергій Шкарлет, що підтвердило
+                        значущість навчального закладу на національному рівні. Інститут продовжує інтегруватися у
+                        міжнародний освітній простір та вдосконалювати якість підготовки юристів.</p>
+                    <p>Івано-Франківський навчально-науковий юридичний інститут – це сучасний заклад, що готує
+                        висококваліфікованих фахівців для юридичної сфери України.</p>
+                </div>
+            </div>
+            <div class="six columns feature-media right">
+                <img class="img-misc" src="../src/img/Frankivsk/img_4.jpg" alt="4">
+            </div>
+        </div>
+    </section>
+    <section id="video-carousel">
+        <div class="honor-container">
+            <div class="row responsive">
+                <div class="uk-slider-container-offset mobile-size" uk-slider>
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="Yjyz6X1gUXY">
+                                            <source src="https://youtu.be/Yjyz6X1gUXY"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">Історія розвитку Одеської школи права</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="BPPuklLrQWc">
+                                            <source src="https://youtu.be/BPPuklLrQWc"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">Абітурієнту Івано-Франківського юридичного
+                                            інституту</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="JvrPsuFIvs4">
+                                            <source src="https://youtu.be/JvrPsuFIvs4"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">Огляд Івано-Франківського навчально-наукового
+                                            юридичного інституту</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="ADlpq6VHzRE">
+                                            <source src="https://youtu.be/ADlpq6VHzRE"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">Вибори директора Івано-Франківського юридичного
+                                            інституту</h3>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                           uk-slidenav-previous
+                           uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                           uk-slider-item="next"></a>
+                    </div>
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="go-top-container">
+            <a href="#" class="go-top-button go-top-button-oua">
+                <div class="go-top-text">
+                    <img src="../src/svg/to-top.svg" alt="1">
+                </div>
+            </a>
+        </div>
+    </section>
+</div>
+<footer>
+    <div class="footer-main">
+        <div class="footer-address">
+            <a href="https://maps.app.goo.gl/VNCv7oxnQNMP8f8VA" target="_blank">м.Івано-Франківськ, вул. Максимовича
+                13</a>
+
+        </div>
+        <div class="footer-social-media">
+            <div class="social-media-item-wrapper instagram">
+                <div class="social-media-dark">
+                    <a href="https://iflaw.edu.ua/" target="_blank">
+                        <img src="../src/svg/website.svg" alt="Instagram" width="28" height="28">
+                    </a>
+                </div>
+                <div class="social-media-color">
+                    <a href="https://iflaw.edu.ua/" target="_blank">
+                        <img src="../src/svg/website.svg" alt="Instagram" width="28" height="28">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="social-media-dark">
+                    <a href="mailto:dekanat_if@onua.edu.ua" target="_blank">
+                        <img src="../src/svg/mail.svg" alt="mail" width="28" height="28">
+                    </a>
+                </div>
+            </div>
+            <div class="social-media-item-wrapper phone">
+                <div class="social-media-dark">
+                    <a href="tel:+380342720751" target="_blank">
+                        <img src="../src/svg/phone-black.svg" alt="Phone" width="28" height="28">
+                    </a>
+                </div>
+                <div class="social-media-color">
+                    <a href="tel:+380342720751" target="_blank">
+                        <img src="../src/svg/phone-color.svg" alt="Phone" width="28" height="28">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/videojs-youtube@3.0.1/dist/Youtube.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/uikit3/uikit.min.js"></script>
+<script src="../assets/js/uikit3/uikit-icons.min.js"></script>
+</body>
+</html>

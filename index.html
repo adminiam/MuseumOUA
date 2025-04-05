@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <title>Музей МОК</title>
+    <title>МОК</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="src/favicon/MOK/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="src/favicon/MOK/favicon-32x32.png">
@@ -26,7 +26,7 @@
                 <a class="uk-logo" href="#">
                     <img class="all-logos-UN" alt="" src="src/img/logos/all_logos_UN.png">
                 </a>
-                <ul class="uk-navbar-nav uk-navbar-nav-mainPage">
+                <ul class="uk-navbar-nav uk-navbar-nav-index uk-navbar-nav-mainPage">
                     <li><a href="MASHO/masho.html">Міжнародна академічна<br>школа Одеса</a></li>
                     <li>
                         <a href="#">Національний університет<br>"Одеська юридична академія"<span
@@ -41,6 +41,19 @@
                     </li>
                     <li><a href="MGU/mgu.html">Міжнародний гуманітарний<br>університет</a></li>
                     <li><a href="KyivUN/kyivUN.html">Київський університет<br> інтелектуальноївласності та права</a></li>
+                    <li class="language-selector language-color-index">
+                        <div class="current-language " id="lang-selector-toggle">
+                            <img src="src/svg/ua.svg" alt="Ukrainian" class="flag-icon">
+                            <span class="language-name">UA</span>
+                            <span uk-icon="icon: chevron-down"></span>
+                        </div>
+                        <div class="language-dropdown language-color-index" id="lang-dropdown">
+                            <a href="index-en.html" class="language-option" data-lang="en">
+                                <img src="src/svg/uk.svg" alt="English" class="flag-icon">
+                                <span class="language-name">EN</span>
+                            </a>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -74,6 +87,9 @@
                     <li class="border-bottom"><a href="MGU/mgu.html">Міжнародний гуманітарний університет</a></li>
                     <li class="border-bottom"><a href="KyivUN/kyivUN.html">Київський університет інтелектуальної
                         власності та права</a></li>
+                    <li><a href="index-en.html">
+                        <img src="src/svg/uk.svg" alt="Ukrainian" class="flag-icon">
+                        <span class="language-name">EN</span></a></li>
                 </ul>
             </div>
         </div>
@@ -88,7 +104,8 @@
             <source src="src/video/masho.mp4" type="video/mp4">
         </video>
         <div class="wrapper-animated-text-mainPage">
-            <div class="animated-text-mainPage">Вітаємо Вас у нашому Музеї</div>
+            <div class="animated-text-mainPage desktop-text">Вітаємо Вас у Міжнародній освітній корпорації</div>
+            <div class="animated-text-mainPage mobile-text">Вітаємо Вас у МОК</div>
         </div>
         <div class="button-container-mainPage">
             <a href="#un-carousel" class="custom-button-mainPage main-pages-decoration">
@@ -152,10 +169,53 @@
                                              loading="lazy">
                                     </div>
                                     <a class="main-pages-decoration" href="KyivUN/kyivUN.html">
-                                        <div id="f" class="uk-card-body fixed-size">
+                                        <div class="uk-card-body fixed-size">
                                             <h3 class="uk-card-title">Київський університет інтелектуальної<br>
                                                 власності та
                                                 права</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="slider-img" src="src/img/College/img_1.jpg" width="900" height="600"
+                                             alt="Слайдер"
+                                             loading="lazy">
+                                    </div>
+                                    <a class="main-pages-decoration" href="College/college.html">
+                                        <div class="uk-card-body fixed-size">
+                                            <h3 class="uk-card-title">Фаховий колледж</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="slider-img" src="src/img/Frankivsk/img_4.jpg" width="900" height="600"
+                                             alt="Слайдер"
+                                             loading="lazy">
+                                    </div>
+                                    <a class="main-pages-decoration" href="Frankivsk/frankivsk.html">
+                                        <div class="uk-card-body fixed-size">
+                                            <h3 class="uk-card-title">Івано-Франківський навчально-науковий<br>
+                                                юридичний інститут</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="slider-img" src="src/img/Chernivtsi/img_3.jpg" width="900" height="600"
+                                             alt="Слайдер"
+                                             loading="lazy">
+                                    </div>
+                                    <a class="main-pages-decoration" href="Chernivtsi/chernivtsi.html">
+                                        <div class="uk-card-body fixed-size">
+                                            <h3 class="uk-card-title">Чернiвецький навчально-науковий<br>юридичний інститут</h3>
                                         </div>
                                     </a>
                                 </div>

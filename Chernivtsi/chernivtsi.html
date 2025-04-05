@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Музей НУ"ОЮА"</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="../src/favicon/OUA/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../src/favicon/OUA/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../src/favicon/OUA/favicon-16x16.png">
+    <link rel="manifest" href="../src/favicon/OUA/site.webmanifest">
+    <link rel="stylesheet" href="assets/uikit3/uikit.min.css"/>
+    <link rel="stylesheet" href="../assets/css/default.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body id="oua-body">
+<header id="oua-header">
+    <div>
+        <nav class="uk-navbar-container uk-visible@m uk-navbar" uk-navbar="mode: click">
+            <div class="uk-navbar-center">
+                <a class="uk-logo" href="../index.html">
+                    <img class="oua-logo" alt="" src="../src/img/logos/oua_logo.png">
+                </a>
+                <ul class="uk-navbar-nav uk-navbar-nav-oua">
+                    <li><a href="../MASHO/masho.html">Міжнародна академічна<br>школа Одеса</a></li>
+                    <li>
+                        <a href="../OUA/oua.html">Національний університет<br>"Одеська юридична академія"<span
+                                uk-drop-parent-icon></span></a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-nav-oua uk-navbar-dropdown-nav uk-animation-slide-bottom-medium">
+                                <li class="border-bottom"><a href="../OUA/oua.html">НУ "ОЮА"</a></li>
+                                <li><a href="https://www.onua.edu.ua/ua/virtualnyi-tur-universytetom">Віртуальний тур
+                                    університетом</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="../MGU/mgu.html">Міжнародний гуманітарний<br>університет</a></li>
+                    <li><a href="../KyivUN/kyivUN.html">Київський університет інтелектуальної<br>власності та права НУ
+                        «ОЮА»</a></li>
+                    <li class="language-selector language-color-oua">
+                        <div class="current-language " id="lang-selector-toggle">
+                            <img src="../src/svg/ua.svg" alt="Ukrainian" class="flag-icon">
+                            <span class="language-name">UA</span>
+                            <span uk-icon="icon: chevron-down"></span>
+                        </div>
+                        <div class="language-dropdown language-color-oua" id="lang-dropdown">
+                            <a href="chernivtsi-en.html" class="language-option" data-lang="en">
+                                <img src="../src/svg/uk.svg" alt="English" class="flag-icon">
+                                <span class="language-name">EN</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="uk-navbar uk-navbar-container uk-margin uk-hidden@m">
+            <div class="uk-navbar-right">
+                <a class="uk-navbar-toggle" href="#offcanvas-nav-oua" uk-toggle>
+                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left"></span>
+                </a>
+            </div>
+            <div class="uk-navbar-center">
+                <a class="uk-logo" href="../index.html">
+                    <img class="oua-logo" alt="" src="../src/img/logos/oua_logo.png">
+                </a>
+            </div>
+        </nav>
+
+        <div id="offcanvas-nav-oua" uk-offcanvas="flip: true; mode: slide">
+            <div class="uk-offcanvas-bar uk-overflow-hidden uk-offcanvas-bar-oua">
+                <ul class="uk-nav">
+                    <li class="border-bottom"><a href="../MASHO/masho.html">Міжнародна академічна школа Одеса</a></li>
+                    <li class="border-bottom">
+                        <a class="uk-margin-small-bottom" href="#">Національний університет "Одеська юридична
+                            академія"</a>
+                        <ul class="uk-nav-sub">
+                            <li><a class="uk-text-muted uk-text-left" href="../OUA/oua.html"><span
+                                    uk-icon="icon: chevron-right"></span>НУ "ОЮА"</a></li>
+                            <li><a class="uk-text-muted uk-text-left"
+                                   href="https://www.onua.edu.ua/ua/virtualnyi-tur-universytetom"><span
+                                    uk-icon="icon: chevron-right"></span>Віртуальний тур університетом</a></li>
+                        </ul>
+                    </li>
+                    <li class="border-bottom"><a href="../MGU/mgu.html">Міжнародний гуманітарний університет</a></li>
+                    <li class="border-bottom"><a href="../KyivUN/kyivUN.html">Київський університет інтелектуальної
+                        власності та права</a></li>
+                    <li><a href="chernivtsi-en.html">
+                        <img src="../src/svg/uk.svg" alt="Ukrainian" class="flag-icon">
+                        <span class="language-name">EN</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</header>
+<div class="sections-container">
+    <section id='main-information'>
+        <div class="row feature design fix-position">
+            <div class="container-left-text">
+                <div class="six columns left text margin-fixed-left">
+                    <h2>Чернiвецький навчально-науковий<br>юридичний iнститут</h2>
+                    <p>Чернівецький навчально-науковий юридичний інститут – це один із провідних освітніх центрів Західної України у сфері права. Він забезпечує
+                        підготовку висококваліфікованих спеціалістів, що працюють у судових органах, прокуратурі,
+                        адвокатурі, правоохоронних структурах та інших юридичних установах.</p>
+                </div>
+                <div id="margin-bottom-1" class="six columns left text margin-fixed-left">
+                    <p>Заснований у 2001 році як навчально-консультаційний центр, у 2014 році
+                        інститут отримав статус повноцінного навчально-наукового закладу. Нині він здійснює підготовку
+                        бакалаврів і магістрів за кількома спеціалізаціями, зосереджуючи увагу на теоретичній та
+                        практичній підготовці студентів.</p>
+                    <p>Інститут оснащений сучасною матеріально-технічною базою, що включає
+                        мультимедійні аудиторії, спеціалізовані лабораторії та бібліотеку. Навчальний процес
+                        організований так, щоб студенти здобували не лише ґрунтовні знання, а й реальний досвід завдяки
+                        співпраці з юридичними установами.</p>
+                </div>
+
+            </div>
+            <div class="six columns feature-media right">
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../src/img/Chernivtsi/img_5.jpg" alt="5">
+                        </div>
+                        <div class="swiper-slide"><img src="../src/img/Chernivtsi/img_1.jpg" alt="1">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row feature">
+            <div class="six columns feature-media left">
+                <img class="img-misc" src="../src/img/Chernivtsi/img_2.jpg" alt="2">
+            </div>
+            <div class="container-right-text">
+                <div class="six columns right text margin-fixed-right">
+                    <h2>Історія інституту</h2>
+                    <p>Чернівецький навчально-науковий юридичний інститут був створений у 2001 році як
+                        навчально-консультаційний центр Одеської національної юридичної академії. У 2014 році заклад отримав
+                        статус інституту, розширивши спектр освітніх програм і зміцнивши науковий потенціал.</p>
+                    <p>Інститут готує фахівців, які здатні ефективно працювати в різних сферах
+                        правозастосування, забезпечуючи розвиток і вдосконалення правової системи України.</p>
+                </div>
+                <div class="six columns right text margin-fixed-right">
+                    <h2>Освітні можливості</h2>
+                    <p>Навчальний процес базується на чотирьох кафедрах, які забезпечують викладання ключових юридичних дисциплін. Програми навчання включають такі напрямки:</p>
+                    <p>• Прокуратура та слідство<br>
+                        • Кримінальна юстиція<br>
+                        • Цивільна та господарська юстиція<br>
+                        • Судова та адміністративна діяльність</p>
+                    <p>Студенти здобувають не лише фундаментальні теоретичні знання, а й практичні
+                        навички завдяки співпраці з судами, органами прокуратури, адвокатськими та нотаріальними бюро.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row feature design display reverse">
+            <div class="container-left-text">
+                <div class="six columns left text margin-fixed-left">
+                    <h2>Наукова діяльність</h2>
+                    <p>Інститут активно розвиває юридичну науку. Викладачі та студенти беруть участь у
+                        наукових дослідженнях, публікують статті та монографії. Важливим досягненням є власне наукове видання –
+                        "Вісник Чернівецького юридичного інституту", що стало платформою для обговорення актуальних питань
+                        правознавства.</p>
+                </div>
+            </div>
+            <div class="six columns feature-media left">
+                <img class="img-misc" src="../src/img/Chernivtsi/img_4.jpg" alt="3">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row feature">
+            <div class="six columns feature-media right">
+                <img class="img-misc" src="../src/img/Chernivtsi/img_3.jpg" alt="3">
+            </div>
+            <div class="container-right-text">
+                <div class="six columns right text margin-fixed-right">
+                    <h2>Матеріально-технічна база</h2>
+                    <p>Інститут має потужну матеріально-технічну базу, що забезпечує комфортні умови для
+                        навчання:
+                    </p>
+                    <p>• мультимедійні лекційні аудиторії;<br>
+                        • спеціалізовані лабораторії;<br>
+                        • бібліотека з електронними ресурсами;<br>
+                        • комп'ютерні класи з доступом до юридичних баз даних.
+                    </p>
+                    <p>Ці ресурси сприяють ефективному навчальному процесу та підготовці
+                        висококваліфікованих юристів.</p>
+                </div>
+                <div class="six columns left text margin-fixed-right">
+                    <h2>Студентське життя та кар'єрні перспективи</h2>
+                    <p>Студенти інституту беруть участь у професійних форумах, наукових конференціях,
+                        юридичних клініках, що дозволяє їм ще під час навчання набувати практичний досвід. Інститут тісно
+                        співпрацює з державними установами та приватними юридичними компаніями, що забезпечує високу
+                        конкурентоспроможність випускників на ринку праці.</p>
+                    <p>Набір студентів у цьому навчальному році склав 211 осіб, а загальний контингент
+                        становить 418 студентів. Чернівецький навчально-науковий юридичний інститут – це надійний вибір для тих,
+                        хто прагне отримати якісну юридичну освіту та досягти професійного успіху!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="video-carousel">
+        <div class="honor-container">
+            <div class="row responsive">
+                <div class="uk-slider-container-offset mobile-size" uk-slider>
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="yL7mekvEQ18">
+                                            <source src="https://www.youtube.com/watch?v=yL7mekvEQ18"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">Оглядовий ролик інституту</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="HzkdZcA4jC0">
+                                            <source src="https://youtu.be/HzkdZcA4jC0"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">Нагородження у Чернівецькому юридичному інституті </h3>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                           uk-slidenav-previous
+                           uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                           uk-slider-item="next"></a>
+                    </div>
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="go-top-container">
+            <a href="#" class="go-top-button go-top-button-oua">
+                <div class="go-top-text">
+                    <img src="../src/svg/to-top.svg" alt="1">
+                </div>
+            </a>
+        </div>
+    </section>
+</div>
+<footer>
+    <div class="footer-main">
+        <div class="footer-address">
+            <a href="https://maps.app.goo.gl/gD3stk2rYYdEzmTv9" target="_blank">м.Чернівці, вул. Григорія Сковороди, 7
+            </a>
+        </div>
+        <div class="footer-social-media">
+            <div class="social-media-item-wrapper instagram">
+                <div class="social-media-dark">
+                    <a href="https://cherninstitut.com.ua" target="_blank">
+                        <img src="../src/svg/website.svg" alt="Instagram" width="28" height="28">
+                    </a>
+                </div>
+                <div class="social-media-color">
+                    <a href="https://cherninstitut.com.ua" target="_blank">
+                        <img src="../src/svg/website.svg" alt="Instagram" width="28" height="28">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="social-media-dark">
+                    <a href="mailto:chernivtsi.institute@gmail.com" target="_blank">
+                        <img src="../src/svg/mail.svg" alt="mail" width="28" height="28">
+                    </a>
+                </div>
+            </div>
+            <div class="social-media-item-wrapper instagram">
+
+                <div class="social-media-dark">
+                    <a href="https://www.instagram.com/oua.cv/" target="_blank">
+                        <img src="../src/svg/insta.svg" alt="Instagram" width="28" height="28">
+                    </a>
+                </div>
+                <div class="social-media-color">
+                    <a href="https://www.instagram.com/oua.cv/" target="_blank">
+                        <img src="../src/svg/instagram-color.svg" alt="Instagram" width="28" height="28">
+                    </a>
+                </div>
+            </div>
+            <div class="social-media-item-wrapper facebook">
+                <div class="social-media-dark">
+                    <a href="https://www.facebook.com/profile.php?id=100029718696971" target="_blank">
+                        <img src="../src/svg/fb.svg" alt="Facebook" width="28" height="28">
+                    </a>
+                </div>
+                <div class="social-media-color">
+                    <a href="https://www.facebook.com/profile.php?id=100029718696971" target="_blank">
+                        <img src="../src/svg/facebook-color-2.svg" alt="Facebook" width="28" height="28">
+                    </a>
+                </div>
+            </div>
+            <div class="social-media-item-wrapper phone">
+                <div class="social-media-dark">
+                    <a href="tel:+380372559449" target="_blank">
+                        <img src="../src/svg/phone-black.svg" alt="Phone" width="28" height="28">
+                    </a>
+                </div>
+                <div class="social-media-color">
+                    <a href="tel:+380372559449" target="_blank">
+                        <img src="../src/svg/phone-color.svg" alt="Phone" width="28" height="28">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/videojs-youtube@3.0.1/dist/Youtube.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/uikit3/uikit.min.js"></script>
+<script src="../assets/js/uikit3/uikit-icons.min.js"></script>
+</body>
+</html>
+

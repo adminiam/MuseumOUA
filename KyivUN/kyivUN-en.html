@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Музей</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="../src/favicon/KyivUN/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../src/favicon/KyivUN/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../src/favicon/KyivUN/favicon-16x16.png">
+    <link rel="manifest" href="../src/favicon/KyivUN/site.webmanifest">
+    <link rel="stylesheet" href="assets/uikit3/uikit.min.css"/>
+    <link rel="stylesheet" href="../assets/css/default.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body id="kyivUN-body">
+<header id="kyivUN-header">
+    <div>
+        <nav class="uk-navbar-container uk-visible@m uk-navbar" uk-navbar="mode: click">
+            <div class="uk-navbar-center">
+                <a class="uk-logo" href="../index-en.html">
+                    <img class="kyivUN-logo" alt="" src="../src/img/logos/kyivUN_logo.png">
+                </a>
+                <ul class="uk-navbar-nav uk-navbar-nav-kyivUN">
+                    <li><a href="../MASHO/masho-en.html">Odesa International<br>Academic School</a></li>
+                    <li>
+                        <a href="#">National University<br>"Odesa Law Academy"<span uk-drop-parent-icon></span></a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-nav-kyivUN uk-navbar-dropdown-nav uk-animation-slide-bottom-medium">
+                                <li class="border-bottom"><a href="../OUA/oua-en.html">NU "OLA"</a></li>
+                                <li><a href="https://www.onua.edu.ua/ua/virtualnyi-tur-universytetom">Virtual Tour</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="../MGU/mgu-en.html">International Humanities<br>University</a></li>
+                    <li><a href="../KyivUN/kyivUN-en.html">Kyiv University of Intellectual<br>Property and Law
+                        NU"OLA"</a>
+                    </li>
+                    <li class="language-selector language-color-kyiv">
+                        <div class="current-language " id="lang-selector-toggle">
+                            <img src="../src/svg/uk.svg" alt="English" class="flag-icon">
+                            <span class="language-name">EN</span>
+                            <span uk-icon="icon: chevron-down"></span>
+                        </div>
+                        <div class="language-dropdown language-color-kyiv" id="lang-dropdown">
+                            <a href="kyivUN.html" class="language-option" data-lang="en">
+                                <img src="../src/svg/ua.svg" alt="Ukrainian" class="flag-icon">
+                                <span class="language-name">UA</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="uk-navbar uk-navbar-container uk-margin uk-hidden@m">
+            <div class="uk-navbar-right">
+                <a class="uk-navbar-toggle" href="#offcanvas-nav-kyivUN" uk-toggle>
+                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left"></span>
+                </a>
+            </div>
+            <div class="uk-navbar-center">
+                <a class="uk-logo" href="../index-en.html">
+                    <img class="kyivUN-logo" alt="" src="../src/img/logos/kyivUN_logo.png">
+                </a>
+            </div>
+        </nav>
+
+        <div id="offcanvas-nav-kyivUN" uk-offcanvas="flip: true; mode: slide">
+            <div class="uk-offcanvas-bar uk-overflow-hidden uk-offcanvas-bar-kyivUN">
+                <ul class="uk-nav">
+                    <li class="border-bottom"><a href="../MASHO/masho-en.html">Odesa International Academic School</a></li>
+                    <li class="border-bottom">
+                        <a class="uk-margin-small-bottom" href="#">National University "Odesa Law Academy"</a>
+                        <ul class="uk-nav-sub">
+                            <li><a class="uk-text-muted uk-text-left" href="../OUA/oua-en.html"><span
+                                    uk-icon="icon: chevron-right"></span> NU "OLA"</a></li>
+                            <li><a class="uk-text-muted uk-text-left"
+                                   href="https://www.onua.edu.ua/ua/virtualnyi-tur-universytetom"><span
+                                    uk-icon="icon: chevron-right"></span> Virtual Tour</a></li>
+                        </ul>
+                    </li>
+                    <li class="border-bottom"><a href="../MGU/mgu.html">International Humanities University</a></li>
+                    <li class="border-bottom"><a href="../KyivUN/kyivUN.html">Kyiv University of Intellectual Property
+                        and Law NU"OLA"</a></li>
+                    <li><a href="kyivUN.html">
+                        <img src="../src/svg/ua.svg" alt="Ukrainian" class="flag-icon">
+                        <span class="language-name">UA</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="sections-container">
+    <section id='main-information'>
+        <div class="row feature design fix-position">
+            <div class="container-left-text">
+                <div class="six columns left text margin-fixed-left">
+                    <p>
+                    <h2>Kyiv University of Intellectual Property and Law</h2>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Kyiv University of Intellectual Property and Law is a worthy and strong
+                    successor of the Odesa School of Law, having inherited its traditions and inexhaustible desire for
+                    continuous development. The training of highly qualified lawyers, philologists, managers,
+                    psychologists, and IT specialists is carried out according to European higher education standards.
+                    This multifunctional educational complex in the capital has become a home for ambitious, purposeful
+                    young men and women from all over Ukraine.
+                </div>
+                <div id="margin-bottom-1" class="six columns left text margin-fixed-left">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Furthermore, the University serves as a regular meeting place for
+                        distinguished legal scholars and representatives of higher state authorities with teachers and
+                        students. In particular, the Presidium of the National Academy of Legal Sciences of Ukraine held
+                        meetings within KUIPL's walls with the participation of the Chairman of the Verkhovna Rada of
+                        Ukraine, Ruslan Stefanchuk; at the opening of the Kyiv University stadium, the Minister of
+                        Education and Science of Ukraine Serhiy Shkarlet and People's Deputy of Ukraine David Arakhamia
+                        were present, who highly praised the infrastructure and teaching quality at the higher education
+                        institution.</p>
+                </div>
+            </div>
+
+            <div class="six columns feature-media right">
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../src/img/KyivUN/periods/img1.jpg" alt="1">
+                        </div>
+                        <div class="swiper-slide"><img src="../src/img/KyivUN/periods/img2.jpg" alt="2">
+                        </div>
+                        <div class="swiper-slide"><img src="../src/img/KyivUN/periods/img3.jpg" alt="3">
+                        </div>
+                        <div class="swiper-slide"><img src="../src/img/KyivUN/periods/img4.jpg" alt="4">
+                        </div>
+                        <div class="swiper-slide"><img src="../src/img/KyivUN/periods/img84.jpg" alt="84">
+                        </div>
+                        <div class="swiper-slide"><img src="../src/img/KyivUN/periods/img85.jpg" alt="85">
+                        </div>
+                        <div class="swiper-slide"><img src="../src/img/KyivUN/periods/img86.jpg" alt="86">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id='universities-carousel'>
+        <div class="honor-container">
+            <div class="row responsive">
+                <div class="uk-slider-container-offset mobile-size" uk-slider>
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="slider-img" src="../src/img/KyivUN/periods/imgCover1.jpg"
+                                             width="900" height="600"
+                                             alt="Slider" loading="lazy">
+                                    </div>
+                                    <a class="main-pages-decoration" href="periods-en/1996-2018.html">
+                                        <div class="uk-card-body fixed-size">
+                                            <h3 class="uk-card-title">Kyiv Institute of Intellectual Property and Law:
+                                                History of Establishment and Development</h3>
+                                            <p class="years-font-size">(1996-2018)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="slider-img" src="../src/img/KyivUN/periods/imgCover2.jpg"
+                                             width="900" height="600"
+                                             alt="Slider" loading="lazy">
+                                    </div>
+                                    <a class="main-pages-decoration" href="periods-en/2019-2021.html">
+                                        <div class="uk-card-body fixed-size">
+                                            <h3 class="uk-card-title">From the Innovative Center of NU "OLA" to One of
+                                                the Best Educational Institutions in Ukraine</h3>
+                                            <p class="years-font-size">(2019-2021)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="slider-img" src="../src/img/KyivUN/periods/imgCover3.jpg"
+                                             width="900" height="600"
+                                             alt="Slider"
+                                             loading="lazy">
+                                    </div>
+                                    <a class="main-pages-decoration" href="periods-en/2022-2024.html">
+                                        <div class="uk-card-body fixed-size">
+                                            <h3 class="uk-card-title">Achieving the Status of a University of National
+                                                Importance</h3>
+                                            <p class="years-font-size">(2022-2024)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                           uk-slidenav-previous
+                           uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                           uk-slider-item="next"></a>
+                    </div>
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="video-carousel">
+        <div class="honor-container">
+            <div class="row responsive">
+                <div class="uk-slider-container-offset mobile-size" uk-slider>
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="rgx9i5dfEO4">
+                                            <source src="https://www.youtube.com/watch?v=rgx9i5dfEO4"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">The First Knowledge Day at the Independent Kyiv
+                                            University
+                                            of Intellectual Property and Law</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="cT929pUHjws">
+                                            <source src="https://www.youtube.com/watch?v=cT929pUHjws"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">Grand Opening of the Sports and Wellness Complex</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="3cFcoU-PRRo">
+                                            <source src="https://www.youtube.com/watch?v=3cFcoU-PRRo"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">Miss Kyiv Institute of Intellectual Property 2019</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top video-border-carousel">
+                                        <video class="video-js vjs-default-skin" controls data-youtube-id="flItbPfkdJc">
+                                            <source src="https://www.youtube.com/watch?v=flItbPfkdJc"
+                                                    type="video/youtube">
+                                        </video>
+                                    </div>
+                                    <div class="uk-card-body fixed-size">
+                                        <h3 class="uk-card-title">Meeting of KIIPL Students with Famous Journalist and
+                                            Showman
+                                            Dmytro Komarov</h3>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                           uk-slidenav-previous
+                           uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                           uk-slider-item="next"></a>
+                    </div>
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="go-top-container">
+            <a href="#" class="go-top-button go-top-button-kyivUN">
+                <div class="go-top-text">
+                    <img src="../src/svg/to-top.svg" alt="1">
+                </div>
+            </a>
+        </div>
+    </section>
+</div>
+<footer>
+    <div class="footer-main">
+        <div class="footer-address">
+            <a href="https://maps.app.goo.gl/HW425FDmro6Gufxq9" target="_blank">Kyiv, Kharkiv highway, 210</a>
+        </div>
+        <div class="footer-social-media">
+            <div class="social-media-item-wrapper instagram">
+                <div class="social-media-dark">
+                    <a href="https://kyivinstitute.com" target="_blank">
+                        <img src="../src/svg/website.svg" alt="Instagram" width="28" height="28">
+                    </a>
+                </div>
+                <div class="social-media-color">
+                    <a href="https://kyivinstitute.com" target="_blank">
+                        <img src="../src/svg/website.svg" alt="Instagram" width="28" height="28">
+                    </a>
+                </div>
+            </div>
+            <div class="social-media-item-wrapper instagram">
+                <div class="social-media-dark">
+                    <a href="https://instagram.com/kyiv_nuoua?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+                        <img src="../src/svg/insta.svg" alt="Instagram" width="28" height="28">
+                    </a>
+                </div>
+                <div class="social-media-color">
+                    <a href="https://instagram.com/kyiv_nuoua?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+                        <img src="../src/svg/instagram-color.svg" alt="Instagram" width="28" height="28">
+                    </a>
+                </div>
+            </div>
+            <div class="social-media-item-wrapper facebook">
+                <div class="social-media-dark">
+                    <a href="https://www.facebook.com/kyivinstitute.onua/" target="_blank">
+                        <img src="../src/svg/fb.svg" alt="Facebook" width="28" height="28">
+                    </a>
+                </div>
+                <div class="social-media-color">
+                    <a href="https://www.facebook.com/kyivinstitute.onua/" target="_blank">
+                        <img src="../src/svg/facebook-color-2.svg" alt="Facebook" width="28" height="28">
+                    </a>
+                </div>
+            </div>
+            <div class="social-media-item-wrapper phone">
+                <div class="social-media-dark">
+                    <a href="tel:+380507029200" target="_blank">
+                        <img src="../src/svg/phone-black.svg" alt="Phone" width="28" height="28">
+                    </a>
+                </div>
+                <div class="social-media-color">
+                    <a href="tel:+380507029200" target="_blank">
+                        <img src="../src/svg/phone-color.svg" alt="Phone" width="28" height="28">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/videojs-youtube@3.0.1/dist/Youtube.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/uikit3/uikit.min.js"></script>
+<script src="../assets/js/uikit3/uikit-icons.min.js"></script>
+</body>
+</html>
+

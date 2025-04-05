@@ -10,6 +10,105 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.documentary-body {
+    padding-top: 10%;
+}
+.mobile-text {
+    display: none;
+}
+
+
+.language-selector {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    border-radius: 4px;
+}
+.uk-navbar-nav .language-selector {
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.current-language {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.language-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;
+    min-width: 120px;
+}
+
+.uk-navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.uk-navbar-nav-index {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.language-color-mgu{
+    background: linear-gradient(to bottom, #2B4742, #326c66) no-repeat fixed;
+}
+.language-color-oua{
+    background: linear-gradient(to bottom, #001E3F, #457391) no-repeat fixed;
+}
+
+.language-color-masho{
+    background: linear-gradient(to bottom, #0A2B4B, #c3f3ff) no-repeat fixed;
+}
+.language-color-kyiv{
+    background: linear-gradient(to bottom, #07575b, #c4dfe6) no-repeat fixed;
+}
+.language-color-index{
+    background: linear-gradient(to bottom, #1f150e, #1f1707) no-repeat fixed;
+}
+.flag-icon {
+    width: 24px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.language-name {
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.language-dropdown.show {
+    display: block;
+}
+
+.language-option {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: background-color 0.2s;
+}
+
+.language-option:hover {
+    background-color: #f5f5f5;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 section {
     opacity: 0;
@@ -50,7 +149,7 @@ footer {
     z-index: 990;
 }
 
-#mainpage-header{
+#mainpage-header {
     opacity: 0;
 }
 
@@ -66,7 +165,7 @@ footer {
     background: no-repeat linear-gradient(214deg, rgba(68, 45, 27, 1) 0%, rgba(209, 162, 121, 1) 50%, rgba(68, 45, 27, 1) 100%);
 }
 
-#link-pages-body{
+#link-pages-body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -266,16 +365,25 @@ footer {
 }
 
 .animated-text-mainPage {
-    width: 59rem;
+    width: 99rem;
     height: 3.7rem;
     color: white;
     font-size: 40px;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid white;
-    animation: cursor 0.95s step-end infinite, printed_text 6s steps(40);
+    animation: cursor 0.95s step-end infinite, printed_text 7s steps(60);
 }
-
+.animated-text-mainPage-en {
+    width: 109rem;
+    height: 3.7rem;
+    color: white;
+    font-size: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid white;
+    animation: cursor 0.95s step-end infinite, printed_text 7s steps(70);
+}
 .overlay-mainPage {
     position: absolute;
     top: 0;
@@ -292,7 +400,19 @@ footer {
     position: relative;
     height: 100vh;
 }
+@media (max-width: 768px) {
+    .documentary-body {
+        padding-top: 30%;
+    }
 
+    .desktop-text {
+        display: none;
+    }
+
+    .mobile-text {
+        display: block;
+    }
+}
 @keyframes cursor {
     0% {
         border-color: white;
@@ -546,8 +666,8 @@ section:last-of-type {
     border-radius: 10px;
 }
 
-.margin-top-photo{
-    margin: 10px 0 0 0!important;
+.margin-top-photo {
+    margin: 10px 0 0 0 !important;
 }
 
 #padding-container {
