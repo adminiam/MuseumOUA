@@ -110,7 +110,6 @@ if (window.addEventListener) {
 document.addEventListener('DOMContentLoaded', function () {
     var video = document.getElementById('background-video');
     video.play().catch(function (error) {
-        // Автозапуск может быть заблокирован, ждем взаимодействия с пользователем
         document.body.addEventListener('click', function () {
             video.play();
         });
@@ -141,24 +140,49 @@ document.addEventListener('DOMContentLoaded', function () {
     header.style.top = '0';
     header.style.opacity = '0';
 });
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const langToggle = document.getElementById('lang-selector-toggle');
     const langDropdown = document.getElementById('lang-dropdown');
     const langOptions = document.querySelectorAll('.language-option');
     const currentLang = document.querySelector('.current-language');
     const currentLangImg = currentLang.querySelector('.flag-icon');
     const currentLangName = currentLang.querySelector('.language-name');
-    langToggle.addEventListener('click', function(e) {
+    langToggle.addEventListener('click', function (e) {
         e.stopPropagation();
         langDropdown.classList.toggle('show');
     });
-    document.addEventListener('click', function(e) {
+    document.addEventListener('click', function (e) {
         if (!langDropdown.contains(e.target) && !langToggle.contains(e.target)) {
             langDropdown.classList.remove('show');
         }
     });
 
 });
+
+    document.addEventListener('DOMContentLoaded', function () {
+    const header = document.getElementById('mainpage-header');
+    const overlaySection = document.getElementById('overlay_misc');
+
+    // Функция, скрывающая header, когда пользователь на первой секции
+    function toggleNavbarVisibility() {
+    const scrollY = window.scrollY;
+    const sectionBottom = overlaySection.offsetTop + overlaySection.offsetHeight;
+
+    if (scrollY < sectionBottom) {
+    header.style.opacity = '0';
+    header.style.pointerEvents = 'none';
+    header.style.visibility = 'hidden';
+} else {
+    header.style.opacity = '1';
+    header.style.pointerEvents = 'auto';
+    header.style.visibility = 'visible';
+}
+}
+
+    window.addEventListener('scroll', toggleNavbarVisibility);
+    toggleNavbarVisibility(); // Вызов при загрузке
+});
+
 
 
 

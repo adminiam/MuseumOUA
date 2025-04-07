@@ -17,6 +17,23 @@ body {
     display: none;
 }
 
+.lang-flag-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.lang-flag-img {
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.lang-flag-img:hover {
+    transform: scale(1.1);
+}
 
 .language-selector {
     position: relative;
